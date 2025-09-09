@@ -13,7 +13,7 @@ a.a.a.g -> a.a.a.SYNSegment:
 a.a.a.h -> a.a.a.Segment:
     void a(int) -> setAck
     void a(int,int,int) -> init
-a.a.a.i -> a.a.a.RunnableC0042i:
+a.a.a.i -> a.a.a.RunnableC0230i:
 a.a.b -> a.a.ReliableServerSocket:
 a.a.h -> a.a.ReliableSocket:
 a.a.p -> a.a.ReliableSocketInputStream:
@@ -234,7 +234,7 @@ com.corrodinggames.rts.game.units.a.u -> com.corrodinggames.rts.game.units.a.Bot
 com.corrodinggames.rts.game.units.a.v -> com.corrodinggames.rts.game.units.a.UnitBuildUnitAction:
     com.corrodinggames.rts.game.units.el a -> buildUnit
 com.corrodinggames.rts.game.units.a.w -> com.corrodinggames.rts.game.units.a.AbstractAction:
-com.corrodinggames.rts.game.units.a.x -> com.corrodinggames.rts.game.units.a.AbstractC0043x:
+com.corrodinggames.rts.game.units.a.x -> com.corrodinggames.rts.game.units.a.AbstractC0231x:
     com.corrodinggames.rts.game.units.a.u d() -> bothWayPoint
 com.corrodinggames.rts.game.units.aa -> com.corrodinggames.rts.game.units.CleanHistoryAction:
 com.corrodinggames.rts.game.units.ac -> com.corrodinggames.rts.game.units.EmptyActionFilterA:
@@ -262,6 +262,7 @@ com.corrodinggames.rts.game.units.bi -> com.corrodinggames.rts.game.units.DustTe
 com.corrodinggames.rts.game.units.bl -> com.corrodinggames.rts.game.units.FogRevealer:
 com.corrodinggames.rts.game.units.bn -> com.corrodinggames.rts.game.units.UnitAgent:
 com.corrodinggames.rts.game.units.bp -> com.corrodinggames.rts.game.units.AbstractUnitAgent:
+    com.corrodinggames.rts.gameFramework.utility.p br -> statusEffectArray
     com.corrodinggames.rts.gameFramework.m.e M -> image
     com.corrodinggames.rts.game.units.ce T -> attacking
     void a(com.corrodinggames.rts.game.units.bp,com.corrodinggames.rts.game.units.ce,float) -> damage
@@ -394,11 +395,30 @@ com.corrodinggames.rts.game.units.cr -> com.corrodinggames.rts.game.units.GunBoa
 com.corrodinggames.rts.game.units.cs -> com.corrodinggames.rts.game.units.MegaTankEnum:
 com.corrodinggames.rts.game.units.ct -> com.corrodinggames.rts.game.units.LaserTankEnum:
 com.corrodinggames.rts.game.units.cu -> com.corrodinggames.rts.game.units.HovercraftEnum:
+com.corrodinggames.rts.game.units.custom.a.a.b -> com.corrodinggames.rts.game.units.custom.a.a.AddWaypointActionPart:
+    boolean e -> addWaypointPrepend
+    com.corrodinggames.rts.game.units.custom.h f -> addWaypointTargetNearestUnitTagged
+    com.corrodinggames.rts.game.s g -> addWaypointTargetNearestUnitTeam
+    float h -> addWaypointTargetNearestUnitMaxRange
+    com.corrodinggames.rts.game.units.custom.h j -> addWaypointTargetRandomUnitTagged
+    com.corrodinggames.rts.game.s k -> addWaypointTargetRandomUnitTeam
+    float l -> addWaypointTargetRandomUnitMaxRange
+    boolean m -> addWaypointTargetMapMustBeReachable
+    boolean n -> addWaypointPositionFromAction
+    android.graphics.PointF o -> addWaypointPositionOffsetFromSelf
+    android.graphics.PointF p -> addWaypointPositionRelativeOffsetFromSelf
+    android.graphics.PointF q -> addWaypointPositionRandomOffsetFromSelf
+    com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBoolean r -> addWaypointTargetFromReference
+    float s -> addWaypointMaxTime
+    com.corrodinggames.rts.game.units.custom.u t -> addWaypointTriggerActionIfFailed
+    com.corrodinggames.rts.game.units.custom.u u -> addWaypointTriggerActionIfMatched
 com.corrodinggames.rts.game.units.custom.a.a.j -> com.corrodinggames.rts.game.units.custom.a.a.ActionSectionPart1:
     boolean a -> deleteSelf
+com.corrodinggames.rts.game.units.custom.a.a.m -> com.corrodinggames.rts.game.units.custom.a.a.TakeResourcesActionPart:
 com.corrodinggames.rts.game.units.custom.a.d -> com.corrodinggames.rts.game.units.custom.a.ActionSectionPart2:
     com.corrodinggames.rts.game.units.custom.aj A -> isLockedMessage
     com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBoolean aB -> iconExtraIsVisible
+    com.corrodinggames.rts.gameFramework.utility.p ac -> actionPart
     com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBoolean aF -> isGuiBlinking
     int aJ -> tech
     boolean aK -> forceNano
@@ -440,10 +460,19 @@ com.corrodinggames.rts.game.units.custom.ag -> com.corrodinggames.rts.game.units
     java.lang.String h() -> getCustomModsFolderName
 com.corrodinggames.rts.game.units.custom.ah -> com.corrodinggames.rts.game.units.custom.CustomLoaderState:
 com.corrodinggames.rts.game.units.custom.aj -> com.corrodinggames.rts.game.units.custom.LogicMessage:
-com.corrodinggames.rts.game.units.custom.as -> com.corrodinggames.rts.game.units.custom.as:
+com.corrodinggames.rts.game.units.custom.as -> com.corrodinggames.rts.game.units.custom.CoreRegister:
     float b -> mass
+    java.util.LinkedHashMap s -> map
+    void a(java.util.LinkedHashMap,com.corrodinggames.rts.game.units.custom.bm) -> register
+com.corrodinggames.rts.game.units.custom.at -> com.corrodinggames.rts.game.units.custom.MassValue:
 com.corrodinggames.rts.game.units.custom.b -> com.corrodinggames.rts.game.units.custom.b:
     com.corrodinggames.rts.game.units.custom.z e -> name
+com.corrodinggames.rts.game.units.custom.be -> com.corrodinggames.rts.game.units.custom.MaxEnergyValue:
+com.corrodinggames.rts.game.units.custom.bf -> com.corrodinggames.rts.game.units.custom.EnergyValue:
+com.corrodinggames.rts.game.units.custom.bg -> com.corrodinggames.rts.game.units.custom.MaxHpValue:
+com.corrodinggames.rts.game.units.custom.bm -> com.corrodinggames.rts.game.units.custom.IntValue:
+    int a -> value
+    java.lang.String b -> type
 com.corrodinggames.rts.game.units.custom.bo -> com.corrodinggames.rts.game.units.custom.UnitDataFromLogicWriter:
 com.corrodinggames.rts.game.units.custom.bo -> com.corrodinggames.rts.game.units.custom.bo:
     com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBoolean b -> logicBoolean
@@ -497,7 +526,7 @@ com.corrodinggames.rts.game.units.custom.cg -> com.corrodinggames.rts.game.units
     boolean A -> slave
     float aa -> barrelHeight
     com.corrodinggames.rts.game.units.custom.o aA -> onShootPlayAnimation
-    float ab -> f856ab
+    float ab -> f949ab
     float aB -> onShootFreezeBodyMovementFor
     java.lang.Boolean ac -> showRangeUIGuide
     com.corrodinggames.rts.game.units.custom.u aC -> onShootTriggerActions
@@ -772,6 +801,8 @@ com.corrodinggames.rts.game.units.dz -> com.corrodinggames.rts.game.units.Turret
 com.corrodinggames.rts.game.units.e -> com.corrodinggames.rts.game.units.CrystalResource:
 com.corrodinggames.rts.game.units.e.a -> com.corrodinggames.rts.game.units.e.Artillery:
 com.corrodinggames.rts.game.units.e.b -> com.corrodinggames.rts.game.units.e.Builder:
+    com.corrodinggames.rts.gameFramework.m.e a -> builderTexture
+    com.corrodinggames.rts.gameFramework.m.e b -> builderDeadTexture
     com.corrodinggames.rts.game.units.a.s n -> reclaimBuildingTargetAction
     void b(java.util.ArrayList) -> getCanBuildList
     java.util.ArrayList N() -> getUnitActionList
@@ -817,6 +848,30 @@ com.corrodinggames.rts.game.units.eo -> com.corrodinggames.rts.game.units.WayPoi
 com.corrodinggames.rts.game.units.f -> com.corrodinggames.rts.game.units.DamagingBorder:
 com.corrodinggames.rts.game.units.f.c -> com.corrodinggames.rts.game.units.f.UnitGeoIndex:
     void a(float,float,float,com.corrodinggames.rts.game.units.bp,float,com.corrodinggames.rts.game.units.f.i) -> findNearestUnit
+com.corrodinggames.rts.game.units.f.d -> com.corrodinggames.rts.game.units.f.RectCircularUnitDetector:
+    android.graphics.RectF a -> rect
+    float b -> rectLeft
+    float c -> rectRight
+    float d -> rectTop
+    float e -> rectBottom
+    float f -> circleCenterX
+    float g -> circleCenterY
+    float h -> squaredRadius
+com.corrodinggames.rts.game.units.f.e -> com.corrodinggames.rts.game.units.f.AbstractUnitSpatialCondition:
+com.corrodinggames.rts.game.units.f.g -> com.corrodinggames.rts.game.units.f.MutableRectUnitDetector:
+    android.graphics.RectF a -> rect
+    float b -> rectLeft
+    float c -> rectRight
+    float d -> rectTop
+    float e -> rectBottom
+    void a(float,float,float,float) -> set
+com.corrodinggames.rts.game.units.f.h -> com.corrodinggames.rts.game.units.f.RectUnitDetector:
+    android.graphics.RectF a -> rect
+    float b -> rectLeft
+    float c -> rectRight
+    float d -> rectTop
+    float e -> rectBottom
+    boolean a(com.corrodinggames.rts.game.units.ce) -> read
 com.corrodinggames.rts.game.units.h -> com.corrodinggames.rts.game.units.EditorOrBuilder:
     com.corrodinggames.rts.game.units.a.s A -> enableAIDebug
     com.corrodinggames.rts.game.units.a.s B -> enableTriggerDebug
@@ -869,8 +924,8 @@ com.corrodinggames.rts.game.units.z -> com.corrodinggames.rts.game.units.Trigger
 com.corrodinggames.rts.gameFramework.a -> com.corrodinggames.rts.gameFramework.CollisionEngine:
 com.corrodinggames.rts.gameFramework.ah -> com.corrodinggames.rts.gameFramework.ah:
     long ej -> id
-    float eq -> PositionX
-    float er -> PositionY
+    float eq -> x
+    float er -> y
     float es -> height
 com.corrodinggames.rts.gameFramework.aj -> com.corrodinggames.rts.gameFramework.GameSaver:
 com.corrodinggames.rts.gameFramework.bi -> com.corrodinggames.rts.gameFramework.MusicType:
@@ -1082,6 +1137,7 @@ com.corrodinggames.rts.gameFramework.utility.ae -> com.corrodinggames.rts.gameFr
     android.graphics.Rect a(java.lang.String,java.lang.String,android.graphics.Rect) -> getValueAsRectOrDefault
     com.corrodinggames.rts.game.units.custom.h a(java.lang.String,java.lang.String,com.corrodinggames.rts.game.units.custom.h) -> getValueAsTagList
     java.lang.Boolean a(java.lang.String,java.lang.String,java.lang.Boolean) -> getValueAsBoolean
+    java.lang.Enum a(java.lang.String,java.lang.String,java.lang.Enum,java.lang.Class) -> getValueAsEnum
     java.lang.Float a(java.lang.String,java.lang.String,java.lang.Float) -> readStaticFloatValue
     java.lang.Float a(java.lang.String,java.lang.String,java.lang.Float,boolean) -> readTimeValueInner
     java.lang.Integer a(java.lang.String,java.lang.String,java.lang.Integer) -> getValueAsColorOrDefault
@@ -1090,10 +1146,12 @@ com.corrodinggames.rts.gameFramework.utility.ae -> com.corrodinggames.rts.gameFr
     java.lang.Boolean a(java.lang.String,java.lang.String,java.lang.String,java.lang.Boolean) -> getAltValueAsBoolean
     java.lang.String a(java.lang.String,java.lang.String,boolean) -> getValueAndRecord
     float a(java.lang.String,boolean,java.lang.String,java.lang.String) -> parseTime
+    com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBoolean b(com.corrodinggames.rts.game.units.custom.l,java.lang.String,java.lang.String) -> getValueAsUnit
     boolean b(java.lang.String,java.lang.String) -> getValueAsPrimeBoolean
     java.lang.Float b(java.lang.String,java.lang.String,java.lang.Float) -> readTimeValue
     java.lang.Integer b(java.lang.String,java.lang.String,java.lang.Integer) -> readStaticIntegerValue
     java.lang.String b(java.lang.String,java.lang.String,boolean) -> getValue
+    com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBoolean c(com.corrodinggames.rts.game.units.custom.l,java.lang.String,java.lang.String) -> getValueAsNumber
     boolean c(java.lang.String,java.lang.String,java.lang.String) -> readArgStringAsBoolean
     com.corrodinggames.rts.game.units.custom.e.a d(com.corrodinggames.rts.game.units.custom.l,java.lang.String,java.lang.String) -> getValueAsCustomResource
     int d(java.lang.String,java.lang.String) -> readStaticIntValue
