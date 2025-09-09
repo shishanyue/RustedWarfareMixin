@@ -1,0 +1,11 @@
+{
+  "com.corrodinggames.rts.appFramework.IntroScreen": [],
+  "com.corrodinggames.rts.game.units.custom.d.b": [
+    {
+      "cls": "com.corrodinggames.rts.game.units.custom.d.b",
+      "mth": "a(Lcom/corrodinggames/rts/game/units/custom/l;Ljava/lang/String;)Lcom/corrodinggames/rts/game/units/custom/d/b;",
+      "codeOffset": 184
+    }
+  ],
+  "com.corrodinggames.rts.gameFramework.i.a": []
+}
