@@ -13,7 +13,7 @@ a.a.a.g -> a.a.a.SYNSegment:
 a.a.a.h -> a.a.a.Segment:
     void a(int) -> setAck
     void a(int,int,int) -> init
-a.a.a.i -> a.a.a.RunnableC0228i:
+a.a.a.i -> a.a.a.RunnableC0042i:
 a.a.b -> a.a.ReliableServerSocket:
 a.a.h -> a.a.ReliableSocket:
 a.a.p -> a.a.ReliableSocketInputStream:
@@ -234,7 +234,7 @@ com.corrodinggames.rts.game.units.a.u -> com.corrodinggames.rts.game.units.a.Bot
 com.corrodinggames.rts.game.units.a.v -> com.corrodinggames.rts.game.units.a.UnitBuildUnitAction:
     com.corrodinggames.rts.game.units.el a -> buildUnit
 com.corrodinggames.rts.game.units.a.w -> com.corrodinggames.rts.game.units.a.AbstractAction:
-com.corrodinggames.rts.game.units.a.x -> com.corrodinggames.rts.game.units.a.AbstractC0229x:
+com.corrodinggames.rts.game.units.a.x -> com.corrodinggames.rts.game.units.a.AbstractC0043x:
     com.corrodinggames.rts.game.units.a.u d() -> bothWayPoint
 com.corrodinggames.rts.game.units.aa -> com.corrodinggames.rts.game.units.CleanHistoryAction:
 com.corrodinggames.rts.game.units.ac -> com.corrodinggames.rts.game.units.EmptyActionFilterA:
@@ -425,8 +425,10 @@ com.corrodinggames.rts.game.units.custom.a.d -> com.corrodinggames.rts.game.unit
     boolean x -> isAlsoViewableByEnemies
     boolean y -> canLocked
     com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBoolean z -> isLocked
+com.corrodinggames.rts.game.units.custom.a.g -> com.corrodinggames.rts.game.units.custom.a.CustomActionConfig:
 com.corrodinggames.rts.game.units.custom.aa -> com.corrodinggames.rts.game.units.custom.FileChangeWatcher:
     java.lang.String b -> filePath
+com.corrodinggames.rts.game.units.custom.ab -> com.corrodinggames.rts.game.units.custom.UnitDifferenceChecker:
 com.corrodinggames.rts.game.units.custom.ad -> com.corrodinggames.rts.game.units.custom.onNewMapSpawnType:
 com.corrodinggames.rts.game.units.custom.af -> com.corrodinggames.rts.game.units.custom.autoTriggerOnEventType:
 com.corrodinggames.rts.game.units.custom.ag -> com.corrodinggames.rts.game.units.custom.ModsLoader:
@@ -442,8 +444,13 @@ com.corrodinggames.rts.game.units.custom.as -> com.corrodinggames.rts.game.units
     float b -> mass
 com.corrodinggames.rts.game.units.custom.b -> com.corrodinggames.rts.game.units.custom.b:
     com.corrodinggames.rts.game.units.custom.z e -> name
+com.corrodinggames.rts.game.units.custom.bo -> com.corrodinggames.rts.game.units.custom.UnitDataFromLogicWriter:
+com.corrodinggames.rts.game.units.custom.bo -> com.corrodinggames.rts.game.units.custom.bo:
+    com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBoolean b -> logicBoolean
+    com.corrodinggames.rts.game.units.custom.logicBooleans.VariableScope$CachedWriter$Operator c -> operator
+com.corrodinggames.rts.game.units.custom.br -> com.corrodinggames.rts.game.units.custom.Effect:
 com.corrodinggames.rts.game.units.custom.bs -> com.corrodinggames.rts.game.units.custom.explodeTypeOnDeath:
-com.corrodinggames.rts.game.units.custom.bt -> com.corrodinggames.rts.game.units.custom.LegOrArmSection:
+com.corrodinggames.rts.game.units.custom.bt -> com.corrodinggames.rts.game.units.custom.LegOrArm:
     boolean J -> explodeOnDeath
     float K -> holdDisMin
     float m -> estimatingPositionMultiplier
@@ -471,11 +478,26 @@ com.corrodinggames.rts.game.units.custom.bz -> com.corrodinggames.rts.game.units
 com.corrodinggames.rts.game.units.custom.ca -> com.corrodinggames.rts.game.units.custom.CustomProjectileSection:
     int bi -> projectIndex
     void a(com.corrodinggames.rts.game.units.custom.ca,com.corrodinggames.rts.game.units.custom.l,com.corrodinggames.rts.gameFramework.utility.ae,java.lang.String) -> parse
+com.corrodinggames.rts.game.units.custom.cb -> com.corrodinggames.rts.game.units.custom.SpawnProjectile:
+    com.corrodinggames.rts.gameFramework.utility.p a -> args
+com.corrodinggames.rts.game.units.custom.cd -> com.corrodinggames.rts.game.units.custom.SpawnProjectileArgs:
+    float c -> spawnChance
+    int d -> maxSpawnLimit
+    float e -> offsetX
+    float f -> offsetY
+    float g -> offsetHeight
+    float h -> offsetDir
+    float i -> xOffsetRelative
+    float j -> yOffsetRelative
+    float k -> offsetRandomX
+    float l -> offsetRandomY
+    float m -> offsetRandomDir
+    int n -> recursionLimit
 com.corrodinggames.rts.game.units.custom.cg -> com.corrodinggames.rts.game.units.custom.Turret:
     boolean A -> slave
     float aa -> barrelHeight
     com.corrodinggames.rts.game.units.custom.o aA -> onShootPlayAnimation
-    float ab -> f876ab
+    float ab -> f856ab
     float aB -> onShootFreezeBodyMovementFor
     java.lang.Boolean ac -> showRangeUIGuide
     com.corrodinggames.rts.game.units.custom.u aC -> onShootTriggerActions
@@ -542,6 +564,7 @@ com.corrodinggames.rts.game.units.custom.cg -> com.corrodinggames.rts.game.units
     float Y -> barrelX
     com.corrodinggames.rts.game.units.custom.cg z -> slaveTo
     float Z -> barrelOffsetXOnOddShots
+com.corrodinggames.rts.game.units.custom.ch -> com.corrodinggames.rts.game.units.custom.LukeException:
 com.corrodinggames.rts.game.units.custom.ci -> com.corrodinggames.rts.game.units.custom.SpawnUnitInfo:
 com.corrodinggames.rts.game.units.custom.cj -> com.corrodinggames.rts.game.units.custom.SpawnUnitArgs:
     boolean e -> neutralTeam
@@ -572,6 +595,18 @@ com.corrodinggames.rts.game.units.custom.e.a -> com.corrodinggames.rts.game.unit
     java.lang.String b -> name
     double a(com.corrodinggames.rts.game.units.ce) -> getResourceCount
     com.corrodinggames.rts.game.units.custom.e.a a(java.lang.String) -> getStringAsResourceType
+com.corrodinggames.rts.game.units.custom.f -> com.corrodinggames.rts.game.units.custom.Animation:
+    java.lang.String a -> animation
+    int b -> start
+    int c -> end
+    float d -> scaleStart
+    float e -> scaleEnd
+    float f -> speed
+    boolean g -> pingPong
+    float h -> nblendIn
+    float i -> blendOut
+    com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBoolean j -> playbackRate
+    float q -> onActionsQueuedUnitPlayAt
 com.corrodinggames.rts.game.units.custom.g -> com.corrodinggames.rts.game.units.custom.includesTagList:
     boolean a(com.corrodinggames.rts.game.units.custom.g,com.corrodinggames.rts.game.units.custom.h) -> hasTag
     com.corrodinggames.rts.game.units.custom.h a(java.lang.String) -> loadTagList
@@ -858,6 +893,13 @@ com.corrodinggames.rts.gameFramework.cc -> com.corrodinggames.rts.gameFramework.
 com.corrodinggames.rts.gameFramework.cf -> com.corrodinggames.rts.gameFramework.Unit:
 com.corrodinggames.rts.gameFramework.d.f -> com.corrodinggames.rts.gameFramework.emitter.Emitter:
     void b() -> load
+com.corrodinggames.rts.gameFramework.d.g -> com.corrodinggames.rts.gameFramework.d.g:
+    int b -> staticFrameWidth
+    int c -> staticFrameHeight
+    int f -> frameWidth
+    int g -> frameHeight
+    com.corrodinggames.rts.gameFramework.m.e i -> image
+    com.corrodinggames.rts.gameFramework.m.e j -> imageShadow
 com.corrodinggames.rts.gameFramework.e -> com.corrodinggames.rts.gameFramework.SyncPacket:
     int c -> localTick
     void a(com.corrodinggames.rts.gameFramework.j.bg) -> write
@@ -986,6 +1028,8 @@ com.corrodinggames.rts.gameFramework.k.k -> com.corrodinggames.rts.gameFramework
 com.corrodinggames.rts.gameFramework.m.e -> com.corrodinggames.rts.gameFramework.m.UnitTexture:
     int p -> width
     int q -> height
+    int g() -> height
+    int h() -> width
 com.corrodinggames.rts.gameFramework.n.a -> com.corrodinggames.rts.gameFramework.n.a:
     int a() -> centerX
     int b() -> centerY
