@@ -932,7 +932,36 @@ com.corrodinggames.rts.gameFramework.bi -> com.corrodinggames.rts.gameFramework.
 com.corrodinggames.rts.gameFramework.bp -> com.corrodinggames.rts.gameFramework.ReplayEngine:
     void c(java.lang.String) -> recordReplayLog
     void d() -> close
-com.corrodinggames.rts.gameFramework.bq -> com.corrodinggames.rts.gameFramework.RelaySaveRunnable:
+com.corrodinggames.rts.gameFramework.bq -> com.corrodinggames.rts.gameFramework.ReplaySaveRunnable:
+    boolean f582a -> isRunning
+    int b -> stopTick
+    int c -> gameTime
+    int d -> commandCount
+    int e -> resyncCount
+    int f -> lastCommandFrame
+    int g -> lastWrittenFrame
+    boolean h -> isStopped
+    java.util.concurrent.ConcurrentLinkedQueue i -> commandQueue
+    long j -> lastFlushTime
+    void a() -> stopRecording
+    void b() -> waitForCommands
+    void a(com.corrodinggames.rts.gameFramework.bs) -> addCommand
+com.corrodinggames.rts.gameFramework.bs -> com.corrodinggames.rts.gameFramework.ReplayCommand:
+    int f584a -> frame
+    boolean b -> isUnknown
+    java.lang.Long c -> timestampValue
+    byte[] d -> eventData
+    com.corrodinggames.rts.gameFramework.SyncPacket e -> syncPacket
+    byte[] f -> resyncData
+    com.corrodinggames.rts.gameFramework.br g -> chatMessage
+    int h -> resyncX
+    int i -> resyncY
+    float j -> resyncFloat1
+    float k -> resyncFloat2
+com.corrodinggames.rts.gameFramework.br -> com.corrodinggames.rts.gameFramework.ChatMessage:
+    int f583a -> messageType
+    java.lang.String b -> senderName
+    java.lang.String c -> messageContent
 com.corrodinggames.rts.gameFramework.bv -> com.corrodinggames.rts.gameFramework.StatsHandler:
     com.corrodinggames.rts.gameFramework.cc a(com.corrodinggames.rts.game.p) -> getTeamStatsFromTeamInner
     com.corrodinggames.rts.gameFramework.cc a(com.corrodinggames.rts.game.units.ce) -> getTeamStatsFromTeam
@@ -1174,3 +1203,45 @@ com.corrodinggames.rts.gameFramework.utility.p -> com.corrodinggames.rts.gameFra
     java.lang.Object[] b -> unitList
 com.corrodinggames.rts.gameFramework.utility.x -> com.corrodinggames.rts.gameFramework.utility.UnitPool:
     com.corrodinggames.rts.game.units.ce[] c -> unitRefList
+com.corrodinggames.rts.gameFramework.bp -> com.corrodinggames.rts.gameFramework.ReplayEngine:
+    java.lang.String f581a -> replayDirectory
+    com.corrodinggames.rts.gameFramework.net.CheckSumData g -> checksumData
+    int j -> syncPacketCounter
+    int o -> replayFormatVersion
+    java.lang.String r -> replayFileName
+    boolean t -> isRecordingActive
+    java.lang.String u -> replayFilePath
+    boolean v -> isReplaying
+    com.corrodinggames.rts.gameFramework.ReplayCommand x -> currentReplayCommand
+    com.corrodinggames.rts.gameFramework.ReplayCommand y -> nextReplayCommand
+    int z -> currentFrame
+    int B -> commandCount
+    int C -> resyncCount
+    java.io.InputStream D -> replayInputStream
+    java.io.BufferedInputStream E -> bufferedReplayInput
+    java.io.DataInputStream F -> replayDataInput
+    com.corrodinggames.rts.gameFramework.net.GameInputStream G -> replayGameInput
+    java.io.OutputStream H -> replayOutputStream
+    java.io.BufferedOutputStream I -> bufferedReplayOutput
+    java.io.DataOutputStream J -> replayDataOutput
+    com.corrodinggames.rts.gameFramework.net.GameOutputStream K -> replayGameOutput
+    com.corrodinggames.rts.gameFramework.ReplaySaveRunnable L -> saveRunnable
+    java.lang.Thread M -> saveThread
+    java.lang.Object N -> closeLock
+    boolean O -> isMultiplayerReplayDisabled
+    void a(java.lang.String) -> logReplayMessage
+    void a(java.lang.String,java.lang.Exception) -> logReplayError
+    void a(com.corrodinggames.rts.gameFramework.net.CheckSumData,boolean) -> recordChecksum
+    void a(com.corrodinggames.rts.gameFramework.SyncPacket,int) -> recordSyncPacket
+    java.io.File a(java.lang.String,boolean) -> getReplayFile
+    void a(boolean) -> startRecordingIfNeeded
+    void c() -> submitChecksum
+    void d(java.lang.String) -> printReplayMessage
+    void i() -> submitChecksumData
+    long j() -> calculateUnitChecksum
+    void k() -> setAIReplayFlags
+    void c(java.lang.String) -> startRecording
+    void d() -> close
+    void e() -> closeConditionally
+    boolean g() -> isReplaying
+    boolean h() -> isRecordingOnly
