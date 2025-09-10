@@ -238,6 +238,20 @@
       {
         "nodeRef": {
           "refType": "CLASS",
+          "declClass": "com.corrodinggames.rts.game.units.a.d"
+        },
+        "newName": "AttackModeAction"
+      },
+      {
+        "nodeRef": {
+          "refType": "CLASS",
+          "declClass": "com.corrodinggames.rts.game.units.a.e"
+        },
+        "newName": "AttackMoveAction"
+      },
+      {
+        "nodeRef": {
+          "refType": "CLASS",
           "declClass": "com.corrodinggames.rts.game.units.a.f"
         },
         "newName": "GuardUnitAction"
@@ -248,6 +262,13 @@
           "declClass": "com.corrodinggames.rts.game.units.a.i"
         },
         "newName": "PatrolAction"
+      },
+      {
+        "nodeRef": {
+          "refType": "CLASS",
+          "declClass": "com.corrodinggames.rts.game.units.a.k"
+        },
+        "newName": "MapPingType"
       },
       {
         "nodeRef": {
@@ -331,7 +352,21 @@
           "refType": "CLASS",
           "declClass": "com.corrodinggames.rts.game.units.a.x"
         },
-        "newName": "AbstractAction"
+        "newName": "ChangeUnitStateActionBase"
+      },
+      {
+        "nodeRef": {
+          "refType": "CLASS",
+          "declClass": "com.corrodinggames.rts.game.units.a.y"
+        },
+        "newName": "UnitInfoAction"
+      },
+      {
+        "nodeRef": {
+          "refType": "CLASS",
+          "declClass": "com.corrodinggames.rts.game.units.a.z"
+        },
+        "newName": "UnitInfoSelectAction"
       },
       {
         "nodeRef": {
@@ -427,9 +462,30 @@
       {
         "nodeRef": {
           "refType": "CLASS",
+          "declClass": "com.corrodinggames.rts.game.units.b.b"
+        },
+        "newName": "AirUnitBase"
+      },
+      {
+        "nodeRef": {
+          "refType": "CLASS",
           "declClass": "com.corrodinggames.rts.game.units.b.c"
         },
         "newName": "AmphibiousJet"
+      },
+      {
+        "nodeRef": {
+          "refType": "CLASS",
+          "declClass": "com.corrodinggames.rts.game.units.b.d"
+        },
+        "newName": "AmphibiousJetSurfaceAction"
+      },
+      {
+        "nodeRef": {
+          "refType": "CLASS",
+          "declClass": "com.corrodinggames.rts.game.units.b.e"
+        },
+        "newName": "AmphibiousJetDiveAction"
       },
       {
         "nodeRef": {
@@ -441,9 +497,30 @@
       {
         "nodeRef": {
           "refType": "CLASS",
+          "declClass": "com.corrodinggames.rts.game.units.b.g"
+        },
+        "newName": "DropshipUnloadAction"
+      },
+      {
+        "nodeRef": {
+          "refType": "CLASS",
+          "declClass": "com.corrodinggames.rts.game.units.b.h"
+        },
+        "newName": "DropshipStopUnloadingAction"
+      },
+      {
+        "nodeRef": {
+          "refType": "CLASS",
           "declClass": "com.corrodinggames.rts.game.units.b.i"
         },
         "newName": "GunShip"
+      },
+      {
+        "nodeRef": {
+          "refType": "CLASS",
+          "declClass": "com.corrodinggames.rts.game.units.b.j"
+        },
+        "newName": "Helicopter"
       },
       {
         "nodeRef": {
@@ -695,7 +772,7 @@
           "refType": "CLASS",
           "declClass": "com.corrodinggames.rts.game.units.custom.ad"
         },
-        "newName": "onNewMapSpawnType"
+        "newName": "OnNewMapSpawnType"
       },
       {
         "nodeRef": {
@@ -742,6 +819,76 @@
       {
         "nodeRef": {
           "refType": "CLASS",
+          "declClass": "com.corrodinggames.rts.game.units.custom.au"
+        },
+        "newName": "MaxAttackRangeValue"
+      },
+      {
+        "nodeRef": {
+          "refType": "CLASS",
+          "declClass": "com.corrodinggames.rts.game.units.custom.av"
+        },
+        "newName": "ShootDelayMultiplierValue"
+      },
+      {
+        "nodeRef": {
+          "refType": "CLASS",
+          "declClass": "com.corrodinggames.rts.game.units.custom.aw"
+        },
+        "newName": "ShootDamageMultiplierValue"
+      },
+      {
+        "nodeRef": {
+          "refType": "CLASS",
+          "declClass": "com.corrodinggames.rts.game.units.custom.ax"
+        },
+        "newName": "MoveSpeed"
+      },
+      {
+        "nodeRef": {
+          "refType": "CLASS",
+          "declClass": "com.corrodinggames.rts.game.units.custom.ay"
+        },
+        "newName": "MaxTurnSpeed"
+      },
+      {
+        "nodeRef": {
+          "refType": "CLASS",
+          "declClass": "com.corrodinggames.rts.game.units.custom.az"
+        },
+        "newName": "FogOfWarsightRange"
+      },
+      {
+        "nodeRef": {
+          "refType": "CLASS",
+          "declClass": "com.corrodinggames.rts.game.units.custom.ba"
+        },
+        "newName": "NanoRange"
+      },
+      {
+        "nodeRef": {
+          "refType": "CLASS",
+          "declClass": "com.corrodinggames.rts.game.units.custom.bb"
+        },
+        "newName": "Selfregenrate"
+      },
+      {
+        "nodeRef": {
+          "refType": "CLASS",
+          "declClass": "com.corrodinggames.rts.game.units.custom.bc"
+        },
+        "newName": "TargetHeight"
+      },
+      {
+        "nodeRef": {
+          "refType": "CLASS",
+          "declClass": "com.corrodinggames.rts.game.units.custom.bd"
+        },
+        "newName": "NanoFactorySpeed"
+      },
+      {
+        "nodeRef": {
+          "refType": "CLASS",
           "declClass": "com.corrodinggames.rts.game.units.custom.be"
         },
         "newName": "MaxEnergyValue"
@@ -759,6 +906,41 @@
           "declClass": "com.corrodinggames.rts.game.units.custom.bg"
         },
         "newName": "MaxHpValue"
+      },
+      {
+        "nodeRef": {
+          "refType": "CLASS",
+          "declClass": "com.corrodinggames.rts.game.units.custom.bh"
+        },
+        "newName": "HpValue"
+      },
+      {
+        "nodeRef": {
+          "refType": "CLASS",
+          "declClass": "com.corrodinggames.rts.game.units.custom.bi"
+        },
+        "newName": "MaxshieldValue"
+      },
+      {
+        "nodeRef": {
+          "refType": "CLASS",
+          "declClass": "com.corrodinggames.rts.game.units.custom.bj"
+        },
+        "newName": "ShieldValue"
+      },
+      {
+        "nodeRef": {
+          "refType": "CLASS",
+          "declClass": "com.corrodinggames.rts.game.units.custom.bk"
+        },
+        "newName": "ShieldregenValue"
+      },
+      {
+        "nodeRef": {
+          "refType": "CLASS",
+          "declClass": "com.corrodinggames.rts.game.units.custom.bl"
+        },
+        "newName": "ArmourValue"
       },
       {
         "nodeRef": {
@@ -973,9 +1155,44 @@
       {
         "nodeRef": {
           "refType": "CLASS",
+          "declClass": "com.corrodinggames.rts.game.units.d.a.b"
+        },
+        "newName": "AntiAirTurretUpgradeToT2Action"
+      },
+      {
+        "nodeRef": {
+          "refType": "CLASS",
           "declClass": "com.corrodinggames.rts.game.units.d.a.c"
         },
         "newName": "Turrets"
+      },
+      {
+        "nodeRef": {
+          "refType": "CLASS",
+          "declClass": "com.corrodinggames.rts.game.units.d.a.d"
+        },
+        "newName": "TurretUpgradeToGunT2Action"
+      },
+      {
+        "nodeRef": {
+          "refType": "CLASS",
+          "declClass": "com.corrodinggames.rts.game.units.d.a.e"
+        },
+        "newName": "TurretUpgradeToGunT3Action"
+      },
+      {
+        "nodeRef": {
+          "refType": "CLASS",
+          "declClass": "com.corrodinggames.rts.game.units.d.a.f"
+        },
+        "newName": "TurretUpgradeToArtilleryAction"
+      },
+      {
+        "nodeRef": {
+          "refType": "CLASS",
+          "declClass": "com.corrodinggames.rts.game.units.d.a.g"
+        },
+        "newName": "TurretUpgradeToFlamethrowerAction"
       },
       {
         "nodeRef": {
@@ -1057,6 +1274,13 @@
       {
         "nodeRef": {
           "refType": "CLASS",
+          "declClass": "com.corrodinggames.rts.game.units.d.f"
+        },
+        "newName": "BuildingUnitBase"
+      },
+      {
+        "nodeRef": {
+          "refType": "CLASS",
           "declClass": "com.corrodinggames.rts.game.units.d.g"
         },
         "newName": "CommandCenter"
@@ -1116,6 +1340,13 @@
           "declClass": "com.corrodinggames.rts.game.units.d.o"
         },
         "newName": "FabricatorUpgradeT3Action"
+      },
+      {
+        "nodeRef": {
+          "refType": "CLASS",
+          "declClass": "com.corrodinggames.rts.game.units.d.p"
+        },
+        "newName": "PlayerBuildingUnitBase"
       },
       {
         "nodeRef": {
@@ -2161,6 +2392,22 @@
           "shortId": "a:[I"
         },
         "newName": "data"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.a.a",
+          "shortId": "bu:Lcom/corrodinggames/rts/game/a/q;"
+        },
+        "newName": "attackingUnitsLand"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.a.a",
+          "shortId": "bv:Lcom/corrodinggames/rts/game/a/q;"
+        },
+        "newName": "attackingUnitsHover"
       },
       {
         "nodeRef": {
@@ -4614,6 +4861,14 @@
         "nodeRef": {
           "refType": "FIELD",
           "declClass": "com.corrodinggames.rts.game.units.custom.as",
+          "shortId": "q:F"
+        },
+        "newName": "targetHeight"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.as",
           "shortId": "s:Ljava/util/LinkedHashMap;"
         },
         "newName": "map"
@@ -5806,9 +6061,25 @@
         "nodeRef": {
           "refType": "FIELD",
           "declClass": "com.corrodinggames.rts.game.units.custom.l",
+          "shortId": "O:Lcom/corrodinggames/rts/game/units/custom/h;"
+        },
+        "newName": "tags"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.l",
           "shortId": "R:I"
         },
         "newName": "strictLevel"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.l",
+          "shortId": "T:Lcom/corrodinggames/rts/game/units/custom/ad;"
+        },
+        "newName": "onNewMapSpawnType"
       },
       {
         "nodeRef": {
@@ -5841,6 +6112,38 @@
           "shortId": "d:Ljava/util/ArrayList;"
         },
         "newName": "UnitEnumRefList"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.l",
+          "shortId": "dS:F"
+        },
+        "newName": "startingHeightOffset"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.l",
+          "shortId": "ds:Lcom/corrodinggames/rts/game/units/custom/f;"
+        },
+        "newName": "movingAnimation"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.l",
+          "shortId": "dt:Lcom/corrodinggames/rts/game/units/custom/f;"
+        },
+        "newName": "ideaAnimation"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.l",
+          "shortId": "du:Lcom/corrodinggames/rts/game/units/custom/f;"
+        },
+        "newName": "attackAnimation"
       },
       {
         "nodeRef": {
@@ -8524,6 +8827,14 @@
           "declClass": "com.corrodinggames.rts.game.units.custom.ca",
           "shortId": "a(Lcom/corrodinggames/rts/game/units/custom/ca;Lcom/corrodinggames/rts/game/units/custom/l;Lcom/corrodinggames/rts/gameFramework/utility/ae;Ljava/lang/String;)V"
         },
+        "newName": "parse"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.ca",
+          "shortId": "a(Lcom/corrodinggames/rts/game/units/custom/ca;Lcom/corrodinggames/rts/game/units/custom/l;Lcom/corrodinggames/rts/gameFramework/utility/ae;Ljava/lang/String;)V"
+        },
         "codeRef": {
           "attachType": "VAR",
           "index": 70
@@ -8649,14 +8960,6 @@
           "index": 720896
         },
         "newName": "customProjectileSection"
-      },
-      {
-        "nodeRef": {
-          "refType": "METHOD",
-          "declClass": "com.corrodinggames.rts.game.units.custom.ca",
-          "shortId": "a(Lcom/corrodinggames/rts/game/units/custom/ca;Lcom/corrodinggames/rts/game/units/custom/l;Lcom/corrodinggames/rts/gameFramework/utility/ae;Ljava/lang/String;)V"
-        },
-        "newName": "parse"
       },
       {
         "nodeRef": {
@@ -12750,7 +13053,7 @@
       "caret": 22940,
       "view": {
         "x": 21,
-        "y": 11072
+        "y": 8451
       },
       "active": false,
       "pinned": false,
@@ -12807,7 +13110,7 @@
       "type": "class",
       "tabPath": "com.corrodinggames.rts.game.units.x",
       "subPath": "java",
-      "caret": 230,
+      "caret": 241,
       "view": {
         "x": 0,
         "y": 0
@@ -12822,10 +13125,10 @@
       "type": "class",
       "tabPath": "com.corrodinggames.rts.game.units.a.x",
       "subPath": "java",
-      "caret": 3459,
+      "caret": 277,
       "view": {
         "x": 0,
-        "y": 43
+        "y": 0
       },
       "active": false,
       "pinned": false,
@@ -12885,7 +13188,7 @@
       "caret": 504,
       "view": {
         "x": 0,
-        "y": 405
+        "y": 223
       },
       "active": false,
       "pinned": false,
@@ -12927,10 +13230,10 @@
       "type": "class",
       "tabPath": "com.corrodinggames.rts.game.units.custom.as",
       "subPath": "java",
-      "caret": 2537,
+      "caret": 3719,
       "view": {
         "x": 0,
-        "y": 1078
+        "y": 1549
       },
       "active": false,
       "pinned": false,
@@ -13007,6 +13310,1806 @@
         "x": 0,
         "y": 0
       },
+      "active": false,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false,
+      "previewTab": false
+    },
+    {
+      "type": "class",
+      "tabPath": "com.corrodinggames.rts.game.a.a.a",
+      "subPath": "java",
+      "caret": 294,
+      "view": {
+        "x": 0,
+        "y": 0
+      },
+      "active": false,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false,
+      "previewTab": false
+    },
+    {
+      "type": "class",
+      "tabPath": "com.corrodinggames.rts.game.a.a.b",
+      "subPath": "java",
+      "caret": 918,
+      "view": {
+        "x": 0,
+        "y": 184
+      },
+      "active": false,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false,
+      "previewTab": false
+    },
+    {
+      "type": "class",
+      "tabPath": "com.corrodinggames.rts.game.a.a.d",
+      "subPath": "java",
+      "caret": 0,
+      "view": {
+        "x": 0,
+        "y": 0
+      },
+      "active": false,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false,
+      "previewTab": false
+    },
+    {
+      "type": "class",
+      "tabPath": "com.corrodinggames.rts.game.a.a.c",
+      "subPath": "java",
+      "caret": 0,
+      "view": {
+        "x": 0,
+        "y": 0
+      },
+      "active": false,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false,
+      "previewTab": false
+    },
+    {
+      "type": "class",
+      "tabPath": "com.corrodinggames.rts.game.a.a.e",
+      "subPath": "java",
+      "caret": 414,
+      "view": {
+        "x": 0,
+        "y": 0
+      },
+      "active": false,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false,
+      "previewTab": false
+    },
+    {
+      "type": "class",
+      "tabPath": "com.corrodinggames.rts.game.a.a.f",
+      "subPath": "java",
+      "caret": 749,
+      "view": {
+        "x": 0,
+        "y": 383
+      },
+      "active": false,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false,
+      "previewTab": false
+    },
+    {
+      "type": "class",
+      "tabPath": "com.corrodinggames.rts.game.a.a",
+      "subPath": "java",
+      "caret": 2401,
+      "view": {
+        "x": 0,
+        "y": 32428
+      },
+      "active": false,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false,
+      "previewTab": false
+    },
+    {
+      "type": "class",
+      "tabPath": "com.corrodinggames.rts.game.a.ab",
+      "subPath": "java",
+      "caret": 871,
+      "view": {
+        "x": 0,
+        "y": 308
+      },
+      "active": false,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false,
+      "previewTab": false
+    },
+    {
+      "type": "class",
+      "tabPath": "com.corrodinggames.rts.game.a.aa",
+      "subPath": "java",
+      "caret": 964,
+      "view": {
+        "x": 0,
+        "y": 5976
+      },
+      "active": false,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false,
+      "previewTab": false
+    },
+    {
+      "type": "class",
+      "tabPath": "com.corrodinggames.rts.game.a.c",
+      "subPath": "java",
+      "caret": 324,
+      "view": {
+        "x": 0,
+        "y": 0
+      },
+      "active": false,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false,
+      "previewTab": false
+    },
+    {
+      "type": "class",
+      "tabPath": "com.corrodinggames.rts.game.a.b",
+      "subPath": "java",
+      "caret": 207,
+      "view": {
+        "x": 0,
+        "y": 0
+      },
+      "active": false,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false,
+      "previewTab": false
+    },
+    {
+      "type": "class",
+      "tabPath": "com.corrodinggames.rts.game.a.d",
+      "subPath": "java",
+      "caret": 268,
+      "view": {
+        "x": 0,
+        "y": 0
+      },
+      "active": false,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false,
+      "previewTab": false
+    },
+    {
+      "type": "class",
+      "tabPath": "com.corrodinggames.rts.game.a.e",
+      "subPath": "java",
+      "caret": 420,
+      "view": {
+        "x": 0,
+        "y": 0
+      },
+      "active": false,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false,
+      "previewTab": false
+    },
+    {
+      "type": "class",
+      "tabPath": "com.corrodinggames.rts.game.a.f",
+      "subPath": "java",
+      "caret": 420,
+      "view": {
+        "x": 0,
+        "y": 0
+      },
+      "active": false,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false,
+      "previewTab": false
+    },
+    {
+      "type": "class",
+      "tabPath": "com.corrodinggames.rts.game.a.g",
+      "subPath": "java",
+      "caret": 207,
+      "view": {
+        "x": 0,
+        "y": 0
+      },
+      "active": false,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false,
+      "previewTab": false
+    },
+    {
+      "type": "class",
+      "tabPath": "com.corrodinggames.rts.game.a.h",
+      "subPath": "java",
+      "caret": 207,
+      "view": {
+        "x": 0,
+        "y": 0
+      },
+      "active": false,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false,
+      "previewTab": false
+    },
+    {
+      "type": "class",
+      "tabPath": "com.corrodinggames.rts.game.a.i",
+      "subPath": "java",
+      "caret": 207,
+      "view": {
+        "x": 0,
+        "y": 0
+      },
+      "active": false,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false,
+      "previewTab": false
+    },
+    {
+      "type": "class",
+      "tabPath": "com.corrodinggames.rts.game.a.j",
+      "subPath": "java",
+      "caret": 268,
+      "view": {
+        "x": 0,
+        "y": 0
+      },
+      "active": false,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false,
+      "previewTab": false
+    },
+    {
+      "type": "class",
+      "tabPath": "com.corrodinggames.rts.game.a.k",
+      "subPath": "java",
+      "caret": 324,
+      "view": {
+        "x": 0,
+        "y": 0
+      },
+      "active": false,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false,
+      "previewTab": false
+    },
+    {
+      "type": "class",
+      "tabPath": "com.corrodinggames.rts.game.a.l",
+      "subPath": "java",
+      "caret": 207,
+      "view": {
+        "x": 0,
+        "y": 0
+      },
+      "active": false,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false,
+      "previewTab": false
+    },
+    {
+      "type": "class",
+      "tabPath": "com.corrodinggames.rts.game.a.m",
+      "subPath": "java",
+      "caret": 207,
+      "view": {
+        "x": 0,
+        "y": 0
+      },
+      "active": false,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false,
+      "previewTab": false
+    },
+    {
+      "type": "class",
+      "tabPath": "com.corrodinggames.rts.game.a.n",
+      "subPath": "java",
+      "caret": 273,
+      "view": {
+        "x": 0,
+        "y": 0
+      },
+      "active": false,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false,
+      "previewTab": false
+    },
+    {
+      "type": "class",
+      "tabPath": "com.corrodinggames.rts.game.a.o",
+      "subPath": "java",
+      "caret": 86,
+      "view": {
+        "x": 0,
+        "y": 0
+      },
+      "active": false,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false,
+      "previewTab": false
+    },
+    {
+      "type": "class",
+      "tabPath": "com.corrodinggames.rts.game.a.p",
+      "subPath": "java",
+      "caret": 185,
+      "view": {
+        "x": 0,
+        "y": 0
+      },
+      "active": false,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false,
+      "previewTab": false
+    },
+    {
+      "type": "class",
+      "tabPath": "com.corrodinggames.rts.game.a.q",
+      "subPath": "java",
+      "caret": 396,
+      "view": {
+        "x": 0,
+        "y": 383
+      },
+      "active": false,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false,
+      "previewTab": false
+    },
+    {
+      "type": "class",
+      "tabPath": "com.corrodinggames.rts.game.a.s",
+      "subPath": "java",
+      "caret": 482,
+      "view": {
+        "x": 0,
+        "y": 0
+      },
+      "active": false,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false,
+      "previewTab": false
+    },
+    {
+      "type": "class",
+      "tabPath": "com.corrodinggames.rts.game.a.r",
+      "subPath": "java",
+      "caret": 158,
+      "view": {
+        "x": 0,
+        "y": 0
+      },
+      "active": false,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false,
+      "previewTab": false
+    },
+    {
+      "type": "class",
+      "tabPath": "com.corrodinggames.rts.game.a.t",
+      "subPath": "java",
+      "caret": 889,
+      "view": {
+        "x": 0,
+        "y": 0
+      },
+      "active": false,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false,
+      "previewTab": false
+    },
+    {
+      "type": "class",
+      "tabPath": "com.corrodinggames.rts.game.a.v",
+      "subPath": "java",
+      "caret": 1839,
+      "view": {
+        "x": 0,
+        "y": 597
+      },
+      "active": false,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false,
+      "previewTab": false
+    },
+    {
+      "type": "class",
+      "tabPath": "com.corrodinggames.rts.game.a.u",
+      "subPath": "java",
+      "caret": 273,
+      "view": {
+        "x": 0,
+        "y": 0
+      },
+      "active": false,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false,
+      "previewTab": false
+    },
+    {
+      "type": "class",
+      "tabPath": "com.corrodinggames.rts.game.a.w",
+      "subPath": "java",
+      "caret": 86,
+      "view": {
+        "x": 0,
+        "y": 0
+      },
+      "active": false,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false,
+      "previewTab": false
+    },
+    {
+      "type": "class",
+      "tabPath": "com.corrodinggames.rts.game.a.x",
+      "subPath": "java",
+      "caret": 86,
+      "view": {
+        "x": 0,
+        "y": 0
+      },
+      "active": false,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false,
+      "previewTab": false
+    },
+    {
+      "type": "class",
+      "tabPath": "com.corrodinggames.rts.game.a.y",
+      "subPath": "java",
+      "caret": 397,
+      "view": {
+        "x": 0,
+        "y": 0
+      },
+      "active": false,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false,
+      "previewTab": false
+    },
+    {
+      "type": "class",
+      "tabPath": "com.corrodinggames.rts.game.a.z",
+      "subPath": "java",
+      "caret": 93,
+      "view": {
+        "x": 0,
+        "y": 0
+      },
+      "active": false,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false,
+      "previewTab": false
+    },
+    {
+      "type": "class",
+      "tabPath": "com.corrodinggames.rts.game.b.a",
+      "subPath": "java",
+      "caret": 1310,
+      "view": {
+        "x": 0,
+        "y": 22
+      },
+      "active": false,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false,
+      "previewTab": false
+    },
+    {
+      "type": "class",
+      "tabPath": "com.corrodinggames.rts.game.b.d",
+      "subPath": "java",
+      "caret": 198,
+      "view": {
+        "x": 0,
+        "y": 0
+      },
+      "active": false,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false,
+      "previewTab": false
+    },
+    {
+      "type": "class",
+      "tabPath": "com.corrodinggames.rts.game.b.c",
+      "subPath": "java",
+      "caret": 198,
+      "view": {
+        "x": 0,
+        "y": 0
+      },
+      "active": false,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false,
+      "previewTab": false
+    },
+    {
+      "type": "class",
+      "tabPath": "com.corrodinggames.rts.game.b.b",
+      "subPath": "java",
+      "caret": 2676,
+      "view": {
+        "x": 0,
+        "y": 12538
+      },
+      "active": false,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false,
+      "previewTab": false
+    },
+    {
+      "type": "class",
+      "tabPath": "com.corrodinggames.rts.game.b.j",
+      "subPath": "java",
+      "caret": 361,
+      "view": {
+        "x": 0,
+        "y": 0
+      },
+      "active": false,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false,
+      "previewTab": false
+    },
+    {
+      "type": "class",
+      "tabPath": "com.corrodinggames.rts.game.units.a.a",
+      "subPath": "java",
+      "caret": 217,
+      "view": {
+        "x": 0,
+        "y": 0
+      },
+      "active": false,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false,
+      "previewTab": false
+    },
+    {
+      "type": "class",
+      "tabPath": "com.corrodinggames.rts.game.units.a.c",
+      "subPath": "java",
+      "caret": 320,
+      "view": {
+        "x": 0,
+        "y": 0
+      },
+      "active": false,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false,
+      "previewTab": false
+    },
+    {
+      "type": "class",
+      "tabPath": "com.corrodinggames.rts.game.units.a.u",
+      "subPath": "java",
+      "caret": 151,
+      "view": {
+        "x": 0,
+        "y": 0
+      },
+      "active": false,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false,
+      "previewTab": false
+    },
+    {
+      "type": "class",
+      "tabPath": "com.corrodinggames.rts.game.units.a.d",
+      "subPath": "java",
+      "caret": 478,
+      "view": {
+        "x": 0,
+        "y": 0
+      },
+      "active": false,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false,
+      "previewTab": false
+    },
+    {
+      "type": "class",
+      "tabPath": "com.corrodinggames.rts.game.units.a.e",
+      "subPath": "java",
+      "caret": 274,
+      "view": {
+        "x": 0,
+        "y": 0
+      },
+      "active": false,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false,
+      "previewTab": false
+    },
+    {
+      "type": "class",
+      "tabPath": "com.corrodinggames.rts.game.units.a.g",
+      "subPath": "java",
+      "caret": 726,
+      "view": {
+        "x": 0,
+        "y": 510
+      },
+      "active": false,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false,
+      "previewTab": false
+    },
+    {
+      "type": "class",
+      "tabPath": "com.corrodinggames.rts.game.units.a.j",
+      "subPath": "java",
+      "caret": 363,
+      "view": {
+        "x": 0,
+        "y": 1085
+      },
+      "active": false,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false,
+      "previewTab": false
+    },
+    {
+      "type": "class",
+      "tabPath": "com.corrodinggames.rts.game.units.a.h",
+      "subPath": "java",
+      "caret": 619,
+      "view": {
+        "x": 0,
+        "y": 3312
+      },
+      "active": false,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false,
+      "previewTab": false
+    },
+    {
+      "type": "class",
+      "tabPath": "com.corrodinggames.rts.game.units.a.k",
+      "subPath": "java",
+      "caret": 247,
+      "view": {
+        "x": 0,
+        "y": 0
+      },
+      "active": false,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false,
+      "previewTab": false
+    },
+    {
+      "type": "class",
+      "tabPath": "com.corrodinggames.rts.game.units.a.f",
+      "subPath": "java",
+      "caret": 413,
+      "view": {
+        "x": 0,
+        "y": 0
+      },
+      "active": false,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false,
+      "previewTab": false
+    },
+    {
+      "type": "class",
+      "tabPath": "com.corrodinggames.rts.game.units.a.p",
+      "subPath": "java",
+      "caret": 544,
+      "view": {
+        "x": 0,
+        "y": 816
+      },
+      "active": false,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false,
+      "previewTab": false
+    },
+    {
+      "type": "class",
+      "tabPath": "com.corrodinggames.rts.game.units.a.y",
+      "subPath": "java",
+      "caret": 529,
+      "view": {
+        "x": 0,
+        "y": 31
+      },
+      "active": false,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false,
+      "previewTab": false
+    },
+    {
+      "type": "class",
+      "tabPath": "com.corrodinggames.rts.game.units.a.z",
+      "subPath": "java",
+      "caret": 658,
+      "view": {
+        "x": 0,
+        "y": 188
+      },
+      "active": false,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false,
+      "previewTab": false
+    },
+    {
+      "type": "class",
+      "tabPath": "com.corrodinggames.rts.game.units.b.b",
+      "subPath": "java",
+      "caret": 675,
+      "view": {
+        "x": 0,
+        "y": 0
+      },
+      "active": false,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false,
+      "previewTab": false
+    },
+    {
+      "type": "class",
+      "tabPath": "com.corrodinggames.rts.game.units.b.a",
+      "subPath": "java",
+      "caret": 833,
+      "view": {
+        "x": 0,
+        "y": 0
+      },
+      "active": false,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false,
+      "previewTab": false
+    },
+    {
+      "type": "class",
+      "tabPath": "com.corrodinggames.rts.game.units.b.d",
+      "subPath": "java",
+      "caret": 294,
+      "view": {
+        "x": 0,
+        "y": 0
+      },
+      "active": false,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false,
+      "previewTab": false
+    },
+    {
+      "type": "class",
+      "tabPath": "com.corrodinggames.rts.game.units.b.e",
+      "subPath": "java",
+      "caret": 457,
+      "view": {
+        "x": 0,
+        "y": 0
+      },
+      "active": false,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false,
+      "previewTab": false
+    },
+    {
+      "type": "class",
+      "tabPath": "com.corrodinggames.rts.game.units.b.g",
+      "subPath": "java",
+      "caret": 520,
+      "view": {
+        "x": 0,
+        "y": 0
+      },
+      "active": false,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false,
+      "previewTab": false
+    },
+    {
+      "type": "class",
+      "tabPath": "com.corrodinggames.rts.game.units.b.h",
+      "subPath": "java",
+      "caret": 473,
+      "view": {
+        "x": 0,
+        "y": 0
+      },
+      "active": false,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false,
+      "previewTab": false
+    },
+    {
+      "type": "class",
+      "tabPath": "com.corrodinggames.rts.game.units.custom.b",
+      "subPath": "java",
+      "caret": 97,
+      "view": {
+        "x": 0,
+        "y": 0
+      },
+      "active": false,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false,
+      "previewTab": false
+    },
+    {
+      "type": "class",
+      "tabPath": "com.corrodinggames.rts.game.units.b.j",
+      "subPath": "java",
+      "caret": 999,
+      "view": {
+        "x": 0,
+        "y": 3545
+      },
+      "active": false,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false,
+      "previewTab": false
+    },
+    {
+      "type": "class",
+      "tabPath": "com.corrodinggames.rts.game.units.c.a",
+      "subPath": "java",
+      "caret": 971,
+      "view": {
+        "x": 0,
+        "y": 0
+      },
+      "active": false,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false,
+      "previewTab": false
+    },
+    {
+      "type": "class",
+      "tabPath": "com.corrodinggames.rts.game.units.custom.a.a.a",
+      "subPath": "java",
+      "caret": 395,
+      "view": {
+        "x": 0,
+        "y": 0
+      },
+      "active": false,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false,
+      "previewTab": false
+    },
+    {
+      "type": "class",
+      "tabPath": "com.corrodinggames.rts.game.units.custom.a.a.c",
+      "subPath": "java",
+      "caret": 631,
+      "view": {
+        "x": 0,
+        "y": 201
+      },
+      "active": false,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false,
+      "previewTab": false
+    },
+    {
+      "type": "class",
+      "tabPath": "com.corrodinggames.rts.game.units.custom.a.a.d",
+      "subPath": "java",
+      "caret": 520,
+      "view": {
+        "x": 0,
+        "y": 315
+      },
+      "active": false,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false,
+      "previewTab": false
+    },
+    {
+      "type": "class",
+      "tabPath": "com.corrodinggames.rts.game.units.custom.a.a.e",
+      "subPath": "java",
+      "caret": 951,
+      "view": {
+        "x": 0,
+        "y": 0
+      },
+      "active": false,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false,
+      "previewTab": false
+    },
+    {
+      "type": "class",
+      "tabPath": "com.corrodinggames.rts.game.units.d.a.b",
+      "subPath": "java",
+      "caret": 395,
+      "view": {
+        "x": 0,
+        "y": 0
+      },
+      "active": false,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false,
+      "previewTab": false
+    },
+    {
+      "type": "class",
+      "tabPath": "com.corrodinggames.rts.game.units.d.a.a",
+      "subPath": "java",
+      "caret": 1279,
+      "view": {
+        "x": 0,
+        "y": 1178
+      },
+      "active": false,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false,
+      "previewTab": false
+    },
+    {
+      "type": "class",
+      "tabPath": "com.corrodinggames.rts.game.units.d.a.d",
+      "subPath": "java",
+      "caret": 526,
+      "view": {
+        "x": 0,
+        "y": 0
+      },
+      "active": false,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false,
+      "previewTab": false
+    },
+    {
+      "type": "class",
+      "tabPath": "com.corrodinggames.rts.game.units.d.a.c",
+      "subPath": "java",
+      "caret": 6647,
+      "view": {
+        "x": 0,
+        "y": 2302
+      },
+      "active": false,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false,
+      "previewTab": false
+    },
+    {
+      "type": "class",
+      "tabPath": "com.corrodinggames.rts.game.units.d.a.e",
+      "subPath": "java",
+      "caret": 526,
+      "view": {
+        "x": 0,
+        "y": 0
+      },
+      "active": false,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false,
+      "previewTab": false
+    },
+    {
+      "type": "class",
+      "tabPath": "com.corrodinggames.rts.game.units.d.a.f",
+      "subPath": "java",
+      "caret": 525,
+      "view": {
+        "x": 0,
+        "y": 0
+      },
+      "active": false,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false,
+      "previewTab": false
+    },
+    {
+      "type": "class",
+      "tabPath": "com.corrodinggames.rts.game.units.d.a.g",
+      "subPath": "java",
+      "caret": 526,
+      "view": {
+        "x": 0,
+        "y": 0
+      },
+      "active": false,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false,
+      "previewTab": false
+    },
+    {
+      "type": "class",
+      "tabPath": "com.corrodinggames.rts.game.units.d.a.h",
+      "subPath": "java",
+      "caret": 243,
+      "view": {
+        "x": 0,
+        "y": 116
+      },
+      "active": false,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false,
+      "previewTab": false
+    },
+    {
+      "type": "class",
+      "tabPath": "com.corrodinggames.rts.game.units.d.a.i",
+      "subPath": "java",
+      "caret": 519,
+      "view": {
+        "x": 0,
+        "y": 663
+      },
+      "active": false,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false,
+      "previewTab": false
+    },
+    {
+      "type": "class",
+      "tabPath": "com.corrodinggames.rts.game.units.d.a.j",
+      "subPath": "java",
+      "caret": 429,
+      "view": {
+        "x": 0,
+        "y": 1153
+      },
+      "active": false,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false,
+      "previewTab": false
+    },
+    {
+      "type": "class",
+      "tabPath": "com.corrodinggames.rts.game.units.d.a.l",
+      "subPath": "java",
+      "caret": 584,
+      "view": {
+        "x": 0,
+        "y": 927
+      },
+      "active": false,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false,
+      "previewTab": false
+    },
+    {
+      "type": "class",
+      "tabPath": "com.corrodinggames.rts.game.units.d.a.k",
+      "subPath": "java",
+      "caret": 494,
+      "view": {
+        "x": 0,
+        "y": 825
+      },
+      "active": false,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false,
+      "previewTab": false
+    },
+    {
+      "type": "class",
+      "tabPath": "com.corrodinggames.rts.game.units.d.a.m",
+      "subPath": "java",
+      "caret": 1969,
+      "view": {
+        "x": 0,
+        "y": 621
+      },
+      "active": false,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false,
+      "previewTab": false
+    },
+    {
+      "type": "class",
+      "tabPath": "com.corrodinggames.rts.game.units.d.ac",
+      "subPath": "java",
+      "caret": 370,
+      "view": {
+        "x": 0,
+        "y": 51
+      },
+      "active": false,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false,
+      "previewTab": false
+    },
+    {
+      "type": "class",
+      "tabPath": "com.corrodinggames.rts.game.units.f.i",
+      "subPath": "java",
+      "caret": 275,
+      "view": {
+        "x": 0,
+        "y": 0
+      },
+      "active": false,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false,
+      "previewTab": false
+    },
+    {
+      "type": "class",
+      "tabPath": "com.corrodinggames.rts.game.units.f.j",
+      "subPath": "java",
+      "caret": 216,
+      "view": {
+        "x": 0,
+        "y": 0
+      },
+      "active": false,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false,
+      "previewTab": false
+    },
+    {
+      "type": "class",
+      "tabPath": "com.corrodinggames.rts.game.units.d.a",
+      "subPath": "java",
+      "caret": 1098,
+      "view": {
+        "x": 0,
+        "y": 255
+      },
+      "active": false,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false,
+      "previewTab": false
+    },
+    {
+      "type": "class",
+      "tabPath": "com.corrodinggames.rts.game.units.d.f",
+      "subPath": "java",
+      "caret": 1167,
+      "view": {
+        "x": 0,
+        "y": 0
+      },
+      "active": false,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false,
+      "previewTab": false
+    },
+    {
+      "type": "class",
+      "tabPath": "com.corrodinggames.rts.game.units.d.p",
+      "subPath": "java",
+      "caret": 966,
+      "view": {
+        "x": 0,
+        "y": 3001
+      },
+      "active": false,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false,
+      "previewTab": false
+    },
+    {
+      "type": "class",
+      "tabPath": "com.corrodinggames.rts.game.units.ej",
+      "subPath": "java",
+      "caret": 0,
+      "view": {
+        "x": 0,
+        "y": 0
+      },
+      "active": false,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false,
+      "previewTab": false
+    },
+    {
+      "type": "class",
+      "tabPath": "com.corrodinggames.rts.game.units.ah",
+      "subPath": "java",
+      "caret": 339,
+      "view": {
+        "x": 0,
+        "y": 0
+      },
+      "active": false,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false,
+      "previewTab": false
+    },
+    {
+      "type": "class",
+      "tabPath": "com.corrodinggames.rts.game.units.e",
+      "subPath": "java",
+      "caret": 595,
+      "view": {
+        "x": 0,
+        "y": 51
+      },
+      "active": false,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false,
+      "previewTab": false
+    },
+    {
+      "type": "class",
+      "tabPath": "com.corrodinggames.rts.game.units.ab",
+      "subPath": "java",
+      "caret": 193,
+      "view": {
+        "x": 0,
+        "y": 0
+      },
+      "active": false,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false,
+      "previewTab": false
+    },
+    {
+      "type": "class",
+      "tabPath": "com.corrodinggames.rts.game.units.bp",
+      "subPath": "java",
+      "caret": 2093,
+      "view": {
+        "x": 0,
+        "y": 260
+      },
+      "active": false,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false,
+      "previewTab": false
+    },
+    {
+      "type": "class",
+      "tabPath": "com.corrodinggames.rts.game.units.dq",
+      "subPath": "java",
+      "caret": 0,
+      "view": {
+        "x": 0,
+        "y": 0
+      },
+      "active": false,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false,
+      "previewTab": false
+    },
+    {
+      "type": "class",
+      "tabPath": "com.corrodinggames.rts.game.units.ei",
+      "subPath": "java",
+      "caret": 0,
+      "view": {
+        "x": 0,
+        "y": 0
+      },
+      "active": false,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false,
+      "previewTab": false
+    },
+    {
+      "type": "class",
+      "tabPath": "com.corrodinggames.rts.game.units.ao",
+      "subPath": "java",
+      "caret": 438,
+      "view": {
+        "x": 0,
+        "y": 0
+      },
+      "active": false,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false,
+      "previewTab": false
+    },
+    {
+      "type": "class",
+      "tabPath": "com.corrodinggames.rts.game.units.ap",
+      "subPath": "java",
+      "caret": 1071,
+      "view": {
+        "x": 0,
+        "y": 2117
+      },
+      "active": false,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false,
+      "previewTab": false
+    },
+    {
+      "type": "class",
+      "tabPath": "com.corrodinggames.rts.game.units.aq",
+      "subPath": "java",
+      "caret": 83,
+      "view": {
+        "x": 0,
+        "y": 0
+      },
+      "active": false,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false,
+      "previewTab": false
+    },
+    {
+      "type": "class",
+      "tabPath": "com.corrodinggames.rts.game.units.ar",
+      "subPath": "java",
+      "caret": 83,
+      "view": {
+        "x": 0,
+        "y": 0
+      },
+      "active": false,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false,
+      "previewTab": false
+    },
+    {
+      "type": "class",
+      "tabPath": "com.corrodinggames.rts.game.units.as",
+      "subPath": "java",
+      "caret": 83,
+      "view": {
+        "x": 0,
+        "y": 0
+      },
+      "active": false,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false,
+      "previewTab": false
+    },
+    {
+      "type": "class",
+      "tabPath": "com.corrodinggames.rts.game.units.cm",
+      "subPath": "java",
+      "caret": 0,
+      "view": {
+        "x": 0,
+        "y": 0
+      },
+      "active": false,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false,
+      "previewTab": false
+    },
+    {
+      "type": "class",
+      "tabPath": "com.corrodinggames.rts.game.units.cj",
+      "subPath": "java",
+      "caret": 10691,
+      "view": {
+        "x": 0,
+        "y": 17568
+      },
+      "active": false,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false,
+      "previewTab": false
+    },
+    {
+      "type": "class",
+      "tabPath": "com.corrodinggames.rts.game.units.au",
+      "subPath": "java",
+      "caret": 111,
+      "view": {
+        "x": 0,
+        "y": 0
+      },
+      "active": false,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false,
+      "previewTab": false
+    },
+    {
+      "type": "class",
+      "tabPath": "com.corrodinggames.rts.game.units.do",
+      "subPath": "java",
+      "caret": 0,
+      "view": {
+        "x": 0,
+        "y": 0
+      },
+      "active": false,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false,
+      "previewTab": false
+    },
+    {
+      "type": "class",
+      "tabPath": "com.corrodinggames.rts.game.units.av",
+      "subPath": "java",
+      "caret": 83,
+      "view": {
+        "x": 0,
+        "y": 0
+      },
+      "active": false,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false,
+      "previewTab": false
+    },
+    {
+      "type": "class",
+      "tabPath": "com.corrodinggames.rts.game.units.ax",
+      "subPath": "java",
+      "caret": 83,
+      "view": {
+        "x": 0,
+        "y": 0
+      },
+      "active": false,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false,
+      "previewTab": false
+    },
+    {
+      "type": "class",
+      "tabPath": "com.corrodinggames.rts.game.units.ay",
+      "subPath": "java",
+      "caret": 0,
+      "view": {
+        "x": 0,
+        "y": 0
+      },
+      "active": false,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false,
+      "previewTab": false
+    },
+    {
+      "type": "class",
+      "tabPath": "com.corrodinggames.rts.game.units.az",
+      "subPath": "java",
+      "caret": 83,
+      "view": {
+        "x": 0,
+        "y": 0
+      },
+      "active": false,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false,
+      "previewTab": false
+    },
+    {
+      "type": "class",
+      "tabPath": "com.corrodinggames.rts.game.units.ba",
+      "subPath": "java",
+      "caret": 0,
+      "view": {
+        "x": 0,
+        "y": 0
+      },
+      "active": false,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false,
+      "previewTab": false
+    },
+    {
+      "type": "class",
+      "tabPath": "com.corrodinggames.rts.game.units.aj",
+      "subPath": "java",
+      "caret": 269,
+      "view": {
+        "x": 0,
+        "y": 0
+      },
+      "active": false,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false,
+      "previewTab": false
+    },
+    {
+      "type": "class",
+      "tabPath": "com.corrodinggames.rts.game.units.bi",
+      "subPath": "java",
+      "caret": 0,
+      "view": {
+        "x": 0,
+        "y": 0
+      },
+      "active": false,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false,
+      "previewTab": false
+    },
+    {
+      "type": "class",
+      "tabPath": "com.corrodinggames.rts.game.units.eh",
+      "subPath": "java",
+      "caret": 0,
+      "view": {
+        "x": 0,
+        "y": 0
+      },
+      "active": false,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false,
+      "previewTab": false
+    },
+    {
+      "type": "class",
+      "tabPath": "com.corrodinggames.rts.game.units.d.ab",
+      "subPath": "java",
+      "caret": 1307,
+      "view": {
+        "x": 0,
+        "y": 0
+      },
+      "active": false,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false,
+      "previewTab": false
+    },
+    {
+      "type": "class",
+      "tabPath": "com.corrodinggames.rts.game.units.d.r",
+      "subPath": "java",
+      "caret": 1187,
+      "view": {
+        "x": 0,
+        "y": 2754
+      },
+      "active": false,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false,
+      "previewTab": false
+    },
+    {
+      "type": "class",
+      "tabPath": "com.corrodinggames.rts.game.units.b",
+      "subPath": "java",
+      "caret": 97,
+      "view": {
+        "x": 0,
+        "y": 0
+      },
+      "active": false,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false,
+      "previewTab": false
+    },
+    {
+      "type": "class",
+      "tabPath": "com.corrodinggames.rts.game.units.bs",
+      "subPath": "java",
+      "caret": 97,
+      "view": {
+        "x": 0,
+        "y": 0
+      },
+      "active": false,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false,
+      "previewTab": false
+    },
+    {
+      "type": "class",
+      "tabPath": "com.corrodinggames.rts.game.units.bu",
+      "subPath": "java",
+      "caret": 336,
+      "view": {
+        "x": 0,
+        "y": 0
+      },
+      "active": false,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false,
+      "previewTab": false
+    },
+    {
+      "type": "class",
+      "tabPath": "com.corrodinggames.rts.game.units.bq",
+      "subPath": "java",
+      "caret": 90,
+      "view": {
+        "x": 0,
+        "y": 0
+      },
+      "active": false,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false,
+      "previewTab": false
+    },
+    {
+      "type": "class",
+      "tabPath": "com.corrodinggames.rts.game.units.bo",
+      "subPath": "java",
+      "caret": 263,
+      "view": {
+        "x": 0,
+        "y": 0
+      },
+      "active": false,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false,
+      "previewTab": false
+    },
+    {
+      "type": "class",
+      "tabPath": "com.corrodinggames.rts.game.units.ce",
+      "subPath": "java",
+      "caret": 2241,
+      "view": {
+        "x": 0,
+        "y": 821
+      },
+      "active": false,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false,
+      "previewTab": false
+    },
+    {
+      "type": "class",
+      "tabPath": "com.corrodinggames.rts.game.units.custom.l",
+      "subPath": "java",
+      "caret": 2393,
+      "view": {
+        "x": 0,
+        "y": 648
+      },
+      "active": false,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false,
+      "previewTab": false
+    },
+    {
+      "type": "class",
+      "tabPath": "com.corrodinggames.rts.game.units.custom.ad",
+      "subPath": "java",
+      "caret": 162,
+      "view": {
+        "x": 0,
+        "y": 0
+      },
+      "active": false,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false,
+      "previewTab": false
+    },
+    {
+      "type": "class",
+      "tabPath": "com.corrodinggames.rts.game.units.custom.j",
+      "subPath": "java",
+      "caret": 173073,
+      "view": {
+        "x": 0,
+        "y": 73360
+      },
+      "active": false,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false,
+      "previewTab": false
+    },
+    {
+      "type": "class",
+      "tabPath": "com.corrodinggames.rts.game.units.custom.ag",
+      "subPath": "java",
+      "caret": 147934,
+      "view": {
+        "x": 401,
+        "y": 34277
+      },
       "active": true,
       "pinned": false,
       "bookmarked": false,
@@ -13018,6 +15121,7 @@
   "cacheDir": "C:\\Users\\shishanyue\\AppData\\Local\\skylot\\jadx\\cache\\projects\\base.apk-0e08460f45b2917ea91278d17b53719d",
   "enableLiveReload": false,
   "searchHistory": [
+    "BuildingUnitBase",
     "explodeOnDeath",
     "explodeOnDe",
     "\"tech\"",
@@ -13046,8 +15150,7 @@
     "Skipping sendPacketToAll,",
     "Error on doSingleRequest",
     "http://gs1.corrodi",
-    "[z;p10]Crossing Large",
-    "unknown"
+    "[z;p10]Crossing Large"
   ],
   "searchResourcesFilter": "$TEXT",
   "searchResourcesSizeLimit": 0,
