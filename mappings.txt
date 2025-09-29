@@ -13,7 +13,7 @@ a.a.a.g -> net.rudp.a.SYNSegment:
 a.a.a.h -> net.rudp.a.Segment:
     void a(int) -> setAck
     void a(int,int,int) -> init
-a.a.a.i -> net.rudp.a.RunnableC0000i:
+a.a.a.i -> net.rudp.a.RunnableC0075i:
 a.a.b -> net.rudp.ReliableServerSocket:
 a.a.h -> net.rudp.ReliableSocket:
 a.a.p -> net.rudp.ReliableSocketInputStream:
@@ -23,9 +23,6 @@ a.a.s -> net.rudp.ReliableSocketStateListener:
 com.corrodinggames.rts.appFramework.ab -> com.corrodinggames.rts.appFramework.InputContext:
 com.corrodinggames.rts.appFramework.bg -> com.corrodinggames.rts.appFramework.MenuLoading:
     void a() -> doLoadingComplete
-com.corrodinggames.rts.appFramework.ep -> com.corrodinggames.rts.appFramework.CurrTouchPoint:
-    float a() -> x
-    float b() -> y
 com.corrodinggames.rts.appFramework.ep -> com.corrodinggames.rts.appFramework.CurrTouchPoint:
     float a() -> x
     float b() -> y
@@ -219,37 +216,37 @@ com.corrodinggames.rts.game.p -> com.corrodinggames.rts.game.PlayerData:
     com.corrodinggames.rts.gameFramework.m.e[] a(com.corrodinggames.rts.gameFramework.m.e) -> usePureGreenTeamColor
     com.corrodinggames.rts.game.p i(int) -> setTeamId
     int t() -> getPing
-com.corrodinggames.rts.game.q -> com.corrodinggames.rts.game.teamColorsHueType:
+com.corrodinggames.rts.game.q -> com.corrodinggames.rts.game.TeamColorsHueType:
 com.corrodinggames.rts.game.s -> com.corrodinggames.rts.game.Relation:
-com.corrodinggames.rts.game.units.a.b -> com.corrodinggames.rts.game.units.a.EmptyActionFilter:
-com.corrodinggames.rts.game.units.a.c -> com.corrodinggames.rts.game.units.a.ActionId:
-com.corrodinggames.rts.game.units.a.d -> com.corrodinggames.rts.game.units.a.AttackModeAction:
-com.corrodinggames.rts.game.units.a.e -> com.corrodinggames.rts.game.units.a.AttackMoveAction:
-com.corrodinggames.rts.game.units.a.f -> com.corrodinggames.rts.game.units.a.GuardUnitAction:
+com.corrodinggames.rts.game.units.a.b -> com.corrodinggames.rts.game.units.actions.EmptyActionFilter:
+com.corrodinggames.rts.game.units.a.c -> com.corrodinggames.rts.game.units.actions.ActionId:
+com.corrodinggames.rts.game.units.a.d -> com.corrodinggames.rts.game.units.actions.AttackModeAction:
+com.corrodinggames.rts.game.units.a.e -> com.corrodinggames.rts.game.units.actions.AttackMoveAction:
+com.corrodinggames.rts.game.units.a.f -> com.corrodinggames.rts.game.units.actions.GuardUnitAction:
 com.corrodinggames.rts.game.units.a.h -> com.corrodinggames.rts.game.units.a.h:
     com.corrodinggames.rts.game.units.a.s a -> actionBaseInner
-com.corrodinggames.rts.game.units.a.i -> com.corrodinggames.rts.game.units.a.PatrolAction:
-com.corrodinggames.rts.game.units.a.k -> com.corrodinggames.rts.game.units.a.MapPingType:
-com.corrodinggames.rts.game.units.a.l -> com.corrodinggames.rts.game.units.a.FactoryBuildUnitAction:
+com.corrodinggames.rts.game.units.a.i -> com.corrodinggames.rts.game.units.actions.PatrolAction:
+com.corrodinggames.rts.game.units.a.k -> com.corrodinggames.rts.game.units.actions.MapPingType:
+com.corrodinggames.rts.game.units.a.l -> com.corrodinggames.rts.game.units.actions.FactoryBuildUnitAction:
     com.corrodinggames.rts.game.units.el a -> unitEnumRef
     com.corrodinggames.rts.game.units.el h() -> getUnitEnumRef
-com.corrodinggames.rts.game.units.a.m -> com.corrodinggames.rts.game.units.a.ReclaimBuildingTargetAction:
-com.corrodinggames.rts.game.units.a.n -> com.corrodinggames.rts.game.units.a.RepairTargetAction:
-com.corrodinggames.rts.game.units.a.o -> com.corrodinggames.rts.game.units.a.SetRallyAction:
-com.corrodinggames.rts.game.units.a.q -> com.corrodinggames.rts.game.units.a.TeamChatAction:
-com.corrodinggames.rts.game.units.a.r -> com.corrodinggames.rts.game.units.a.MapPingAction:
-com.corrodinggames.rts.game.units.a.s -> com.corrodinggames.rts.game.units.a.AbstractActionBase:
+com.corrodinggames.rts.game.units.a.m -> com.corrodinggames.rts.game.units.actions.ReclaimBuildingTargetAction:
+com.corrodinggames.rts.game.units.a.n -> com.corrodinggames.rts.game.units.actions.RepairTargetAction:
+com.corrodinggames.rts.game.units.a.o -> com.corrodinggames.rts.game.units.actions.SetRallyAction:
+com.corrodinggames.rts.game.units.a.q -> com.corrodinggames.rts.game.units.actions.TeamChatAction:
+com.corrodinggames.rts.game.units.a.r -> com.corrodinggames.rts.game.units.actions.MapPingAction:
+com.corrodinggames.rts.game.units.a.s -> com.corrodinggames.rts.game.units.actions.AbstractActionBase:
     com.corrodinggames.rts.game.units.a.c j -> actionId
     void a(java.lang.String) -> setActionId
-com.corrodinggames.rts.game.units.a.t -> com.corrodinggames.rts.game.units.a.DisplayActionType:
-com.corrodinggames.rts.game.units.a.u -> com.corrodinggames.rts.game.units.a.BothWayPointType:
-com.corrodinggames.rts.game.units.a.v -> com.corrodinggames.rts.game.units.a.UnitBuildUnitAction:
+com.corrodinggames.rts.game.units.a.t -> com.corrodinggames.rts.game.units.actions.DisplayActionType:
+com.corrodinggames.rts.game.units.a.u -> com.corrodinggames.rts.game.units.actions.BothWayPointType:
+com.corrodinggames.rts.game.units.a.v -> com.corrodinggames.rts.game.units.actions.UnitBuildUnitAction:
     com.corrodinggames.rts.game.units.el a -> buildUnit
-com.corrodinggames.rts.game.units.a.w -> com.corrodinggames.rts.game.units.a.AbstractAction:
-com.corrodinggames.rts.game.units.a.x -> com.corrodinggames.rts.game.units.a.ChangeUnitStateActionBase:
+com.corrodinggames.rts.game.units.a.w -> com.corrodinggames.rts.game.units.actions.AbstractAction:
+com.corrodinggames.rts.game.units.a.x -> com.corrodinggames.rts.game.units.actions.ChangeUnitStateActionBase:
     com.corrodinggames.rts.game.units.a.u d() -> bothWayPoint
-com.corrodinggames.rts.game.units.a.y -> com.corrodinggames.rts.game.units.a.UnitInfoAction:
-com.corrodinggames.rts.game.units.a.z -> com.corrodinggames.rts.game.units.a.UnitInfoSelectAction:
+com.corrodinggames.rts.game.units.a.y -> com.corrodinggames.rts.game.units.actions.UnitInfoAction:
+com.corrodinggames.rts.game.units.a.z -> com.corrodinggames.rts.game.units.actions.UnitInfoSelectAction:
 com.corrodinggames.rts.game.units.aa -> com.corrodinggames.rts.game.units.CleanHistoryAction:
 com.corrodinggames.rts.game.units.ac -> com.corrodinggames.rts.game.units.EmptyActionFilterA:
 com.corrodinggames.rts.game.units.ad -> com.corrodinggames.rts.game.units.CloneUnitAction:
@@ -263,16 +260,16 @@ com.corrodinggames.rts.game.units.aj -> com.corrodinggames.rts.game.units.Change
 com.corrodinggames.rts.game.units.ak -> com.corrodinggames.rts.game.units.AddCreditsAction:
 com.corrodinggames.rts.game.units.al -> com.corrodinggames.rts.game.units.ModFilterAction:
 com.corrodinggames.rts.game.units.an -> com.corrodinggames.rts.game.units.TypeFilterAction:
-com.corrodinggames.rts.game.units.b.a -> com.corrodinggames.rts.game.units.b.AirShip:
-com.corrodinggames.rts.game.units.b.b -> com.corrodinggames.rts.game.units.b.AirUnitBase:
-com.corrodinggames.rts.game.units.b.c -> com.corrodinggames.rts.game.units.b.AmphibiousJet:
-com.corrodinggames.rts.game.units.b.d -> com.corrodinggames.rts.game.units.b.AmphibiousJetSurfaceAction:
-com.corrodinggames.rts.game.units.b.e -> com.corrodinggames.rts.game.units.b.AmphibiousJetDiveAction:
-com.corrodinggames.rts.game.units.b.f -> com.corrodinggames.rts.game.units.b.Dropship:
-com.corrodinggames.rts.game.units.b.g -> com.corrodinggames.rts.game.units.b.DropshipUnloadAction:
-com.corrodinggames.rts.game.units.b.h -> com.corrodinggames.rts.game.units.b.DropshipStopUnloadingAction:
-com.corrodinggames.rts.game.units.b.i -> com.corrodinggames.rts.game.units.b.GunShip:
-com.corrodinggames.rts.game.units.b.j -> com.corrodinggames.rts.game.units.b.Helicopter:
+com.corrodinggames.rts.game.units.b.a -> com.corrodinggames.rts.game.units.air.AirShip:
+com.corrodinggames.rts.game.units.b.b -> com.corrodinggames.rts.game.units.air.AirUnitBase:
+com.corrodinggames.rts.game.units.b.c -> com.corrodinggames.rts.game.units.air.AmphibiousJet:
+com.corrodinggames.rts.game.units.b.d -> com.corrodinggames.rts.game.units.air.AmphibiousJetSurfaceAction:
+com.corrodinggames.rts.game.units.b.e -> com.corrodinggames.rts.game.units.air.AmphibiousJetDiveAction:
+com.corrodinggames.rts.game.units.b.f -> com.corrodinggames.rts.game.units.air.Dropship:
+com.corrodinggames.rts.game.units.b.g -> com.corrodinggames.rts.game.units.air.DropshipUnloadAction:
+com.corrodinggames.rts.game.units.b.h -> com.corrodinggames.rts.game.units.air.DropshipStopUnloadingAction:
+com.corrodinggames.rts.game.units.b.i -> com.corrodinggames.rts.game.units.air.GunShip:
+com.corrodinggames.rts.game.units.b.j -> com.corrodinggames.rts.game.units.air.Helicopter:
 com.corrodinggames.rts.game.units.bc -> com.corrodinggames.rts.game.units.SetTerrainTypeTool:
 com.corrodinggames.rts.game.units.bd -> com.corrodinggames.rts.game.units.SetTerrainTypeAction:
 com.corrodinggames.rts.game.units.bf -> com.corrodinggames.rts.game.units.LongGrassTerrain:
@@ -295,7 +292,7 @@ com.corrodinggames.rts.game.units.bp -> com.corrodinggames.rts.game.units.Abstra
     float y() -> MaxMoveSpeed
 com.corrodinggames.rts.game.units.bt -> com.corrodinggames.rts.game.units.ExplodeTypeOnDeath:
 com.corrodinggames.rts.game.units.c -> com.corrodinggames.rts.game.units.UnitRefProtected:
-com.corrodinggames.rts.game.units.c.a -> com.corrodinggames.rts.game.units.c.Ladybug:
+com.corrodinggames.rts.game.units.c.a -> com.corrodinggames.rts.game.units.bugs.Ladybug:
     com.corrodinggames.rts.gameFramework.m.e b -> mainTexture
 com.corrodinggames.rts.game.units.ca -> com.corrodinggames.rts.game.units.SpreadingFire:
 com.corrodinggames.rts.game.units.cd -> com.corrodinggames.rts.game.units.Tree:
@@ -487,6 +484,13 @@ com.corrodinggames.rts.game.units.custom.ah -> com.corrodinggames.rts.game.units
 com.corrodinggames.rts.game.units.custom.aj -> com.corrodinggames.rts.game.units.custom.LogicMessage:
 com.corrodinggames.rts.game.units.custom.as -> com.corrodinggames.rts.game.units.custom.CoreRegister:
     float b -> mass
+    int c -> maxHp
+    float d -> maxEnergy
+    int g -> maxShield
+    float h -> shieldRegen
+    float i -> maxAttackRange
+    float l -> armour
+    int n -> fogOfWarSightRange
     float q -> targetHeight
     java.util.LinkedHashMap s -> map
     void a(java.util.LinkedHashMap,com.corrodinggames.rts.game.units.custom.bm) -> register
@@ -507,7 +511,12 @@ com.corrodinggames.rts.game.units.custom.bd -> com.corrodinggames.rts.game.units
 com.corrodinggames.rts.game.units.custom.be -> com.corrodinggames.rts.game.units.custom.MaxEnergyValue:
 com.corrodinggames.rts.game.units.custom.bf -> com.corrodinggames.rts.game.units.custom.EnergyValue:
 com.corrodinggames.rts.game.units.custom.bg -> com.corrodinggames.rts.game.units.custom.MaxHpValue:
+    double a(com.corrodinggames.rts.game.units.custom.as) -> get
+    void a(com.corrodinggames.rts.game.units.custom.as,double) -> set
 com.corrodinggames.rts.game.units.custom.bh -> com.corrodinggames.rts.game.units.custom.HpValue:
+    double a(com.corrodinggames.rts.game.units.custom.j) -> get
+    void a(com.corrodinggames.rts.game.units.custom.j,double) -> setWith
+    void b(com.corrodinggames.rts.game.units.custom.j,double) -> set
 com.corrodinggames.rts.game.units.custom.bi -> com.corrodinggames.rts.game.units.custom.MaxshieldValue:
 com.corrodinggames.rts.game.units.custom.bj -> com.corrodinggames.rts.game.units.custom.ShieldValue:
 com.corrodinggames.rts.game.units.custom.bk -> com.corrodinggames.rts.game.units.custom.ShieldregenValue:
@@ -568,7 +577,7 @@ com.corrodinggames.rts.game.units.custom.cg -> com.corrodinggames.rts.game.units
     boolean A -> slave
     float aa -> barrelHeight
     com.corrodinggames.rts.game.units.custom.o aA -> onShootPlayAnimation
-    float ab -> limitingRange
+    float ab -> f898ab
     float aB -> onShootFreezeBodyMovementFor
     java.lang.Boolean ac -> showRangeUIGuide
     com.corrodinggames.rts.game.units.custom.u aC -> onShootTriggerActions
@@ -693,15 +702,63 @@ com.corrodinggames.rts.game.units.custom.k -> com.corrodinggames.rts.game.units.
     com.corrodinggames.rts.game.units.ce c -> eventSource
     com.corrodinggames.rts.game.units.custom.h d -> eventTagList
 com.corrodinggames.rts.game.units.custom.l -> com.corrodinggames.rts.game.units.custom.UnitEnumRefBase:
+    com.corrodinggames.rts.game.q ac -> teamColorsHueType
+    com.corrodinggames.rts.game.units.custom.bu aC -> displayText
+    com.corrodinggames.rts.game.units.custom.bu aD -> displayDescription
+    java.lang.String aE -> displayLocaleKey
+    boolean aF -> showInEditor
+    int ah -> imageOffsetX
+    int ai -> imageOffsetY
+    float aj -> imageOffsetH
+    boolean cA -> allowCaptureWhenNeutralByAI
+    boolean cB -> whileNeutralTransportAnyTeam
+    boolean cC -> whileNeutralConvertToTransportedTeam
+    boolean cD -> convertToNeutralIfNotTransporting
     boolean ce -> availableInDemo
+    boolean cE -> createOnAggressiveTeam
     boolean cf -> isLocked
     float cF -> resourceRate
+    com.corrodinggames.rts.game.units.custom.as cL -> core
+    boolean cM -> startShieldAtZero
+    float cN -> armourMinDamageToKeep
+    boolean cO -> startEnergyAtZero
+    float cP -> energyRegen
+    float cQ -> energyRegenWhenRecharging
+    boolean cR -> energyNeedsToRechargeToFull
+    float cS -> energyStartingPercentage
+    com.corrodinggames.rts.game.units.custom.bu cT -> energyDisplayName
+    boolean cU -> shieldDisplayOnlyDeflection
+    float cV -> shieldDeflectionDisplayRate
+    int cW -> radius
+    android.graphics.Rect cX -> footprint
+    boolean cy -> stayNeutral
+    android.graphics.Rect cY -> constructionFootprint
+    boolean cz -> createNeutral
+    android.graphics.Rect cZ -> displayFootprint
     java.util.ArrayList d -> UnitEnumRefList
+    float da -> buildingToFootprintOffsetX
+    float db -> buildingToFootprintOffsetY
+    int dd -> displayRadius
+    float de -> uiTargetRadius
+    int df -> shieldRenderRadius
+    int dg -> buildingSelectionOffset
+    int dh -> fogOfWarSightRangeWhileNotBuilt
+    float di -> exitX
+    float dj -> exitY
+    java.lang.Float dk -> exitDirOffset
+    float dl -> exitHeightOffset
+    boolean dm -> exitHeightIgnoreParent
+    java.lang.Float dn -> exitMoveAwayAmount
     com.corrodinggames.rts.game.units.custom.f ds -> movingAnimation
     float dS -> startingHeightOffset
     com.corrodinggames.rts.game.units.custom.f dt -> ideaAnimation
     com.corrodinggames.rts.game.units.custom.f du -> attackAnimation
+    int eB -> softCollisionOnAll
+    boolean eC -> disableAllUnitCollisions
+    boolean eD -> isBio
     boolean eE -> isBug
+    boolean eH -> isPickableStartingUnit
+    boolean eI -> startFallingWhenStartingUnit
     java.util.ArrayList fT -> CustomProjectileList
     com.corrodinggames.rts.game.units.custom.cg fV -> mainNano
     java.util.ArrayList gh -> actionList
@@ -711,7 +768,12 @@ com.corrodinggames.rts.game.units.custom.l -> com.corrodinggames.rts.game.units.
     com.corrodinggames.rts.gameFramework.utility.p N -> coreSection
     com.corrodinggames.rts.game.units.custom.h O -> tags
     int R -> strictLevel
+    boolean t -> showHealthBar
     com.corrodinggames.rts.game.units.custom.ad T -> onNewMapSpawnType
+    int U -> totalFrames
+    int W -> frameWidth
+    int X -> frameHeight
+    int Y -> defaultFrame
     com.corrodinggames.rts.gameFramework.m.e a(com.corrodinggames.rts.gameFramework.utility.ae,java.lang.String,java.lang.String) -> loadImage
     com.corrodinggames.rts.game.units.custom.z a(java.lang.String,com.corrodinggames.rts.game.units.custom.z) -> laodEffect
     boolean C() -> isAvailableInDemo
@@ -723,7 +785,6 @@ com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanGameFunctions
 com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanGameFunctions$EventTagsBoolean -> com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanGameFunctions$EventTagsBoolean:
     com.corrodinggames.rts.game.units.custom.g includesTag -> includesTagList
 com.corrodinggames.rts.game.units.custom.logicBooleans.LogicNumberFunction$FunctionDirectionBetween -> com.corrodinggames.rts.game.units.custom.logicBooleans.LogicNumberFunction$FunctionDirectionBetween:
-com.corrodinggames.rts.game.units.custom.logicBooleans.LogicNumberFunction$FunctionDirectionBetween -> com.corrodinggames.rts.game.units.custom.logicBooleans.LogicNumberFunction$FunctionDirectionBetween:
     com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBoolean unit1 -> from
     com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBoolean unit2 -> to
 com.corrodinggames.rts.game.units.custom.logicBooleans.LogicNumberFunction$FunctionDistanceBetween -> com.corrodinggames.rts.game.units.custom.logicBooleans.LogicNumberFunction$FunctionDistanceBetween:
@@ -732,7 +793,6 @@ com.corrodinggames.rts.game.units.custom.logicBooleans.LogicNumberFunction$Funct
 com.corrodinggames.rts.game.units.custom.logicBooleans.LogicNumberFunction$FunctionDistanceBetweenSquared -> com.corrodinggames.rts.game.units.custom.logicBooleans.LogicNumberFunction$FunctionDistanceBetweenSquared:
     com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBoolean unit1 -> from
     com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBoolean unit2 -> to
-com.corrodinggames.rts.game.units.custom.logicBooleans.LogicNumberFunction$FunctionLength -> com.corrodinggames.rts.game.units.custom.logicBooleans.LogicNumberFunction$FunctionLength:
 com.corrodinggames.rts.game.units.custom.logicBooleans.LogicNumberFunction$FunctionLength -> com.corrodinggames.rts.game.units.custom.logicBooleans.LogicNumberFunction$FunctionLength:
     com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBoolean a -> logicValue
 com.corrodinggames.rts.game.units.custom.logicBooleans.LogicNumberFunction$FunctionMax -> com.corrodinggames.rts.game.units.custom.logicBooleans.LogicNumberFunction$FunctionMax:
@@ -751,41 +811,41 @@ com.corrodinggames.rts.game.units.cw -> com.corrodinggames.rts.game.units.Ladybu
 com.corrodinggames.rts.game.units.cx -> com.corrodinggames.rts.game.units.BattleShipEnum:
 com.corrodinggames.rts.game.units.cy -> com.corrodinggames.rts.game.units.TankDestroyerEnum:
 com.corrodinggames.rts.game.units.cz -> com.corrodinggames.rts.game.units.HeavyTankEnum:
-com.corrodinggames.rts.game.units.d.a -> com.corrodinggames.rts.game.units.d.AirFactory:
+com.corrodinggames.rts.game.units.d.a -> com.corrodinggames.rts.game.units.buildings.AirFactory:
     void b() -> init
-com.corrodinggames.rts.game.units.d.a.a -> com.corrodinggames.rts.game.units.d.a.AntiAirTurret:
-com.corrodinggames.rts.game.units.d.a.b -> com.corrodinggames.rts.game.units.d.a.AntiAirTurretUpgradeToT2Action:
-com.corrodinggames.rts.game.units.d.a.c -> com.corrodinggames.rts.game.units.d.a.Turrets:
+com.corrodinggames.rts.game.units.d.a.a -> com.corrodinggames.rts.game.units.buildings.a.AntiAirTurret:
+com.corrodinggames.rts.game.units.d.a.b -> com.corrodinggames.rts.game.units.buildings.a.AntiAirTurretUpgradeToT2Action:
+com.corrodinggames.rts.game.units.d.a.c -> com.corrodinggames.rts.game.units.buildings.a.Turrets:
     void dd() -> init
-com.corrodinggames.rts.game.units.d.a.d -> com.corrodinggames.rts.game.units.d.a.TurretUpgradeToGunT2Action:
-com.corrodinggames.rts.game.units.d.a.e -> com.corrodinggames.rts.game.units.d.a.TurretUpgradeToGunT3Action:
-com.corrodinggames.rts.game.units.d.a.f -> com.corrodinggames.rts.game.units.d.a.TurretUpgradeToArtilleryAction:
-com.corrodinggames.rts.game.units.d.a.g -> com.corrodinggames.rts.game.units.d.a.TurretUpgradeToFlamethrowerAction:
-com.corrodinggames.rts.game.units.d.aa -> com.corrodinggames.rts.game.units.d.BuildNukeAction:
+com.corrodinggames.rts.game.units.d.a.d -> com.corrodinggames.rts.game.units.buildings.a.TurretUpgradeToGunT2Action:
+com.corrodinggames.rts.game.units.d.a.e -> com.corrodinggames.rts.game.units.buildings.a.TurretUpgradeToGunT3Action:
+com.corrodinggames.rts.game.units.d.a.f -> com.corrodinggames.rts.game.units.buildings.a.TurretUpgradeToArtilleryAction:
+com.corrodinggames.rts.game.units.d.a.g -> com.corrodinggames.rts.game.units.buildings.a.TurretUpgradeToFlamethrowerAction:
+com.corrodinggames.rts.game.units.d.aa -> com.corrodinggames.rts.game.units.buildings.BuildNukeAction:
     boolean a(com.corrodinggames.rts.game.units.ce,boolean) -> ActionCallback
-com.corrodinggames.rts.game.units.d.ab -> com.corrodinggames.rts.game.units.d.Repairbay:
-com.corrodinggames.rts.game.units.d.ad -> com.corrodinggames.rts.game.units.d.SeaFactory:
-com.corrodinggames.rts.game.units.d.ae -> com.corrodinggames.rts.game.units.d.SeaFactoryUpgradeT2Action:
-com.corrodinggames.rts.game.units.d.af -> com.corrodinggames.rts.game.units.d.SupplyDepot:
-com.corrodinggames.rts.game.units.d.ag -> com.corrodinggames.rts.game.units.d.SupplyDepotUpgradeT2Action:
-com.corrodinggames.rts.game.units.d.ah -> com.corrodinggames.rts.game.units.d.WallV:
-com.corrodinggames.rts.game.units.d.b -> com.corrodinggames.rts.game.units.d.AirFactoryUpgradeT2Action:
+com.corrodinggames.rts.game.units.d.ab -> com.corrodinggames.rts.game.units.buildings.Repairbay:
+com.corrodinggames.rts.game.units.d.ad -> com.corrodinggames.rts.game.units.buildings.SeaFactory:
+com.corrodinggames.rts.game.units.d.ae -> com.corrodinggames.rts.game.units.buildings.SeaFactoryUpgradeT2Action:
+com.corrodinggames.rts.game.units.d.af -> com.corrodinggames.rts.game.units.buildings.SupplyDepot:
+com.corrodinggames.rts.game.units.d.ag -> com.corrodinggames.rts.game.units.buildings.SupplyDepotUpgradeT2Action:
+com.corrodinggames.rts.game.units.d.ah -> com.corrodinggames.rts.game.units.buildings.WallV:
+com.corrodinggames.rts.game.units.d.b -> com.corrodinggames.rts.game.units.buildings.AirFactoryUpgradeT2Action:
     com.corrodinggames.rts.game.units.a.t e() -> getDisplayActionType
-com.corrodinggames.rts.game.units.d.c -> com.corrodinggames.rts.game.units.d.AntiNukeLaucher:
+com.corrodinggames.rts.game.units.d.c -> com.corrodinggames.rts.game.units.buildings.AntiNukeLaucher:
     int d -> antiNukeCount
     com.corrodinggames.rts.game.units.a.s j -> antiNukeCountAction
     com.corrodinggames.rts.game.units.a.s k -> buildAntiNukeAction
-com.corrodinggames.rts.game.units.d.d -> com.corrodinggames.rts.game.units.d.AntiNukeCountAction:
+com.corrodinggames.rts.game.units.d.d -> com.corrodinggames.rts.game.units.buildings.AntiNukeCountAction:
     java.lang.String b() -> getButtonTitle
-com.corrodinggames.rts.game.units.d.e -> com.corrodinggames.rts.game.units.d.BuildAntiNukeAction:
+com.corrodinggames.rts.game.units.d.e -> com.corrodinggames.rts.game.units.buildings.BuildAntiNukeAction:
     java.lang.String a() -> getPlaneDescription
     int c() -> getPrice
     float h_() -> getBuildSpeed
-com.corrodinggames.rts.game.units.d.f -> com.corrodinggames.rts.game.units.d.BuildingUnitBase:
+com.corrodinggames.rts.game.units.d.f -> com.corrodinggames.rts.game.units.buildings.BuildingUnitBase:
     com.corrodinggames.rts.gameFramework.m.e m -> imageBack
     android.graphics.Rect n -> footprint
     android.graphics.Rect o -> constructionFootprint
-com.corrodinggames.rts.game.units.d.g -> com.corrodinggames.rts.game.units.d.CommandCenter:
+com.corrodinggames.rts.game.units.d.g -> com.corrodinggames.rts.game.units.buildings.CommandCenter:
     com.corrodinggames.rts.gameFramework.m.e a -> baseTexture
     com.corrodinggames.rts.gameFramework.m.e[] b -> baseTextureWithTeamColor
     com.corrodinggames.rts.gameFramework.m.e c -> deadTexture
@@ -796,28 +856,28 @@ com.corrodinggames.rts.game.units.d.g -> com.corrodinggames.rts.game.units.d.Com
     int aY() -> getNumBitsOnDeath
     void b(java.util.ArrayList) -> getCanBuildList
     int b_() -> getFogOfWarSightRange
-com.corrodinggames.rts.game.units.d.h -> com.corrodinggames.rts.game.units.d.ExperimentalLandFactory:
+com.corrodinggames.rts.game.units.d.h -> com.corrodinggames.rts.game.units.buildings.ExperimentalLandFactory:
     com.corrodinggames.rts.gameFramework.m.e a -> frontTexture
     com.corrodinggames.rts.gameFramework.m.e b -> baseTexture
     com.corrodinggames.rts.gameFramework.m.e e -> deadTexture
-com.corrodinggames.rts.game.units.d.i -> com.corrodinggames.rts.game.units.d.ExperimentalLandFactoryUpgradeT2Action:
-com.corrodinggames.rts.game.units.d.j -> com.corrodinggames.rts.game.units.d.Extractor:
-com.corrodinggames.rts.game.units.d.k -> com.corrodinggames.rts.game.units.d.ExtractorUpgradeT2Action:
-com.corrodinggames.rts.game.units.d.l -> com.corrodinggames.rts.game.units.d.ExtractorUpgradeT3Action:
-com.corrodinggames.rts.game.units.d.m -> com.corrodinggames.rts.game.units.d.Fabricator:
-com.corrodinggames.rts.game.units.d.n -> com.corrodinggames.rts.game.units.d.FabricatorUpgradeT2Action:
-com.corrodinggames.rts.game.units.d.o -> com.corrodinggames.rts.game.units.d.FabricatorUpgradeT3Action:
-com.corrodinggames.rts.game.units.d.p -> com.corrodinggames.rts.game.units.d.PlayerBuildingUnitBase:
+com.corrodinggames.rts.game.units.d.i -> com.corrodinggames.rts.game.units.buildings.ExperimentalLandFactoryUpgradeT2Action:
+com.corrodinggames.rts.game.units.d.j -> com.corrodinggames.rts.game.units.buildings.Extractor:
+com.corrodinggames.rts.game.units.d.k -> com.corrodinggames.rts.game.units.buildings.ExtractorUpgradeT2Action:
+com.corrodinggames.rts.game.units.d.l -> com.corrodinggames.rts.game.units.buildings.ExtractorUpgradeT3Action:
+com.corrodinggames.rts.game.units.d.m -> com.corrodinggames.rts.game.units.buildings.Fabricator:
+com.corrodinggames.rts.game.units.d.n -> com.corrodinggames.rts.game.units.buildings.FabricatorUpgradeT2Action:
+com.corrodinggames.rts.game.units.d.o -> com.corrodinggames.rts.game.units.buildings.FabricatorUpgradeT3Action:
+com.corrodinggames.rts.game.units.d.p -> com.corrodinggames.rts.game.units.buildings.PlayerBuildingUnitBase:
     int a(com.corrodinggames.rts.game.units.a.c,boolean) -> getQueueNumberBy
-com.corrodinggames.rts.game.units.d.q -> com.corrodinggames.rts.game.units.d.ActionFinishedResult:
+com.corrodinggames.rts.game.units.d.q -> com.corrodinggames.rts.game.units.buildings.ActionFinishedResult:
     com.corrodinggames.rts.game.units.a.c j -> actionId
-com.corrodinggames.rts.game.units.d.s -> com.corrodinggames.rts.game.units.d.AbsctractActionBind:
-com.corrodinggames.rts.game.units.d.t -> com.corrodinggames.rts.game.units.d.LandFactory:
+com.corrodinggames.rts.game.units.d.s -> com.corrodinggames.rts.game.units.buildings.AbsctractActionBind:
+com.corrodinggames.rts.game.units.d.t -> com.corrodinggames.rts.game.units.buildings.LandFactory:
     void a(java.util.ArrayList,int) -> getCanBuildList
-com.corrodinggames.rts.game.units.d.u -> com.corrodinggames.rts.game.units.d.LandFactoryUpgradeT2Action:
-com.corrodinggames.rts.game.units.d.w -> com.corrodinggames.rts.game.units.d.LaserDefence:
-com.corrodinggames.rts.game.units.d.x -> com.corrodinggames.rts.game.units.d.LaserDefenceUpgradeT2Action:
-com.corrodinggames.rts.game.units.d.y -> com.corrodinggames.rts.game.units.d.NukeLaucher:
+com.corrodinggames.rts.game.units.d.u -> com.corrodinggames.rts.game.units.buildings.LandFactoryUpgradeT2Action:
+com.corrodinggames.rts.game.units.d.w -> com.corrodinggames.rts.game.units.buildings.LaserDefence:
+com.corrodinggames.rts.game.units.d.x -> com.corrodinggames.rts.game.units.buildings.LaserDefenceUpgradeT2Action:
+com.corrodinggames.rts.game.units.d.y -> com.corrodinggames.rts.game.units.buildings.NukeLaucher:
     com.corrodinggames.rts.gameFramework.m.e[] a -> baseTexture
     com.corrodinggames.rts.gameFramework.m.e b -> deadTexture
     int c -> nukeCount
@@ -827,7 +887,7 @@ com.corrodinggames.rts.game.units.d.y -> com.corrodinggames.rts.game.units.d.Nuk
     void a(com.corrodinggames.rts.game.units.a.s,boolean,android.graphics.PointF,com.corrodinggames.rts.game.units.ce) -> ActionCallbackWithPoint
     com.corrodinggames.rts.game.f a(com.corrodinggames.rts.game.units.ce,float,float,float,float) -> getNukeProjectile
     void a(com.corrodinggames.rts.game.units.d.q) -> ActionFinishedCallback
-com.corrodinggames.rts.game.units.d.z -> com.corrodinggames.rts.game.units.d.LaunchNukeAction:
+com.corrodinggames.rts.game.units.d.z -> com.corrodinggames.rts.game.units.buildings.LaunchNukeAction:
 com.corrodinggames.rts.game.units.da -> com.corrodinggames.rts.game.units.HeavyHoverTankEnum:
 com.corrodinggames.rts.game.units.db -> com.corrodinggames.rts.game.units.LaserDefenceEnum:
     int c() -> getPrice
@@ -857,29 +917,29 @@ com.corrodinggames.rts.game.units.dx -> com.corrodinggames.rts.game.units.Spread
 com.corrodinggames.rts.game.units.dy -> com.corrodinggames.rts.game.units.AntiAirTurretT2Enum:
 com.corrodinggames.rts.game.units.dz -> com.corrodinggames.rts.game.units.TurretT2Enum:
 com.corrodinggames.rts.game.units.e -> com.corrodinggames.rts.game.units.CrystalResource:
-com.corrodinggames.rts.game.units.e.a -> com.corrodinggames.rts.game.units.e.Artillery:
-com.corrodinggames.rts.game.units.e.b -> com.corrodinggames.rts.game.units.e.Builder:
+com.corrodinggames.rts.game.units.e.a -> com.corrodinggames.rts.game.units.land.Artillery:
+com.corrodinggames.rts.game.units.e.b -> com.corrodinggames.rts.game.units.land.Builder:
     com.corrodinggames.rts.gameFramework.m.e a -> builderTexture
     com.corrodinggames.rts.gameFramework.m.e b -> builderDeadTexture
     com.corrodinggames.rts.game.units.a.s n -> reclaimBuildingTargetAction
     void b(java.util.ArrayList) -> getCanBuildList
     java.util.ArrayList N() -> getUnitActionList
     com.corrodinggames.rts.game.units.el q() -> getThisUnit
-com.corrodinggames.rts.game.units.e.c -> com.corrodinggames.rts.game.units.e.ExperimentalHoverTank:
-com.corrodinggames.rts.game.units.e.d -> com.corrodinggames.rts.game.units.e.ExperimentalTank:
-com.corrodinggames.rts.game.units.e.e -> com.corrodinggames.rts.game.units.e.HeavyHoverTank:
-com.corrodinggames.rts.game.units.e.f -> com.corrodinggames.rts.game.units.e.HeavyTank:
-com.corrodinggames.rts.game.units.e.g -> com.corrodinggames.rts.game.units.e.HoverTank:
-com.corrodinggames.rts.game.units.e.i -> com.corrodinggames.rts.game.units.e.Hovercraft:
-com.corrodinggames.rts.game.units.e.j -> com.corrodinggames.rts.game.units.e.UnloadAllUnitAction:
-com.corrodinggames.rts.game.units.e.k -> com.corrodinggames.rts.game.units.e.UnloadUnitAction:
-com.corrodinggames.rts.game.units.e.l -> com.corrodinggames.rts.game.units.e.Unit:
-com.corrodinggames.rts.game.units.e.m -> com.corrodinggames.rts.game.units.e.LaserTank:
-com.corrodinggames.rts.game.units.e.n -> com.corrodinggames.rts.game.units.e.MammothTank:
-com.corrodinggames.rts.game.units.e.o -> com.corrodinggames.rts.game.units.e.MegaTank:
-com.corrodinggames.rts.game.units.e.p -> com.corrodinggames.rts.game.units.e.Tank:
+com.corrodinggames.rts.game.units.e.c -> com.corrodinggames.rts.game.units.land.ExperimentalHoverTank:
+com.corrodinggames.rts.game.units.e.d -> com.corrodinggames.rts.game.units.land.ExperimentalTank:
+com.corrodinggames.rts.game.units.e.e -> com.corrodinggames.rts.game.units.land.HeavyHoverTank:
+com.corrodinggames.rts.game.units.e.f -> com.corrodinggames.rts.game.units.land.HeavyTank:
+com.corrodinggames.rts.game.units.e.g -> com.corrodinggames.rts.game.units.land.HoverTank:
+com.corrodinggames.rts.game.units.e.i -> com.corrodinggames.rts.game.units.land.Hovercraft:
+com.corrodinggames.rts.game.units.e.j -> com.corrodinggames.rts.game.units.land.UnloadAllUnitAction:
+com.corrodinggames.rts.game.units.e.k -> com.corrodinggames.rts.game.units.land.UnloadUnitAction:
+com.corrodinggames.rts.game.units.e.l -> com.corrodinggames.rts.game.units.land.Unit:
+com.corrodinggames.rts.game.units.e.m -> com.corrodinggames.rts.game.units.land.LaserTank:
+com.corrodinggames.rts.game.units.e.n -> com.corrodinggames.rts.game.units.land.MammothTank:
+com.corrodinggames.rts.game.units.e.o -> com.corrodinggames.rts.game.units.land.MegaTank:
+com.corrodinggames.rts.game.units.e.p -> com.corrodinggames.rts.game.units.land.Tank:
     void b() -> init
-com.corrodinggames.rts.game.units.e.q -> com.corrodinggames.rts.game.units.e.TankDestroyer:
+com.corrodinggames.rts.game.units.e.q -> com.corrodinggames.rts.game.units.land.TankDestroyer:
 com.corrodinggames.rts.game.units.ea -> com.corrodinggames.rts.game.units.TurretT3Enum:
 com.corrodinggames.rts.game.units.eb -> com.corrodinggames.rts.game.units.DamagingBorderEnum:
 com.corrodinggames.rts.game.units.ec -> com.corrodinggames.rts.game.units.CommandCenterEnum:
@@ -956,14 +1016,14 @@ com.corrodinggames.rts.game.units.h -> com.corrodinggames.rts.game.units.EditorO
     com.corrodinggames.rts.game.units.a.s z -> enableDebug
     boolean f_() -> networkIsNotSync
     void h(int) -> sandBoxMode
-com.corrodinggames.rts.game.units.h.a -> com.corrodinggames.rts.game.units.h.BattleShip:
-com.corrodinggames.rts.game.units.h.b -> com.corrodinggames.rts.game.units.h.BuilderShip:
+com.corrodinggames.rts.game.units.h.a -> com.corrodinggames.rts.game.units.water.BattleShip:
+com.corrodinggames.rts.game.units.h.b -> com.corrodinggames.rts.game.units.water.BuilderShip:
     void b(java.util.ArrayList) -> getCanBuildList
-com.corrodinggames.rts.game.units.h.c -> com.corrodinggames.rts.game.units.h.GunBoat:
-com.corrodinggames.rts.game.units.h.d -> com.corrodinggames.rts.game.units.h.MissileShip:
-com.corrodinggames.rts.game.units.h.e -> com.corrodinggames.rts.game.units.h.AttackSubmarine:
-com.corrodinggames.rts.game.units.h.f -> com.corrodinggames.rts.game.units.h.AttackSubmarineSurfaceAction:
-com.corrodinggames.rts.game.units.h.g -> com.corrodinggames.rts.game.units.h.AttackSubmarineDiveAction:
+com.corrodinggames.rts.game.units.h.c -> com.corrodinggames.rts.game.units.water.GunBoat:
+com.corrodinggames.rts.game.units.h.d -> com.corrodinggames.rts.game.units.water.MissileShip:
+com.corrodinggames.rts.game.units.h.e -> com.corrodinggames.rts.game.units.water.AttackSubmarine:
+com.corrodinggames.rts.game.units.h.f -> com.corrodinggames.rts.game.units.water.AttackSubmarineSurfaceAction:
+com.corrodinggames.rts.game.units.h.g -> com.corrodinggames.rts.game.units.water.AttackSubmarineDiveAction:
 com.corrodinggames.rts.game.units.i -> com.corrodinggames.rts.game.units.ReloadUnitsAction:
 com.corrodinggames.rts.game.units.j -> com.corrodinggames.rts.game.units.StartRecordingAction:
 com.corrodinggames.rts.game.units.k -> com.corrodinggames.rts.game.units.RecordReplayRunner:
@@ -1046,7 +1106,7 @@ com.corrodinggames.rts.gameFramework.bf -> com.corrodinggames.rts.gameFramework.
 com.corrodinggames.rts.gameFramework.bg -> com.corrodinggames.rts.gameFramework.MusicPlayerNameAbstract:
     java.lang.String b -> name
 com.corrodinggames.rts.gameFramework.bh -> com.corrodinggames.rts.gameFramework.MusicLoaderAbstract:
-com.corrodinggames.rts.gameFramework.bi -> com.corrodinggames.rts.gameFramework.MusicTypeEnum:
+com.corrodinggames.rts.gameFramework.bi -> com.corrodinggames.rts.gameFramework.MusicType:
 com.corrodinggames.rts.gameFramework.bj -> com.corrodinggames.rts.gameFramework.MusicTypeStarting:
 com.corrodinggames.rts.gameFramework.bk -> com.corrodinggames.rts.gameFramework.MusicTypeBuildUp:
 com.corrodinggames.rts.gameFramework.bl -> com.corrodinggames.rts.gameFramework.MusicTypeAttacked:
@@ -1058,13 +1118,13 @@ com.corrodinggames.rts.gameFramework.bo -> com.corrodinggames.rts.gameFramework.
 com.corrodinggames.rts.gameFramework.bp -> com.corrodinggames.rts.gameFramework.ReplayEngine:
     void c(java.lang.String) -> recordReplayLog
     void d() -> close
-com.corrodinggames.rts.gameFramework.bq -> com.corrodinggames.rts.gameFramework.ReplaySaveRunnable:
+com.corrodinggames.rts.gameFramework.bq -> com.corrodinggames.rts.gameFramework.RelaySaveRunnable:
 com.corrodinggames.rts.gameFramework.br -> com.corrodinggames.rts.gameFramework.ReplayChatInfo:
 com.corrodinggames.rts.gameFramework.bs -> com.corrodinggames.rts.gameFramework.ReplayInfo:
     com.corrodinggames.rts.gameFramework.br g -> chat
 com.corrodinggames.rts.gameFramework.bt -> com.corrodinggames.rts.gameFramework.FileSaver:
 com.corrodinggames.rts.gameFramework.bu -> com.corrodinggames.rts.gameFramework.FileSaverInfo:
-com.corrodinggames.rts.gameFramework.bv -> com.corrodinggames.rts.gameFramework.TeamStatsHandler:
+com.corrodinggames.rts.gameFramework.bv -> com.corrodinggames.rts.gameFramework.StatsHandler:
     com.corrodinggames.rts.gameFramework.cc a(com.corrodinggames.rts.game.p) -> getTeamStatsFromTeamInner
     com.corrodinggames.rts.gameFramework.cc a(com.corrodinggames.rts.game.units.ce) -> getTeamStatsFromTeam
 com.corrodinggames.rts.gameFramework.bw -> com.corrodinggames.rts.gameFramework.TeamStatsInfoA:
@@ -1084,7 +1144,13 @@ com.corrodinggames.rts.gameFramework.cc -> com.corrodinggames.rts.gameFramework.
     int h -> experimentalsLost
 com.corrodinggames.rts.gameFramework.cd -> com.corrodinggames.rts.gameFramework.TeamStatsInfoB:
 com.corrodinggames.rts.gameFramework.ce -> com.corrodinggames.rts.gameFramework.GameEntityAbstract:
-com.corrodinggames.rts.gameFramework.cf -> com.corrodinggames.rts.gameFramework.TimeCalulations:
+com.corrodinggames.rts.gameFramework.cf -> com.corrodinggames.rts.gameFramework.Unit:
+    long a() -> getNanoTime
+    java.lang.String a(double) -> formatMilliseconds
+    float a(long) -> calculateElapsedMillis
+    double a(long,long) -> calculateTimeDifferenceMillis
+    void a(java.lang.String,long) -> logExecutionTime
+    java.lang.String b(double) -> formatNanosecondsToMilliseconds
 com.corrodinggames.rts.gameFramework.cg -> com.corrodinggames.rts.gameFramework.State:
 com.corrodinggames.rts.gameFramework.ch -> com.corrodinggames.rts.gameFramework.StateTotal:
 com.corrodinggames.rts.gameFramework.ci -> com.corrodinggames.rts.gameFramework.StateUpdate:
@@ -1224,7 +1290,6 @@ com.corrodinggames.rts.gameFramework.k -> com.corrodinggames.rts.gameFramework.G
     com.corrodinggames.rts.gameFramework.i.a bW -> modEngine
     com.corrodinggames.rts.gameFramework.aj bX -> gameSaver
     com.corrodinggames.rts.gameFramework.bp bY -> replayEngine
-    android.os.Handler dA -> handler
     float cB -> cameraWidth
     android.graphics.Rect cK -> cameraBoundsWithOffset
     android.graphics.RectF cL -> cameraBoundsCopy
@@ -1240,6 +1305,7 @@ com.corrodinggames.rts.gameFramework.k -> com.corrodinggames.rts.gameFramework.G
     float cw -> y
     float cx -> cameraWidthCopy
     float cy -> cameraHeight
+    android.os.Handler dA -> handler
     java.lang.String dF -> introScreenLoadingTips
     com.corrodinggames.rts.gameFramework.x dv -> createNewGameEngine
     com.corrodinggames.rts.gameFramework.ae dY -> fileErrorType
@@ -1367,9 +1433,9 @@ com.corrodinggames.rts.gameFramework.utility.am -> com.corrodinggames.rts.gameFr
     float a -> x
     float b -> y
     float c -> z
-com.corrodinggames.rts.gameFramework.utility.p -> com.corrodinggames.rts.gameFramework.utility.CommonPool:
-    int a -> size
-    java.lang.Object[] b -> objectList
+com.corrodinggames.rts.gameFramework.utility.p -> com.corrodinggames.rts.gameFramework.utility.LukeArray:
+    int a -> transportingUnitCount
+    java.lang.Object[] b -> unitList
 com.corrodinggames.rts.gameFramework.utility.v -> com.corrodinggames.rts.gameFramework.utility.EntityPool:
 com.corrodinggames.rts.gameFramework.utility.x -> com.corrodinggames.rts.gameFramework.utility.UnitPool:
     com.corrodinggames.rts.game.units.ce[] c -> unitRefList
