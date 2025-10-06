@@ -13,7 +13,7 @@ a.a.a.g -> net.rudp.a.SYNSegment:
 a.a.a.h -> net.rudp.a.Segment:
     void a(int) -> setAck
     void a(int,int,int) -> init
-a.a.a.i -> net.rudp.a.RunnableC0268i:
+a.a.a.i -> net.rudp.a.RunnableC0054i:
 a.a.b -> net.rudp.ReliableServerSocket:
 a.a.h -> net.rudp.ReliableSocket:
 a.a.p -> net.rudp.ReliableSocketInputStream:
@@ -226,6 +226,7 @@ com.corrodinggames.rts.game.units.a.f -> com.corrodinggames.rts.game.units.actio
 com.corrodinggames.rts.game.units.a.h -> com.corrodinggames.rts.game.units.a.h:
     com.corrodinggames.rts.game.units.a.s a -> actionBaseInner
 com.corrodinggames.rts.game.units.a.i -> com.corrodinggames.rts.game.units.actions.PatrolAction:
+com.corrodinggames.rts.game.units.a.j -> com.corrodinggames.rts.game.units.actions.PingMapAction:
 com.corrodinggames.rts.game.units.a.k -> com.corrodinggames.rts.game.units.actions.MapPingType:
 com.corrodinggames.rts.game.units.a.l -> com.corrodinggames.rts.game.units.actions.FactoryBuildUnitAction:
     com.corrodinggames.rts.game.units.el a -> unitEnumRef
@@ -299,6 +300,7 @@ com.corrodinggames.rts.game.units.c -> com.corrodinggames.rts.game.units.UnitRef
 com.corrodinggames.rts.game.units.c.a -> com.corrodinggames.rts.game.units.bugs.Ladybug:
     com.corrodinggames.rts.gameFramework.m.e b -> mainTexture
 com.corrodinggames.rts.game.units.ca -> com.corrodinggames.rts.game.units.SpreadingFire:
+com.corrodinggames.rts.game.units.cc -> com.corrodinggames.rts.game.units.NullUnit:
 com.corrodinggames.rts.game.units.cd -> com.corrodinggames.rts.game.units.Tree:
     boolean a(com.corrodinggames.rts.game.units.ce,float) -> damageBy
 com.corrodinggames.rts.game.units.ce -> com.corrodinggames.rts.game.units.UnitRef:
@@ -331,6 +333,9 @@ com.corrodinggames.rts.game.units.ce -> com.corrodinggames.rts.game.units.UnitRe
     float cx -> maxHp
     float cz -> shield
     void a(com.corrodinggames.rts.game.units.a.s,boolean) -> ActionCallback
+    void a(com.corrodinggames.rts.game.units.custom.af) -> autoTriggerAction
+    void a(com.corrodinggames.rts.game.units.custom.af,com.corrodinggames.rts.game.units.ce) -> autoTriggerAction
+    void a(com.corrodinggames.rts.game.units.custom.af,com.corrodinggames.rts.game.units.ce,com.corrodinggames.rts.game.units.custom.h,com.corrodinggames.rts.game.units.custom.logicBooleans.VariableScope) -> autoTriggerAction
     int a(com.corrodinggames.rts.game.units.custom.g) -> getQueueSize
     void a_(java.lang.String) -> setTurretType
     java.util.HashMap b() -> getUnitsMap
@@ -402,6 +407,7 @@ com.corrodinggames.rts.game.units.cj -> com.corrodinggames.rts.game.units.UnitEn
     com.corrodinggames.rts.game.units.cj z -> dropship
     com.corrodinggames.rts.game.units.cj Z -> dummyNonUnitWithTeam
     java.util.ArrayList a(int) -> getActionListByTechLevel
+    com.corrodinggames.rts.game.units.el a(java.lang.String,boolean) -> getUnitByName
     java.lang.String e() -> loadDisplayText
     java.lang.String f() -> loadDisplayDescription
     java.lang.String i() -> getName
@@ -416,10 +422,11 @@ com.corrodinggames.rts.game.units.cr -> com.corrodinggames.rts.game.units.GunBoa
 com.corrodinggames.rts.game.units.cs -> com.corrodinggames.rts.game.units.MegaTankEnum:
 com.corrodinggames.rts.game.units.ct -> com.corrodinggames.rts.game.units.LaserTankEnum:
 com.corrodinggames.rts.game.units.cu -> com.corrodinggames.rts.game.units.HovercraftEnum:
+com.corrodinggames.rts.game.units.custom.a.a -> com.corrodinggames.rts.game.units.custom.actionSection.Action:
 com.corrodinggames.rts.game.units.custom.a.a.a -> com.corrodinggames.rts.game.units.custom.a.a.a:
     com.corrodinggames.rts.game.units.custom.e.a a -> resourceAmount
     double b -> resourceAmountSetValue
-com.corrodinggames.rts.game.units.custom.a.a.b -> com.corrodinggames.rts.game.units.custom.a.a.AddWaypointActionPart:
+com.corrodinggames.rts.game.units.custom.a.a.b -> com.corrodinggames.rts.game.units.custom.actionSection.a.AddWaypointActionPart:
     boolean e -> addWaypointPrepend
     com.corrodinggames.rts.game.units.custom.h f -> addWaypointTargetNearestUnitTagged
     com.corrodinggames.rts.game.s g -> addWaypointTargetNearestUnitTeam
@@ -436,9 +443,30 @@ com.corrodinggames.rts.game.units.custom.a.a.b -> com.corrodinggames.rts.game.un
     float s -> addWaypointMaxTime
     com.corrodinggames.rts.game.units.custom.u t -> addWaypointTriggerActionIfFailed
     com.corrodinggames.rts.game.units.custom.u u -> addWaypointTriggerActionIfMatched
-com.corrodinggames.rts.game.units.custom.a.a.j -> com.corrodinggames.rts.game.units.custom.a.a.ActionSectionPart1:
+com.corrodinggames.rts.game.units.custom.a.a.i -> com.corrodinggames.rts.game.units.custom.actionSection.a.SendMessageAction:
+    com.corrodinggames.rts.game.units.custom.logicBooleans.VariableScope$MemoryWriter a -> sendMessageWithDataWriter
+    com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBoolean b -> sendMessageTo
+    com.corrodinggames.rts.game.units.custom.h c -> sendMessageWithTags
+    boolean a(com.corrodinggames.rts.game.units.custom.j,com.corrodinggames.rts.game.units.a.s,android.graphics.PointF,com.corrodinggames.rts.game.units.ce,int) -> trigger
+com.corrodinggames.rts.game.units.custom.a.a.j -> com.corrodinggames.rts.game.units.custom.actionSection.a.ActionSectionPartA:
     boolean a -> deleteSelf
-com.corrodinggames.rts.game.units.custom.a.a.m -> com.corrodinggames.rts.game.units.custom.a.a.TakeResourcesActionPart:
+    boolean b -> switchToNeutralTeam
+    boolean c -> switchToAggressiveTeam
+    com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBoolean d -> nswitchToTeam
+    com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBoolean e -> setBodyRotation
+    com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBoolean f -> setHeight
+    com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBoolean g -> teleportTo
+    boolean h -> clearAllActionCooldowns
+    float i -> addAllActionCooldownsTime
+    float j -> addActionCooldownTime
+    com.corrodinggames.rts.game.units.custom.u k -> addActionCooldownApplyToActions
+    boolean l -> removeAllQueuedItemsWithoutRefund
+    boolean m -> refundAllQueuedItems
+    float n -> setBuilt
+    com.corrodinggames.rts.gameFramework.utility.am o -> offsetSelfAbsolute
+    boolean p -> resetUnitStats
+    com.corrodinggames.rts.game.units.custom.logicBooleans.VariableScope$CachedWriter q -> setUnitStats
+com.corrodinggames.rts.game.units.custom.a.a.m -> com.corrodinggames.rts.game.units.custom.actionSection.a.TakeResourcesActionPart:
 com.corrodinggames.rts.game.units.custom.a.a.o -> com.corrodinggames.rts.game.units.custom.a.a.o:
     com.corrodinggames.rts.game.units.custom.ci a -> addUnitsIntoTransport
     int b -> deleteNumUnitsFromTransport
@@ -447,21 +475,35 @@ com.corrodinggames.rts.game.units.custom.a.a.o -> com.corrodinggames.rts.game.un
     boolean e -> forceUnloadTransportNow
     int f -> forceUnloadTransportNowOnlyOnSlot
     com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBoolean g -> transportTargetNow
-com.corrodinggames.rts.game.units.custom.a.d -> com.corrodinggames.rts.game.units.custom.a.ActionSectionPart2:
+com.corrodinggames.rts.game.units.custom.a.d -> com.corrodinggames.rts.game.units.custom.actionSection.ActionSectionPartB:
+    int a -> actionCount
     com.corrodinggames.rts.game.units.custom.aj A -> isLockedMessage
+    com.corrodinggames.rts.game.units.custom.cg aa -> whenBuildingRotateToRotateTurret
     int aA -> iconExtraColor
+    com.corrodinggames.rts.game.units.custom.u ab -> whenBuildingTriggerAction
     com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBoolean aB -> iconExtraIsVisible
     com.corrodinggames.rts.gameFramework.utility.p ac -> actionPart
     com.corrodinggames.rts.game.units.custom.logicBooleans.UnitReference$UnitReferenceOrUnitType aC -> unitShownInUI
+    java.lang.Float ad -> addEnergy
     boolean aD -> unitShownInUIWithHpBar
+    com.corrodinggames.rts.game.units.custom.d.b ae -> addResources
     boolean aE -> unitShownInUIWithProgressBar
+    com.corrodinggames.rts.game.units.custom.d.b af -> addResourcesScaledByAIHandicaps
     com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBoolean aF -> isGuiBlinking
     com.corrodinggames.rts.game.units.a.t aG -> displayType
+    android.graphics.PointF ah -> fireTurretXAtGroundWithOffset
+    com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBoolean aH -> resetCustomTimer
+    com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBoolean ai -> fireTurretXAtGroundWithTarget
     boolean aI -> displayRemainingStockpile
+    com.corrodinggames.rts.game.units.custom.ca aj -> fireTurretXAtGroundWithProjectile
     int aJ -> tech
+    int ak -> fireTurretXAtGroundCount
     boolean aK -> forceNano
+    com.corrodinggames.rts.game.units.cg al -> fireTurretXAtGroundOnlyOverPassableTileOf
     java.lang.String aL -> type
+    com.corrodinggames.rts.game.units.custom.b.g am -> fireTurretXAtGroundShowGuideDecals
     com.corrodinggames.rts.game.units.custom.a.f aM -> extraType
+    com.corrodinggames.rts.game.units.custom.a.e aN -> aiUse
     com.corrodinggames.rts.gameFramework.m.e ay -> iconImage
     com.corrodinggames.rts.gameFramework.m.e az -> iconExtraImage
     com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBoolean B -> isLockedAlt
@@ -471,45 +513,98 @@ com.corrodinggames.rts.game.units.custom.a.d -> com.corrodinggames.rts.game.unit
     com.corrodinggames.rts.game.units.custom.logicBooleans.UnitReference$UnitReferenceOrUnitType e -> textAddUnitName
     com.corrodinggames.rts.game.units.custom.aj E -> isLockedAlt2Message
     com.corrodinggames.rts.game.units.custom.logicBooleans.UnitReference$UnitReferenceOrUnitType f -> descriptionAddFromUnit
+    com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBoolean F -> aiIsHighPriority
     com.corrodinggames.rts.game.units.custom.logicBooleans.UnitReference$UnitReferenceOrUnitType g -> descriptionAddUnitStats
+    com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBoolean G -> aiIsDisabled
     com.corrodinggames.rts.game.units.custom.bu h -> textPostFix
+    com.corrodinggames.rts.game.units.custom.v H -> convertTo
     com.corrodinggames.rts.game.units.custom.aj i -> description
     com.corrodinggames.rts.game.units.custom.v I -> aiConsiderSameAsBuilding
     com.corrodinggames.rts.game.units.a.u j -> bothWayPointType
-    java.lang.String k -> unitName
+    com.corrodinggames.rts.game.units.custom.v J -> guiBuildUnit
+    java.lang.String k -> convertToUnitName
     boolean K -> nhighPriorityQueue
+    com.corrodinggames.rts.game.units.custom.v l -> whenBuildingTemporarilyConvertTo
     boolean L -> onlyOneUnitAtATime
+    com.corrodinggames.rts.game.units.custom.bm[] m -> whenBuildingTemporarilyConvertToKeepFields
     boolean M -> canPlayerCancel
     boolean N -> allowMultipleInQueue
     boolean o -> extraLagHidingInUI
     boolean O -> alwaysSinglePress
     float p -> pos
     com.corrodinggames.rts.game.units.custom.d.b q -> price
+    boolean Q -> convertToKeepCurrentTags
+    com.corrodinggames.rts.game.units.custom.d.b r -> streamingCost
+    com.corrodinggames.rts.game.units.custom.bm[] R -> convertToKeepCurrentFields
+    com.corrodinggames.rts.game.units.custom.h s -> tags
     float S -> buildSpeed
     com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBoolean t -> requireConditional
     boolean T -> buildSpeedIgnoreFactorySpeedModifiers
     com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBoolean u -> isActive
+    boolean U -> whenBuildingCannotMove
     com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBoolean v -> isVisible
+    com.corrodinggames.rts.game.units.custom.o V -> whenBuildingPlayAnimation
     boolean w -> isAlsoViewableByAllies
+    java.lang.Float W -> whenBuildingRotateTo
     boolean x -> isAlsoViewableByEnemies
+    boolean X -> whenBuildingRotateToOrBackwards
     boolean y -> canLocked
+    boolean Y -> whenBuildingRotateToWaitTillRotated
     com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBoolean z -> isLocked
-com.corrodinggames.rts.game.units.custom.a.f -> com.corrodinggames.rts.game.units.custom.a.ActionExtraType:
-com.corrodinggames.rts.game.units.custom.a.g -> com.corrodinggames.rts.game.units.custom.a.CustomActionConfig:
+    boolean Z -> whenBuildingRotateToAimAtActionTarget
+com.corrodinggames.rts.game.units.custom.a.f -> com.corrodinggames.rts.game.units.custom.actionSection.ActionExtraType:
+com.corrodinggames.rts.game.units.custom.a.g -> com.corrodinggames.rts.game.units.custom.actionSection.CustomActionConfig:
 com.corrodinggames.rts.game.units.custom.aa -> com.corrodinggames.rts.game.units.custom.FileChangeWatcher:
     java.lang.String b -> filePath
 com.corrodinggames.rts.game.units.custom.ab -> com.corrodinggames.rts.game.units.custom.UnitDifferenceChecker:
 com.corrodinggames.rts.game.units.custom.ad -> com.corrodinggames.rts.game.units.custom.OnNewMapSpawnType:
-com.corrodinggames.rts.game.units.custom.af -> com.corrodinggames.rts.game.units.custom.autoTriggerOnEventType:
+com.corrodinggames.rts.game.units.custom.af -> com.corrodinggames.rts.game.units.custom.AutoTriggerOnEventType:
 com.corrodinggames.rts.game.units.custom.ag -> com.corrodinggames.rts.game.units.custom.ModsLoader:
+    boolean a -> debugLoggingEnabled
+    int b -> totalUnitsLoaded
+    int c -> totalCustomModsLoaded
+    int d -> changedUnitTypesCount
+    com.corrodinggames.rts.gameFramework.i.b e -> currentLoadingMod
+    boolean f -> unusedBooleanFlag
+    java.util.HashMap g -> textureCache
+    java.util.HashMap h -> soundCache
+    int i -> imageCacheMisses
+    int j -> imageCacheHits
+    boolean k -> unusedBooleanK
+    int l -> unusedIntL
+    com.corrodinggames.rts.gameFramework.utility.p m -> unusedLukeArrayM
+    java.util.HashMap n -> unitConfigCache
+    java.lang.Object o -> synchronizationLock
+    float p -> maxUnitRadius
+    float q -> maxBuildingRadius
+    com.corrodinggames.rts.gameFramework.i.b r -> lastLoadedMod
+    java.lang.String s -> lastErrorMessage
     void a(long,com.corrodinggames.rts.game.units.custom.ah) -> debugUnitParsePartCostTimes
+    com.corrodinggames.rts.game.units.custom.l a(com.corrodinggames.rts.game.units.custom.l) -> enableAllUnits
     void a(com.corrodinggames.rts.game.units.custom.l,com.corrodinggames.rts.gameFramework.utility.ae,java.lang.String,java.lang.String) -> parseCanBuildSection
     com.corrodinggames.rts.game.units.custom.aj a(com.corrodinggames.rts.game.units.custom.l,com.corrodinggames.rts.gameFramework.utility.ae,java.lang.String,java.lang.String,java.lang.String) -> getLogicMessage
+    com.corrodinggames.rts.game.units.custom.bu a(com.corrodinggames.rts.gameFramework.utility.ae,java.lang.String,java.lang.String) -> loadOrGetCachedUnitConfig
+    com.corrodinggames.rts.gameFramework.utility.ae a(java.lang.String) -> parseStringAsUnitConfig
     com.corrodinggames.rts.game.units.custom.l a(java.lang.String,com.corrodinggames.rts.gameFramework.i.b,java.lang.String,java.lang.String) -> loadUnits
     com.corrodinggames.rts.game.units.custom.l a(java.lang.String,java.io.InputStream,com.corrodinggames.rts.gameFramework.i.b,com.corrodinggames.rts.gameFramework.utility.o,java.lang.String,java.lang.String) -> loadUnit
+    com.corrodinggames.rts.gameFramework.a.i a(java.lang.String,java.lang.String,com.corrodinggames.rts.game.units.custom.l) -> generateModsSummary
+    com.corrodinggames.rts.gameFramework.m.e a(java.lang.String,java.lang.String,boolean,com.corrodinggames.rts.game.units.custom.l) -> reloadSingleUnit
+    void b() -> validateUnitsConfig
+    com.corrodinggames.rts.gameFramework.m.e b(java.lang.String) -> getCachedTexture
+    com.corrodinggames.rts.gameFramework.a.i b(java.lang.String,java.lang.String,com.corrodinggames.rts.game.units.custom.l) -> checkFileChangesAndReload
+    com.corrodinggames.rts.gameFramework.utility.o c(java.lang.String,java.lang.String,com.corrodinggames.rts.game.units.custom.l) -> applyPendingNetworkUnits
+    java.util.ArrayList c(boolean) -> getEnabledUnits
+    void d() -> refreshAllUnitsSync
+    void e() -> loadAllModsAndUnits
     java.lang.String f() -> getBuiltinModsName
     java.lang.String g() -> getBuiltinModsEnabledName
     java.lang.String h() -> getCustomModsFolderName
+    void i() -> clearTextureCaches
+    void j() -> refreshAllUnitsInternal
+    void k() -> calculateMaxRadiusValues
+    void l() -> setupUnitsSync
+    void m() -> setupUnitsInternal
+    void n() -> initializeDefaults
 com.corrodinggames.rts.game.units.custom.ah -> com.corrodinggames.rts.game.units.custom.CustomLoaderState:
 com.corrodinggames.rts.game.units.custom.aj -> com.corrodinggames.rts.game.units.custom.LogicMessage:
 com.corrodinggames.rts.game.units.custom.as -> com.corrodinggames.rts.game.units.custom.CoreRegister:
@@ -532,7 +627,7 @@ com.corrodinggames.rts.game.units.custom.as -> com.corrodinggames.rts.game.units
     float r -> nanoFactorySpeed
     java.util.LinkedHashMap s -> map
     void a(java.util.LinkedHashMap,com.corrodinggames.rts.game.units.custom.bm) -> register
-    java.lang.Object clone() -> m172clone
+    java.lang.Object clone() -> m59clone
 com.corrodinggames.rts.game.units.custom.at -> com.corrodinggames.rts.game.units.custom.MassValue:
 com.corrodinggames.rts.game.units.custom.au -> com.corrodinggames.rts.game.units.custom.MaxAttackRangeValue:
 com.corrodinggames.rts.game.units.custom.av -> com.corrodinggames.rts.game.units.custom.ShootDelayMultiplierValue:
@@ -542,6 +637,106 @@ com.corrodinggames.rts.game.units.custom.ay -> com.corrodinggames.rts.game.units
 com.corrodinggames.rts.game.units.custom.az -> com.corrodinggames.rts.game.units.custom.FogOfWarsightRange:
 com.corrodinggames.rts.game.units.custom.b -> com.corrodinggames.rts.game.units.custom.b:
     com.corrodinggames.rts.game.units.custom.z e -> name
+com.corrodinggames.rts.game.units.custom.b.a -> com.corrodinggames.rts.game.units.custom.b.AbstractSectionParser:
+com.corrodinggames.rts.game.units.custom.b.c -> com.corrodinggames.rts.game.units.custom.b.DecalSectionParser:
+com.corrodinggames.rts.game.units.custom.b.d -> com.corrodinggames.rts.game.units.custom.b.Decal:
+    com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBoolean A -> stackIndexStart
+    float aa -> dirOffset
+    float ab -> pivotOffset
+    com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBoolean ac -> basePosition
+    com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBoolean ad -> drawLineTo
+    int ae -> basePositionFromLegEnd
+    int ag -> basePositionFromTurret
+    com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBoolean ai -> alpha
+    com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBoolean B -> stackIndexCount
+    boolean c -> onlyWhenSelectedByOwnPlayer
+    com.corrodinggames.rts.gameFramework.m.e C -> imageShadow
+    boolean d -> onlyWhenSelectedByEnemyPlayer
+    float D -> shadowOffsetX
+    boolean e -> onlyWhenSelectedByAllyNotOwnPlayer
+    float E -> shadowOffsetY
+    boolean f -> onlyWhenSelectedByAnyPlayer
+    com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBoolean F -> isVisible
+    boolean g -> includeParentsSelection
+    com.corrodinggames.rts.game.units.custom.b.f G -> layer
+    com.corrodinggames.rts.game.s h -> onlyTeam
+    float H -> order
+    boolean i -> onlyPlayersWithUnitControl
+    float j -> onlyWithZoomLevelOrMore
+    boolean k -> onlyWhileActive
+    int K -> frameWidth
+    boolean l -> onlyWhileAlive
+    int L -> frameHeight
+    boolean m -> onlyInPreview
+    boolean M -> frameVerticalOrdering
+    boolean n -> onlyOnNonPreview
+    com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBoolean N -> frame
+    int o -> onlyOnBodyFrameOf
+    int O -> addBodyFrameMultipliedBy
+    float p -> StaticImageScale
+    int P -> color
+    boolean q -> ImageScaleIsDynamic
+    float Q -> lineWidth
+    com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBoolean r -> imageScale
+    float R -> xOffsetRelative
+    com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBoolean s -> imageScaleX
+    float S -> yOffsetRelative
+    com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBoolean t -> imageScaleY
+    float V -> hOffset
+    com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBoolean W -> xOffsetAbsolute
+    float x -> stackHOffset
+    com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBoolean X -> yOffsetAbsolute
+    int y -> stackFrameOffset
+    boolean Y -> alwaysStartDirAtZero
+    boolean Z -> alwaysStartHeightAtZero
+com.corrodinggames.rts.game.units.custom.b.f -> com.corrodinggames.rts.game.units.custom.b.DecalLayer:
+com.corrodinggames.rts.game.units.custom.b.j -> com.corrodinggames.rts.game.units.custom.b.j:
+    com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBoolean a -> enabled
+    float b -> speed
+    float c -> maxSpeed
+    com.corrodinggames.rts.game.units.custom.h d -> notherUnitHasTag
+    boolean e -> onlySameTeam
+com.corrodinggames.rts.game.units.custom.b.l -> com.corrodinggames.rts.game.units.custom.b.l:
+    com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBoolean a -> enabled
+    float b -> speed
+    float c -> maxSpeed
+    int d -> awayFromEdge
+com.corrodinggames.rts.game.units.custom.b.m -> com.corrodinggames.rts.game.units.custom.b.AttachmentSectionParser:
+    com.corrodinggames.rts.game.units.custom.b.m a -> parser
+com.corrodinggames.rts.game.units.custom.b.n -> com.corrodinggames.rts.game.units.custom.b.Attachment:
+    float c -> x
+    float d -> y
+    boolean D -> addTransportedUnits
+    float e -> height
+    boolean E -> unloadInCurrentPosition
+    float f -> idleDir
+    boolean F -> smoothlyBlendPositionWhenExistingUnitAdded
+    float g -> nidleDirReversing
+    boolean h -> resetRotationWhenNotAttacking
+    boolean H -> deattachIfWantingToMove
+    boolean i -> lockDir
+    boolean I -> hidden
+    boolean j -> redirectDamageToParent
+    boolean J -> prioritizeParentsMainTarget
+    boolean k -> redirectDamageToParentShieldOnly
+    boolean K -> onlyAttackParentsMainTarget
+    boolean l -> canBeAttackedAndDamaged
+    boolean L -> alwaysAllowedToAttackParentsMainTarget
+    boolean m -> isUnselectable
+    boolean M -> canAttack
+    boolean n -> isUnselectableAsTarget
+    com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBoolean N -> showAllActionsFrom
+    boolean o -> isVisible
+    boolean O -> keepWaypointsNeedingMovement
+    boolean p -> showMiniHp
+    boolean q -> hideHp
+    boolean r -> rotateWithParent
+    boolean s -> lockLegMovement
+    boolean t -> freezeLegMovement
+    boolean u -> lockRotation
+    boolean v -> keepAliveWhenParentDies
+    com.corrodinggames.rts.game.units.custom.ci w -> onCreateSpawnUnitOf
+    boolean x -> createIncompleteIfParentIs
 com.corrodinggames.rts.game.units.custom.ba -> com.corrodinggames.rts.game.units.custom.NanoRange:
 com.corrodinggames.rts.game.units.custom.bb -> com.corrodinggames.rts.game.units.custom.Selfregenrate:
 com.corrodinggames.rts.game.units.custom.bc -> com.corrodinggames.rts.game.units.custom.TargetHeight:
@@ -573,7 +768,7 @@ com.corrodinggames.rts.game.units.custom.bt -> com.corrodinggames.rts.game.units
     float K -> holdDisMin
     float m -> estimatingPositionMultiplier
     void a(com.corrodinggames.rts.game.units.custom.bt) -> cloneFrom
-com.corrodinggames.rts.game.units.custom.bu -> com.corrodinggames.rts.game.units.custom.bu:
+com.corrodinggames.rts.game.units.custom.bu -> com.corrodinggames.rts.game.units.custom.DisplayPrefixInHUD:
     java.lang.String b() -> getTextTranslation
 com.corrodinggames.rts.game.units.custom.bx -> com.corrodinggames.rts.game.units.custom.PlacementRuleSectionParser:
     com.corrodinggames.rts.gameFramework.utility.p b -> placementRuleSectionList
@@ -615,7 +810,7 @@ com.corrodinggames.rts.game.units.custom.cg -> com.corrodinggames.rts.game.units
     boolean A -> slave
     float aa -> barrelHeight
     com.corrodinggames.rts.game.units.custom.o aA -> onShootPlayAnimation
-    float ab -> f1092ab
+    float ab -> f868ab
     float aB -> onShootFreezeBodyMovementFor
     java.lang.Boolean ac -> showRangeUIGuide
     com.corrodinggames.rts.game.units.custom.u aC -> onShootTriggerActions
@@ -645,6 +840,7 @@ com.corrodinggames.rts.game.units.custom.cg -> com.corrodinggames.rts.game.units
     boolean ay -> clearTurretTargetAfterFiring
     boolean B -> canShoot
     com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBoolean C -> invisible
+    int e -> index
     com.corrodinggames.rts.game.units.custom.z E -> shootFlame
     float f -> x
     com.corrodinggames.rts.game.units.custom.z F -> warmupStartEffect
@@ -684,6 +880,7 @@ com.corrodinggames.rts.game.units.custom.cg -> com.corrodinggames.rts.game.units
     float Z -> barrelOffsetXOnOddShots
 com.corrodinggames.rts.game.units.custom.ch -> com.corrodinggames.rts.game.units.custom.LukeException:
 com.corrodinggames.rts.game.units.custom.ci -> com.corrodinggames.rts.game.units.custom.SpawnUnitInfo:
+    com.corrodinggames.rts.gameFramework.utility.p a -> units
 com.corrodinggames.rts.game.units.custom.cj -> com.corrodinggames.rts.game.units.custom.SpawnUnitArgs:
     boolean e -> neutralTeam
     boolean f -> aggressiveTeam
@@ -713,6 +910,32 @@ com.corrodinggames.rts.game.units.custom.e.a -> com.corrodinggames.rts.game.unit
     java.lang.String b -> name
     double a(com.corrodinggames.rts.game.units.ce) -> getResourceCount
     com.corrodinggames.rts.game.units.custom.e.a a(java.lang.String) -> getStringAsResourceType
+com.corrodinggames.rts.game.units.custom.e.b -> com.corrodinggames.rts.game.units.custom.e.DigitGrouping:
+com.corrodinggames.rts.game.units.custom.e.d -> com.corrodinggames.rts.game.units.custom.e.GlobalResource:
+    com.corrodinggames.rts.gameFramework.m.e B -> iconImage
+    float c -> priority
+    boolean C -> iconImageUseInText
+    java.lang.Integer d -> displayColor
+    boolean e -> displayColorUseInText
+    com.corrodinggames.rts.game.units.custom.bu g -> displayName
+    com.corrodinggames.rts.game.units.custom.bu h -> displayNameShort
+    boolean i -> displayNameHideWhenIconShownInHUD
+    boolean j -> displayNameHideWhenIconShownInText
+    boolean k -> stackHorizontal
+    boolean l -> hidden
+    float m -> valueInStats
+    boolean n -> displayWithRounding
+    boolean o -> displayRoundedDown
+    boolean p -> displayWhenZero
+    boolean q -> displayInHud
+    com.corrodinggames.rts.game.units.custom.e.b r -> displayDigitGrouping
+    int s -> displayPos
+    com.corrodinggames.rts.game.units.custom.bu t -> displayTextPrefix
+    com.corrodinggames.rts.game.units.custom.bu u -> displayTextPostfix
+    java.lang.String v -> displayTextAppendResource
+    boolean x -> displayTextAppendResourceWithGap
+    boolean y -> appendResourceInHUDWhenThisZero
+    java.lang.String z -> equivalentGlobalResourceForAI
 com.corrodinggames.rts.game.units.custom.f -> com.corrodinggames.rts.game.units.custom.Animation:
     java.lang.String a -> animation
     int b -> start
@@ -742,6 +965,7 @@ com.corrodinggames.rts.game.units.custom.k -> com.corrodinggames.rts.game.units.
 com.corrodinggames.rts.game.units.custom.l -> com.corrodinggames.rts.game.units.custom.UnitEnumRefBase:
     boolean A -> showSelectionIndicator
     boolean aa -> imageSmoothingWhenZoomedIn
+    com.corrodinggames.rts.gameFramework.utility.p aA -> attachmentList
     boolean ab -> imageSmoothing
     com.corrodinggames.rts.game.q ac -> teamColorsHueType
     com.corrodinggames.rts.game.units.custom.bu aC -> displayText
@@ -766,13 +990,16 @@ com.corrodinggames.rts.game.units.custom.l -> com.corrodinggames.rts.game.units.
     boolean aN -> isUnselectableAsTarget
     com.corrodinggames.rts.gameFramework.m.e ao -> imageTurret
     boolean aO -> canNotBeDirectlyAttacked
+    com.corrodinggames.rts.gameFramework.m.e ap -> imageShadow
     boolean aP -> canNotBeDamaged
     boolean aQ -> showOnMinimap
     boolean aR -> showOnMinimapToEnemies
     com.corrodinggames.rts.game.units.custom.h aS -> canOnlyBeAttackedByUnitsWithTags
     boolean aT -> canNotBeGivenOrdersByPlayer
+    com.corrodinggames.rts.gameFramework.m.e au -> imageShield
     boolean aU -> canRepairBuildings
     boolean aV -> canRepairUnits
+    com.corrodinggames.rts.gameFramework.m.e aw -> iconBuild
     boolean aW -> autoRepair
     int aX -> nanoRangeForRepair
     boolean aY -> nanoRangeForRepairIsMelee
@@ -785,9 +1012,11 @@ com.corrodinggames.rts.game.units.custom.l -> com.corrodinggames.rts.game.units.
     boolean bD -> unitsSpawnedOnDeathSetToTeamOfLastAttacker
     float be -> nanoUnbuildSpeed
     float bf -> nanoBuildSpeed
+    boolean bg -> whenBuildingHasOperation
     float bh -> selfBuildRate
     float bH -> imageScale
     boolean bi -> dieOnConstruct
+    float bI -> turretImageScale
     boolean bj -> dieOnAttack
     boolean bJ -> splastEffect
     boolean bk -> dieOnZeroEnergy
@@ -800,6 +1029,7 @@ com.corrodinggames.rts.game.units.custom.l -> com.corrodinggames.rts.game.units.
     boolean bN -> dustEffectReverse
     float bo -> nukeOnDeathRange
     float bp -> nukeOnDeathDamage
+    com.corrodinggames.rts.game.units.custom.z bP -> movementEffectReverse
     int bq -> numBitsOnDeath
     boolean bQ -> movementEffectReverseFlipEffects
     boolean br -> nukeOnDeathDisableWhenNoNuke
@@ -819,6 +1049,7 @@ com.corrodinggames.rts.game.units.custom.l -> com.corrodinggames.rts.game.units.
     com.corrodinggames.rts.game.units.custom.z by -> effectOnDeath
     com.corrodinggames.rts.game.units.custom.z bY -> reclaimEffect
     com.corrodinggames.rts.game.units.custom.ce bz -> soundOnDeath
+    float ca -> autoTriggerCooldownTime
     boolean cA -> allowCaptureWhenNeutralByAI
     com.corrodinggames.rts.game.units.custom.s cb -> autoTriggerCheckRate
     boolean cB -> whileNeutralTransportAnyTeam
@@ -965,6 +1196,7 @@ com.corrodinggames.rts.game.units.custom.l -> com.corrodinggames.rts.game.units.
     boolean fi -> slowDeathFall
     java.lang.String fI -> upgradedFrom
     boolean fj -> slowDeathFallSmoke
+    boolean fJ -> aiIsHighPriority
     boolean fk -> canReclaimResources
     float fK -> aiUpgradePriority
     com.corrodinggames.rts.game.units.custom.h fl -> canReclaimResourcesOnlyWithTags
@@ -1006,12 +1238,16 @@ com.corrodinggames.rts.game.units.custom.l -> com.corrodinggames.rts.game.units.
     boolean z -> showQueueBar
     com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBoolean Z -> isVisible
     com.corrodinggames.rts.gameFramework.m.e a(com.corrodinggames.rts.gameFramework.utility.ae,java.lang.String,java.lang.String) -> loadImage
+    void a(java.lang.String,int,java.lang.String,java.lang.String) -> checkMinVersion
     com.corrodinggames.rts.game.units.custom.z a(java.lang.String,com.corrodinggames.rts.game.units.custom.z) -> laodEffect
+    com.corrodinggames.rts.game.units.el a(java.lang.String,boolean) -> getUnitRefByName
     boolean C() -> isAvailableInDemo
     com.corrodinggames.rts.game.units.custom.cg d(java.lang.String) -> getUnitTurret
     com.corrodinggames.rts.game.units.custom.ca e(java.lang.String) -> getCustomProjectileByName
+    java.lang.String E() -> getAllUnitTypes
     com.corrodinggames.rts.game.units.custom.e.a h(java.lang.String) -> getResourceType
     com.corrodinggames.rts.game.units.custom.l k(java.lang.String) -> getUnitEnumRefByName
+    com.corrodinggames.rts.game.units.el p(java.lang.String) -> getUnitRefByName
 com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanGameFunctions$EventTagsBoolean -> com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanGameFunctions$EventTagsBoolean:
 com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanGameFunctions$EventTagsBoolean -> com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanGameFunctions$EventTagsBoolean:
     com.corrodinggames.rts.game.units.custom.g includesTag -> includesTagList
@@ -1032,9 +1268,20 @@ com.corrodinggames.rts.game.units.custom.logicBooleans.LogicNumberFunction$Funct
 com.corrodinggames.rts.game.units.custom.logicBooleans.LogicNumberFunction$FunctionMin -> com.corrodinggames.rts.game.units.custom.logicBooleans.LogicNumberFunction$FunctionMin:
     com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBoolean a -> first
     com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBoolean b -> second
+com.corrodinggames.rts.game.units.custom.o -> com.corrodinggames.rts.game.units.custom.AnimationId:
 com.corrodinggames.rts.game.units.custom.s -> com.corrodinggames.rts.game.units.custom.AutoTriggerCheckRate:
 com.corrodinggames.rts.game.units.custom.u -> com.corrodinggames.rts.game.units.custom.ActionList:
-com.corrodinggames.rts.game.units.custom.x -> com.corrodinggames.rts.game.units.custom.x:
+com.corrodinggames.rts.game.units.custom.v -> com.corrodinggames.rts.game.units.custom.UnitType:
+com.corrodinggames.rts.game.units.custom.v -> com.corrodinggames.rts.game.units.custom.v:
+    java.lang.String a -> fileName
+    java.lang.String b -> sectionName
+    java.lang.String c -> unitName
+    com.corrodinggames.rts.game.units.el d -> unit
+    boolean e -> needCheck
+    boolean f -> noteUsingUnitref
+    void a() -> tryLoadUnitType
+    com.corrodinggames.rts.game.units.el c() -> getUnit
+    java.lang.String d() -> getUnitName
 com.corrodinggames.rts.game.units.custom.x -> com.corrodinggames.rts.game.units.custom.x:
     java.lang.String g -> name
 com.corrodinggames.rts.game.units.cv -> com.corrodinggames.rts.game.units.LandFactoryEnum:
@@ -1156,7 +1403,7 @@ com.corrodinggames.rts.game.units.e.b -> com.corrodinggames.rts.game.units.land.
     com.corrodinggames.rts.game.units.a.s n -> reclaimBuildingTargetAction
     void b(java.util.ArrayList) -> getCanBuildList
     java.util.ArrayList N() -> getUnitActionList
-    com.corrodinggames.rts.game.units.el q() -> getThisUnit
+    com.corrodinggames.rts.game.units.el q() -> mo116q
 com.corrodinggames.rts.game.units.e.c -> com.corrodinggames.rts.game.units.land.ExperimentalHoverTank:
 com.corrodinggames.rts.game.units.e.d -> com.corrodinggames.rts.game.units.land.ExperimentalTank:
 com.corrodinggames.rts.game.units.e.e -> com.corrodinggames.rts.game.units.land.HeavyHoverTank:
@@ -1506,7 +1753,7 @@ com.corrodinggames.rts.gameFramework.j.j -> com.corrodinggames.rts.gameFramework
 com.corrodinggames.rts.gameFramework.j.m -> com.corrodinggames.rts.gameFramework.net.GameNetAPIOperate:
     java.lang.String[] c -> urlList
 com.corrodinggames.rts.gameFramework.j.n -> com.corrodinggames.rts.gameFramework.j.n:
-    java.lang.Object call() -> mo49call
+    java.lang.Object call() -> mo117call
 com.corrodinggames.rts.gameFramework.k -> com.corrodinggames.rts.gameFramework.GameEngine:
     com.corrodinggames.rts.gameFramework.k ak -> globalGameEngine
     android.content.Context al -> gameContext
@@ -1651,6 +1898,7 @@ com.corrodinggames.rts.gameFramework.utility.ae -> com.corrodinggames.rts.gameFr
     boolean c(java.lang.String,java.lang.String,java.lang.String) -> readArgStringAsBoolean
     com.corrodinggames.rts.game.units.custom.e.a d(com.corrodinggames.rts.game.units.custom.l,java.lang.String,java.lang.String) -> getValueAsCustomResource
     int d(java.lang.String,java.lang.String) -> readStaticIntValue
+    java.lang.Float d(java.lang.String,java.lang.String,java.lang.Float) -> readStaticTimeValue
     java.lang.String e(java.lang.String) -> getValueAsMultiline
     com.corrodinggames.rts.gameFramework.utility.am f(java.lang.String,java.lang.String) -> getValueAsPoint
     float g(java.lang.String,java.lang.String) -> getValueAsFloat

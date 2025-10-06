@@ -4,7 +4,11 @@
     "base.apk"
   ],
   "treeExpansionsV2": [
-    "c:com.corrodinggames.rts.game.units.custom.au",
+    "p:com.corrodinggames.rts.game.units.custom.a.a",
+    "p:com.corrodinggames.rts.game.units.h",
+    "p:com.corrodinggames.rts.game.units.g",
+    "p:com.corrodinggames.rts.game.units.f",
+    "p:com.corrodinggames.rts.game.units.e",
     "p:com.corrodinggames.rts.gameFramework",
     "t:JInputs"
   ],
@@ -258,6 +262,13 @@
           "declClass": "com.corrodinggames.rts.game.units.a.i"
         },
         "newName": "PatrolAction"
+      },
+      {
+        "nodeRef": {
+          "refType": "CLASS",
+          "declClass": "com.corrodinggames.rts.game.units.a.j"
+        },
+        "newName": "PingMapAction"
       },
       {
         "nodeRef": {
@@ -619,6 +630,13 @@
       {
         "nodeRef": {
           "refType": "CLASS",
+          "declClass": "com.corrodinggames.rts.game.units.cc"
+        },
+        "newName": "NullUnit"
+      },
+      {
+        "nodeRef": {
+          "refType": "CLASS",
           "declClass": "com.corrodinggames.rts.game.units.cd"
         },
         "newName": "Tree"
@@ -724,6 +742,13 @@
       {
         "nodeRef": {
           "refType": "CLASS",
+          "declClass": "com.corrodinggames.rts.game.units.custom.a.a"
+        },
+        "newName": "Action"
+      },
+      {
+        "nodeRef": {
+          "refType": "CLASS",
           "declClass": "com.corrodinggames.rts.game.units.custom.a.a.b"
         },
         "newName": "AddWaypointActionPart"
@@ -731,9 +756,16 @@
       {
         "nodeRef": {
           "refType": "CLASS",
+          "declClass": "com.corrodinggames.rts.game.units.custom.a.a.i"
+        },
+        "newName": "SendMessageAction"
+      },
+      {
+        "nodeRef": {
+          "refType": "CLASS",
           "declClass": "com.corrodinggames.rts.game.units.custom.a.a.j"
         },
-        "newName": "ActionSectionPart1"
+        "newName": "ActionSectionPartA"
       },
       {
         "nodeRef": {
@@ -747,7 +779,7 @@
           "refType": "CLASS",
           "declClass": "com.corrodinggames.rts.game.units.custom.a.d"
         },
-        "newName": "ActionSectionPart2"
+        "newName": "ActionSectionPartB"
       },
       {
         "nodeRef": {
@@ -789,7 +821,7 @@
           "refType": "CLASS",
           "declClass": "com.corrodinggames.rts.game.units.custom.af"
         },
-        "newName": "autoTriggerOnEventType"
+        "newName": "AutoTriggerOnEventType"
       },
       {
         "nodeRef": {
@@ -867,6 +899,48 @@
           "declClass": "com.corrodinggames.rts.game.units.custom.az"
         },
         "newName": "FogOfWarsightRange"
+      },
+      {
+        "nodeRef": {
+          "refType": "CLASS",
+          "declClass": "com.corrodinggames.rts.game.units.custom.b.a"
+        },
+        "newName": "AbstractSectionParser"
+      },
+      {
+        "nodeRef": {
+          "refType": "CLASS",
+          "declClass": "com.corrodinggames.rts.game.units.custom.b.c"
+        },
+        "newName": "DecalSectionParser"
+      },
+      {
+        "nodeRef": {
+          "refType": "CLASS",
+          "declClass": "com.corrodinggames.rts.game.units.custom.b.d"
+        },
+        "newName": "Decal"
+      },
+      {
+        "nodeRef": {
+          "refType": "CLASS",
+          "declClass": "com.corrodinggames.rts.game.units.custom.b.f"
+        },
+        "newName": "DecalLayer"
+      },
+      {
+        "nodeRef": {
+          "refType": "CLASS",
+          "declClass": "com.corrodinggames.rts.game.units.custom.b.m"
+        },
+        "newName": "AttachmentSectionParser"
+      },
+      {
+        "nodeRef": {
+          "refType": "CLASS",
+          "declClass": "com.corrodinggames.rts.game.units.custom.b.n"
+        },
+        "newName": "Attachment"
       },
       {
         "nodeRef": {
@@ -990,6 +1064,13 @@
       {
         "nodeRef": {
           "refType": "CLASS",
+          "declClass": "com.corrodinggames.rts.game.units.custom.bu"
+        },
+        "newName": "DisplayPrefixInHUD"
+      },
+      {
+        "nodeRef": {
+          "refType": "CLASS",
           "declClass": "com.corrodinggames.rts.game.units.custom.bx"
         },
         "newName": "PlacementRuleSectionParser"
@@ -1074,6 +1155,20 @@
       {
         "nodeRef": {
           "refType": "CLASS",
+          "declClass": "com.corrodinggames.rts.game.units.custom.e.b"
+        },
+        "newName": "DigitGrouping"
+      },
+      {
+        "nodeRef": {
+          "refType": "CLASS",
+          "declClass": "com.corrodinggames.rts.game.units.custom.e.d"
+        },
+        "newName": "GlobalResource"
+      },
+      {
+        "nodeRef": {
+          "refType": "CLASS",
           "declClass": "com.corrodinggames.rts.game.units.custom.f"
         },
         "newName": "Animation"
@@ -1109,6 +1204,13 @@
       {
         "nodeRef": {
           "refType": "CLASS",
+          "declClass": "com.corrodinggames.rts.game.units.custom.o"
+        },
+        "newName": "AnimationId"
+      },
+      {
+        "nodeRef": {
+          "refType": "CLASS",
           "declClass": "com.corrodinggames.rts.game.units.custom.s"
         },
         "newName": "AutoTriggerCheckRate"
@@ -1119,6 +1221,13 @@
           "declClass": "com.corrodinggames.rts.game.units.custom.u"
         },
         "newName": "ActionList"
+      },
+      {
+        "nodeRef": {
+          "refType": "CLASS",
+          "declClass": "com.corrodinggames.rts.game.units.custom.v"
+        },
+        "newName": "UnitType"
       },
       {
         "nodeRef": {
@@ -4661,10 +4770,162 @@
       {
         "nodeRef": {
           "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.a.a.i",
+          "shortId": "a:Lcom/corrodinggames/rts/game/units/custom/logicBooleans/VariableScope$MemoryWriter;"
+        },
+        "newName": "sendMessageWithDataWriter"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.a.a.i",
+          "shortId": "b:Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean;"
+        },
+        "newName": "sendMessageTo"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.a.a.i",
+          "shortId": "c:Lcom/corrodinggames/rts/game/units/custom/h;"
+        },
+        "newName": "sendMessageWithTags"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
           "declClass": "com.corrodinggames.rts.game.units.custom.a.a.j",
           "shortId": "a:Z"
         },
         "newName": "deleteSelf"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.a.a.j",
+          "shortId": "b:Z"
+        },
+        "newName": "switchToNeutralTeam"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.a.a.j",
+          "shortId": "c:Z"
+        },
+        "newName": "switchToAggressiveTeam"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.a.a.j",
+          "shortId": "d:Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean;"
+        },
+        "newName": "nswitchToTeam"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.a.a.j",
+          "shortId": "e:Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean;"
+        },
+        "newName": "setBodyRotation"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.a.a.j",
+          "shortId": "f:Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean;"
+        },
+        "newName": "setHeight"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.a.a.j",
+          "shortId": "g:Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean;"
+        },
+        "newName": "teleportTo"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.a.a.j",
+          "shortId": "h:Z"
+        },
+        "newName": "clearAllActionCooldowns"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.a.a.j",
+          "shortId": "i:F"
+        },
+        "newName": "addAllActionCooldownsTime"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.a.a.j",
+          "shortId": "j:F"
+        },
+        "newName": "addActionCooldownTime"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.a.a.j",
+          "shortId": "k:Lcom/corrodinggames/rts/game/units/custom/u;"
+        },
+        "newName": "addActionCooldownApplyToActions"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.a.a.j",
+          "shortId": "l:Z"
+        },
+        "newName": "removeAllQueuedItemsWithoutRefund"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.a.a.j",
+          "shortId": "m:Z"
+        },
+        "newName": "refundAllQueuedItems"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.a.a.j",
+          "shortId": "n:F"
+        },
+        "newName": "setBuilt"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.a.a.j",
+          "shortId": "o:Lcom/corrodinggames/rts/gameFramework/utility/am;"
+        },
+        "newName": "offsetSelfAbsolute"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.a.a.j",
+          "shortId": "p:Z"
+        },
+        "newName": "resetUnitStats"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.a.a.j",
+          "shortId": "q:Lcom/corrodinggames/rts/game/units/custom/logicBooleans/VariableScope$CachedWriter;"
+        },
+        "newName": "setUnitStats"
       },
       {
         "nodeRef": {
@@ -4766,9 +5027,41 @@
         "nodeRef": {
           "refType": "FIELD",
           "declClass": "com.corrodinggames.rts.game.units.custom.a.d",
+          "shortId": "F:Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean;"
+        },
+        "newName": "aiIsHighPriority"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.a.d",
+          "shortId": "G:Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean;"
+        },
+        "newName": "aiIsDisabled"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.a.d",
+          "shortId": "H:Lcom/corrodinggames/rts/game/units/custom/v;"
+        },
+        "newName": "convertTo"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.a.d",
           "shortId": "I:Lcom/corrodinggames/rts/game/units/custom/v;"
         },
         "newName": "aiConsiderSameAsBuilding"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.a.d",
+          "shortId": "J:Lcom/corrodinggames/rts/game/units/custom/v;"
+        },
+        "newName": "guiBuildUnit"
       },
       {
         "nodeRef": {
@@ -4814,6 +5107,22 @@
         "nodeRef": {
           "refType": "FIELD",
           "declClass": "com.corrodinggames.rts.game.units.custom.a.d",
+          "shortId": "Q:Z"
+        },
+        "newName": "convertToKeepCurrentTags"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.a.d",
+          "shortId": "R:[Lcom/corrodinggames/rts/game/units/custom/bm;"
+        },
+        "newName": "convertToKeepCurrentFields"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.a.d",
           "shortId": "S:F"
         },
         "newName": "buildSpeed"
@@ -4825,6 +5134,62 @@
           "shortId": "T:Z"
         },
         "newName": "buildSpeedIgnoreFactorySpeedModifiers"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.a.d",
+          "shortId": "U:Z"
+        },
+        "newName": "whenBuildingCannotMove"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.a.d",
+          "shortId": "V:Lcom/corrodinggames/rts/game/units/custom/o;"
+        },
+        "newName": "whenBuildingPlayAnimation"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.a.d",
+          "shortId": "W:Ljava/lang/Float;"
+        },
+        "newName": "whenBuildingRotateTo"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.a.d",
+          "shortId": "X:Z"
+        },
+        "newName": "whenBuildingRotateToOrBackwards"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.a.d",
+          "shortId": "Y:Z"
+        },
+        "newName": "whenBuildingRotateToWaitTillRotated"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.a.d",
+          "shortId": "Z:Z"
+        },
+        "newName": "whenBuildingRotateToAimAtActionTarget"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.a.d",
+          "shortId": "a:I"
+        },
+        "newName": "actionCount"
       },
       {
         "nodeRef": {
@@ -4886,6 +5251,14 @@
         "nodeRef": {
           "refType": "FIELD",
           "declClass": "com.corrodinggames.rts.game.units.custom.a.d",
+          "shortId": "aH:Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean;"
+        },
+        "newName": "resetCustomTimer"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.a.d",
           "shortId": "aI:Z"
         },
         "newName": "displayRemainingStockpile"
@@ -4926,9 +5299,105 @@
         "nodeRef": {
           "refType": "FIELD",
           "declClass": "com.corrodinggames.rts.game.units.custom.a.d",
+          "shortId": "aN:Lcom/corrodinggames/rts/game/units/custom/a/e;"
+        },
+        "newName": "aiUse"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.a.d",
+          "shortId": "aa:Lcom/corrodinggames/rts/game/units/custom/cg;"
+        },
+        "newName": "whenBuildingRotateToRotateTurret"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.a.d",
+          "shortId": "ab:Lcom/corrodinggames/rts/game/units/custom/u;"
+        },
+        "newName": "whenBuildingTriggerAction"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.a.d",
           "shortId": "ac:Lcom/corrodinggames/rts/gameFramework/utility/p;"
         },
         "newName": "actionPart"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.a.d",
+          "shortId": "ad:Ljava/lang/Float;"
+        },
+        "newName": "addEnergy"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.a.d",
+          "shortId": "ae:Lcom/corrodinggames/rts/game/units/custom/d/b;"
+        },
+        "newName": "addResources"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.a.d",
+          "shortId": "af:Lcom/corrodinggames/rts/game/units/custom/d/b;"
+        },
+        "newName": "addResourcesScaledByAIHandicaps"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.a.d",
+          "shortId": "ah:Landroid/graphics/PointF;"
+        },
+        "newName": "fireTurretXAtGroundWithOffset"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.a.d",
+          "shortId": "ai:Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean;"
+        },
+        "newName": "fireTurretXAtGroundWithTarget"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.a.d",
+          "shortId": "aj:Lcom/corrodinggames/rts/game/units/custom/ca;"
+        },
+        "newName": "fireTurretXAtGroundWithProjectile"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.a.d",
+          "shortId": "ak:I"
+        },
+        "newName": "fireTurretXAtGroundCount"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.a.d",
+          "shortId": "al:Lcom/corrodinggames/rts/game/units/cg;"
+        },
+        "newName": "fireTurretXAtGroundOnlyOverPassableTileOf"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.a.d",
+          "shortId": "am:Lcom/corrodinggames/rts/game/units/custom/b/g;"
+        },
+        "newName": "fireTurretXAtGroundShowGuideDecals"
       },
       {
         "nodeRef": {
@@ -5008,7 +5477,23 @@
           "declClass": "com.corrodinggames.rts.game.units.custom.a.d",
           "shortId": "k:Ljava/lang/String;"
         },
-        "newName": "unitName"
+        "newName": "convertToUnitName"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.a.d",
+          "shortId": "l:Lcom/corrodinggames/rts/game/units/custom/v;"
+        },
+        "newName": "whenBuildingTemporarilyConvertTo"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.a.d",
+          "shortId": "m:[Lcom/corrodinggames/rts/game/units/custom/bm;"
+        },
+        "newName": "whenBuildingTemporarilyConvertToKeepFields"
       },
       {
         "nodeRef": {
@@ -5033,6 +5518,22 @@
           "shortId": "q:Lcom/corrodinggames/rts/game/units/custom/d/b;"
         },
         "newName": "price"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.a.d",
+          "shortId": "r:Lcom/corrodinggames/rts/game/units/custom/d/b;"
+        },
+        "newName": "streamingCost"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.a.d",
+          "shortId": "s:Lcom/corrodinggames/rts/game/units/custom/h;"
+        },
+        "newName": "tags"
       },
       {
         "nodeRef": {
@@ -5097,6 +5598,158 @@
           "shortId": "b:Ljava/lang/String;"
         },
         "newName": "filePath"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.ag",
+          "shortId": "a:Z"
+        },
+        "newName": "debugLoggingEnabled"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.ag",
+          "shortId": "b:I"
+        },
+        "newName": "totalUnitsLoaded"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.ag",
+          "shortId": "c:I"
+        },
+        "newName": "totalCustomModsLoaded"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.ag",
+          "shortId": "d:I"
+        },
+        "newName": "changedUnitTypesCount"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.ag",
+          "shortId": "e:Lcom/corrodinggames/rts/gameFramework/i/b;"
+        },
+        "newName": "currentLoadingMod"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.ag",
+          "shortId": "f:Z"
+        },
+        "newName": "unusedBooleanFlag"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.ag",
+          "shortId": "g:Ljava/util/HashMap;"
+        },
+        "newName": "textureCache"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.ag",
+          "shortId": "h:Ljava/util/HashMap;"
+        },
+        "newName": "soundCache"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.ag",
+          "shortId": "i:I"
+        },
+        "newName": "imageCacheMisses"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.ag",
+          "shortId": "j:I"
+        },
+        "newName": "imageCacheHits"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.ag",
+          "shortId": "k:Z"
+        },
+        "newName": "unusedBooleanK"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.ag",
+          "shortId": "l:I"
+        },
+        "newName": "unusedIntL"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.ag",
+          "shortId": "m:Lcom/corrodinggames/rts/gameFramework/utility/p;"
+        },
+        "newName": "unusedLukeArrayM"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.ag",
+          "shortId": "n:Ljava/util/HashMap;"
+        },
+        "newName": "unitConfigCache"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.ag",
+          "shortId": "o:Ljava/lang/Object;"
+        },
+        "newName": "synchronizationLock"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.ag",
+          "shortId": "p:F"
+        },
+        "newName": "maxUnitRadius"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.ag",
+          "shortId": "q:F"
+        },
+        "newName": "maxBuildingRadius"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.ag",
+          "shortId": "r:Lcom/corrodinggames/rts/gameFramework/i/b;"
+        },
+        "newName": "lastLoadedMod"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.ag",
+          "shortId": "s:Ljava/lang/String;"
+        },
+        "newName": "lastErrorMessage"
       },
       {
         "nodeRef": {
@@ -5249,6 +5902,742 @@
           "shortId": "e:Lcom/corrodinggames/rts/game/units/custom/z;"
         },
         "newName": "name"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.b.d",
+          "shortId": "A:Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean;"
+        },
+        "newName": "stackIndexStart"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.b.d",
+          "shortId": "B:Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean;"
+        },
+        "newName": "stackIndexCount"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.b.d",
+          "shortId": "C:Lcom/corrodinggames/rts/gameFramework/m/e;"
+        },
+        "newName": "imageShadow"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.b.d",
+          "shortId": "D:F"
+        },
+        "newName": "shadowOffsetX"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.b.d",
+          "shortId": "E:F"
+        },
+        "newName": "shadowOffsetY"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.b.d",
+          "shortId": "F:Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean;"
+        },
+        "newName": "isVisible"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.b.d",
+          "shortId": "G:Lcom/corrodinggames/rts/game/units/custom/b/f;"
+        },
+        "newName": "layer"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.b.d",
+          "shortId": "H:F"
+        },
+        "newName": "order"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.b.d",
+          "shortId": "K:I"
+        },
+        "newName": "frameWidth"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.b.d",
+          "shortId": "L:I"
+        },
+        "newName": "frameHeight"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.b.d",
+          "shortId": "M:Z"
+        },
+        "newName": "frameVerticalOrdering"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.b.d",
+          "shortId": "N:Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean;"
+        },
+        "newName": "frame"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.b.d",
+          "shortId": "O:I"
+        },
+        "newName": "addBodyFrameMultipliedBy"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.b.d",
+          "shortId": "P:I"
+        },
+        "newName": "color"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.b.d",
+          "shortId": "Q:F"
+        },
+        "newName": "lineWidth"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.b.d",
+          "shortId": "R:F"
+        },
+        "newName": "xOffsetRelative"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.b.d",
+          "shortId": "S:F"
+        },
+        "newName": "yOffsetRelative"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.b.d",
+          "shortId": "V:F"
+        },
+        "newName": "hOffset"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.b.d",
+          "shortId": "W:Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean;"
+        },
+        "newName": "xOffsetAbsolute"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.b.d",
+          "shortId": "X:Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean;"
+        },
+        "newName": "yOffsetAbsolute"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.b.d",
+          "shortId": "Y:Z"
+        },
+        "newName": "alwaysStartDirAtZero"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.b.d",
+          "shortId": "Z:Z"
+        },
+        "newName": "alwaysStartHeightAtZero"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.b.d",
+          "shortId": "aa:F"
+        },
+        "newName": "dirOffset"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.b.d",
+          "shortId": "ab:F"
+        },
+        "newName": "pivotOffset"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.b.d",
+          "shortId": "ac:Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean;"
+        },
+        "newName": "basePosition"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.b.d",
+          "shortId": "ad:Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean;"
+        },
+        "newName": "drawLineTo"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.b.d",
+          "shortId": "ae:I"
+        },
+        "newName": "basePositionFromLegEnd"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.b.d",
+          "shortId": "ag:I"
+        },
+        "newName": "basePositionFromTurret"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.b.d",
+          "shortId": "ai:Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean;"
+        },
+        "newName": "alpha"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.b.d",
+          "shortId": "c:Z"
+        },
+        "newName": "onlyWhenSelectedByOwnPlayer"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.b.d",
+          "shortId": "d:Z"
+        },
+        "newName": "onlyWhenSelectedByEnemyPlayer"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.b.d",
+          "shortId": "e:Z"
+        },
+        "newName": "onlyWhenSelectedByAllyNotOwnPlayer"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.b.d",
+          "shortId": "f:Z"
+        },
+        "newName": "onlyWhenSelectedByAnyPlayer"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.b.d",
+          "shortId": "g:Z"
+        },
+        "newName": "includeParentsSelection"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.b.d",
+          "shortId": "h:Lcom/corrodinggames/rts/game/s;"
+        },
+        "newName": "onlyTeam"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.b.d",
+          "shortId": "i:Z"
+        },
+        "newName": "onlyPlayersWithUnitControl"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.b.d",
+          "shortId": "j:F"
+        },
+        "newName": "onlyWithZoomLevelOrMore"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.b.d",
+          "shortId": "k:Z"
+        },
+        "newName": "onlyWhileActive"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.b.d",
+          "shortId": "l:Z"
+        },
+        "newName": "onlyWhileAlive"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.b.d",
+          "shortId": "m:Z"
+        },
+        "newName": "onlyInPreview"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.b.d",
+          "shortId": "n:Z"
+        },
+        "newName": "onlyOnNonPreview"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.b.d",
+          "shortId": "o:I"
+        },
+        "newName": "onlyOnBodyFrameOf"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.b.d",
+          "shortId": "p:F"
+        },
+        "newName": "StaticImageScale"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.b.d",
+          "shortId": "q:Z"
+        },
+        "newName": "ImageScaleIsDynamic"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.b.d",
+          "shortId": "r:Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean;"
+        },
+        "newName": "imageScale"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.b.d",
+          "shortId": "s:Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean;"
+        },
+        "newName": "imageScaleX"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.b.d",
+          "shortId": "t:Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean;"
+        },
+        "newName": "imageScaleY"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.b.d",
+          "shortId": "x:F"
+        },
+        "newName": "stackHOffset"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.b.d",
+          "shortId": "y:I"
+        },
+        "newName": "stackFrameOffset"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.b.j",
+          "shortId": "a:Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean;"
+        },
+        "newName": "enabled"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.b.j",
+          "shortId": "b:F"
+        },
+        "newName": "speed"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.b.j",
+          "shortId": "c:F"
+        },
+        "newName": "maxSpeed"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.b.j",
+          "shortId": "d:Lcom/corrodinggames/rts/game/units/custom/h;"
+        },
+        "newName": "notherUnitHasTag"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.b.j",
+          "shortId": "e:Z"
+        },
+        "newName": "onlySameTeam"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.b.l",
+          "shortId": "a:Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean;"
+        },
+        "newName": "enabled"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.b.l",
+          "shortId": "b:F"
+        },
+        "newName": "speed"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.b.l",
+          "shortId": "c:F"
+        },
+        "newName": "maxSpeed"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.b.l",
+          "shortId": "d:I"
+        },
+        "newName": "awayFromEdge"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.b.m",
+          "shortId": "a:Lcom/corrodinggames/rts/game/units/custom/b/m;"
+        },
+        "newName": "parser"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.b.n",
+          "shortId": "D:Z"
+        },
+        "newName": "addTransportedUnits"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.b.n",
+          "shortId": "E:Z"
+        },
+        "newName": "unloadInCurrentPosition"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.b.n",
+          "shortId": "F:Z"
+        },
+        "newName": "smoothlyBlendPositionWhenExistingUnitAdded"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.b.n",
+          "shortId": "H:Z"
+        },
+        "newName": "deattachIfWantingToMove"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.b.n",
+          "shortId": "I:Z"
+        },
+        "newName": "hidden"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.b.n",
+          "shortId": "J:Z"
+        },
+        "newName": "prioritizeParentsMainTarget"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.b.n",
+          "shortId": "K:Z"
+        },
+        "newName": "onlyAttackParentsMainTarget"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.b.n",
+          "shortId": "L:Z"
+        },
+        "newName": "alwaysAllowedToAttackParentsMainTarget"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.b.n",
+          "shortId": "M:Z"
+        },
+        "newName": "canAttack"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.b.n",
+          "shortId": "N:Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean;"
+        },
+        "newName": "showAllActionsFrom"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.b.n",
+          "shortId": "O:Z"
+        },
+        "newName": "keepWaypointsNeedingMovement"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.b.n",
+          "shortId": "c:F"
+        },
+        "newName": "x"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.b.n",
+          "shortId": "d:F"
+        },
+        "newName": "y"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.b.n",
+          "shortId": "e:F"
+        },
+        "newName": "height"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.b.n",
+          "shortId": "f:F"
+        },
+        "newName": "idleDir"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.b.n",
+          "shortId": "g:F"
+        },
+        "newName": "nidleDirReversing"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.b.n",
+          "shortId": "h:Z"
+        },
+        "newName": "resetRotationWhenNotAttacking"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.b.n",
+          "shortId": "i:Z"
+        },
+        "newName": "lockDir"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.b.n",
+          "shortId": "j:Z"
+        },
+        "newName": "redirectDamageToParent"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.b.n",
+          "shortId": "k:Z"
+        },
+        "newName": "redirectDamageToParentShieldOnly"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.b.n",
+          "shortId": "l:Z"
+        },
+        "newName": "canBeAttackedAndDamaged"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.b.n",
+          "shortId": "m:Z"
+        },
+        "newName": "isUnselectable"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.b.n",
+          "shortId": "n:Z"
+        },
+        "newName": "isUnselectableAsTarget"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.b.n",
+          "shortId": "o:Z"
+        },
+        "newName": "isVisible"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.b.n",
+          "shortId": "p:Z"
+        },
+        "newName": "showMiniHp"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.b.n",
+          "shortId": "q:Z"
+        },
+        "newName": "hideHp"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.b.n",
+          "shortId": "r:Z"
+        },
+        "newName": "rotateWithParent"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.b.n",
+          "shortId": "s:Z"
+        },
+        "newName": "lockLegMovement"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.b.n",
+          "shortId": "t:Z"
+        },
+        "newName": "freezeLegMovement"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.b.n",
+          "shortId": "u:Z"
+        },
+        "newName": "lockRotation"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.b.n",
+          "shortId": "v:Z"
+        },
+        "newName": "keepAliveWhenParentDies"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.b.n",
+          "shortId": "w:Lcom/corrodinggames/rts/game/units/custom/ci;"
+        },
+        "newName": "onCreateSpawnUnitOf"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.b.n",
+          "shortId": "x:Z"
+        },
+        "newName": "createIncompleteIfParentIs"
       },
       {
         "nodeRef": {
@@ -5974,6 +7363,14 @@
         "nodeRef": {
           "refType": "FIELD",
           "declClass": "com.corrodinggames.rts.game.units.custom.cg",
+          "shortId": "e:I"
+        },
+        "newName": "index"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.cg",
           "shortId": "f:F"
         },
         "newName": "x"
@@ -6105,6 +7502,14 @@
           "shortId": "z:Lcom/corrodinggames/rts/game/units/custom/cg;"
         },
         "newName": "slaveTo"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.ci",
+          "shortId": "a:Lcom/corrodinggames/rts/gameFramework/utility/p;"
+        },
+        "newName": "units"
       },
       {
         "nodeRef": {
@@ -6289,6 +7694,198 @@
           "shortId": "b:Ljava/lang/String;"
         },
         "newName": "name"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.e.d",
+          "shortId": "B:Lcom/corrodinggames/rts/gameFramework/m/e;"
+        },
+        "newName": "iconImage"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.e.d",
+          "shortId": "C:Z"
+        },
+        "newName": "iconImageUseInText"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.e.d",
+          "shortId": "c:F"
+        },
+        "newName": "priority"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.e.d",
+          "shortId": "d:Ljava/lang/Integer;"
+        },
+        "newName": "displayColor"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.e.d",
+          "shortId": "e:Z"
+        },
+        "newName": "displayColorUseInText"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.e.d",
+          "shortId": "g:Lcom/corrodinggames/rts/game/units/custom/bu;"
+        },
+        "newName": "displayName"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.e.d",
+          "shortId": "h:Lcom/corrodinggames/rts/game/units/custom/bu;"
+        },
+        "newName": "displayNameShort"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.e.d",
+          "shortId": "i:Z"
+        },
+        "newName": "displayNameHideWhenIconShownInHUD"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.e.d",
+          "shortId": "j:Z"
+        },
+        "newName": "displayNameHideWhenIconShownInText"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.e.d",
+          "shortId": "k:Z"
+        },
+        "newName": "stackHorizontal"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.e.d",
+          "shortId": "l:Z"
+        },
+        "newName": "hidden"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.e.d",
+          "shortId": "m:F"
+        },
+        "newName": "valueInStats"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.e.d",
+          "shortId": "n:Z"
+        },
+        "newName": "displayWithRounding"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.e.d",
+          "shortId": "o:Z"
+        },
+        "newName": "displayRoundedDown"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.e.d",
+          "shortId": "p:Z"
+        },
+        "newName": "displayWhenZero"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.e.d",
+          "shortId": "q:Z"
+        },
+        "newName": "displayInHud"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.e.d",
+          "shortId": "r:Lcom/corrodinggames/rts/game/units/custom/e/b;"
+        },
+        "newName": "displayDigitGrouping"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.e.d",
+          "shortId": "s:I"
+        },
+        "newName": "displayPos"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.e.d",
+          "shortId": "t:Lcom/corrodinggames/rts/game/units/custom/bu;"
+        },
+        "newName": "displayTextPrefix"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.e.d",
+          "shortId": "u:Lcom/corrodinggames/rts/game/units/custom/bu;"
+        },
+        "newName": "displayTextPostfix"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.e.d",
+          "shortId": "v:Ljava/lang/String;"
+        },
+        "newName": "displayTextAppendResource"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.e.d",
+          "shortId": "x:Z"
+        },
+        "newName": "displayTextAppendResourceWithGap"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.e.d",
+          "shortId": "y:Z"
+        },
+        "newName": "appendResourceInHUDWhenThisZero"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.e.d",
+          "shortId": "z:Ljava/lang/String;"
+        },
+        "newName": "equivalentGlobalResourceForAI"
       },
       {
         "nodeRef": {
@@ -6513,6 +8110,14 @@
           "shortId": "Z:Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean;"
         },
         "newName": "isVisible"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.l",
+          "shortId": "aA:Lcom/corrodinggames/rts/gameFramework/utility/p;"
+        },
+        "newName": "attachmentList"
       },
       {
         "nodeRef": {
@@ -6806,6 +8411,30 @@
         "nodeRef": {
           "refType": "FIELD",
           "declClass": "com.corrodinggames.rts.game.units.custom.l",
+          "shortId": "ap:Lcom/corrodinggames/rts/gameFramework/m/e;"
+        },
+        "newName": "imageShadow"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.l",
+          "shortId": "au:Lcom/corrodinggames/rts/gameFramework/m/e;"
+        },
+        "newName": "imageShield"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.l",
+          "shortId": "aw:Lcom/corrodinggames/rts/gameFramework/m/e;"
+        },
+        "newName": "iconBuild"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.l",
           "shortId": "bC:Lcom/corrodinggames/rts/game/units/custom/ci;"
         },
         "newName": "unitsSpawnedOnDeath"
@@ -6825,6 +8454,14 @@
           "shortId": "bH:F"
         },
         "newName": "imageScale"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.l",
+          "shortId": "bI:F"
+        },
+        "newName": "turretImageScale"
       },
       {
         "nodeRef": {
@@ -6865,6 +8502,14 @@
           "shortId": "bN:Z"
         },
         "newName": "dustEffectReverse"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.l",
+          "shortId": "bP:Lcom/corrodinggames/rts/game/units/custom/z;"
+        },
+        "newName": "movementEffectReverse"
       },
       {
         "nodeRef": {
@@ -6985,6 +8630,14 @@
           "shortId": "bf:F"
         },
         "newName": "nanoBuildSpeed"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.l",
+          "shortId": "bg:Z"
+        },
+        "newName": "whenBuildingHasOperation"
       },
       {
         "nodeRef": {
@@ -7345,6 +8998,14 @@
           "shortId": "cZ:Landroid/graphics/Rect;"
         },
         "newName": "displayFootprint"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.l",
+          "shortId": "ca:F"
+        },
+        "newName": "autoTriggerCooldownTime"
       },
       {
         "nodeRef": {
@@ -8270,6 +9931,14 @@
         "nodeRef": {
           "refType": "FIELD",
           "declClass": "com.corrodinggames.rts.game.units.custom.l",
+          "shortId": "fJ:Z"
+        },
+        "newName": "aiIsHighPriority"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.l",
           "shortId": "fK:F"
         },
         "newName": "aiUpgradePriority"
@@ -8633,6 +10302,54 @@
           "shortId": "b:Lcom/corrodinggames/rts/game/units/custom/logicBooleans/LogicBoolean;"
         },
         "newName": "second"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.v",
+          "shortId": "a:Ljava/lang/String;"
+        },
+        "newName": "fileName"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.v",
+          "shortId": "b:Ljava/lang/String;"
+        },
+        "newName": "sectionName"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.v",
+          "shortId": "c:Ljava/lang/String;"
+        },
+        "newName": "unitName"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.v",
+          "shortId": "d:Lcom/corrodinggames/rts/game/units/el;"
+        },
+        "newName": "unit"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.v",
+          "shortId": "e:Z"
+        },
+        "newName": "needCheck"
+      },
+      {
+        "nodeRef": {
+          "refType": "FIELD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.v",
+          "shortId": "f:Z"
+        },
+        "newName": "noteUsingUnitref"
       },
       {
         "nodeRef": {
@@ -10506,6 +12223,30 @@
         "nodeRef": {
           "refType": "METHOD",
           "declClass": "com.corrodinggames.rts.game.units.ce",
+          "shortId": "a(Lcom/corrodinggames/rts/game/units/custom/af;)V"
+        },
+        "newName": "autoTriggerAction"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.corrodinggames.rts.game.units.ce",
+          "shortId": "a(Lcom/corrodinggames/rts/game/units/custom/af;Lcom/corrodinggames/rts/game/units/ce;)V"
+        },
+        "newName": "autoTriggerAction"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.corrodinggames.rts.game.units.ce",
+          "shortId": "a(Lcom/corrodinggames/rts/game/units/custom/af;Lcom/corrodinggames/rts/game/units/ce;Lcom/corrodinggames/rts/game/units/custom/h;Lcom/corrodinggames/rts/game/units/custom/logicBooleans/VariableScope;)V"
+        },
+        "newName": "autoTriggerAction"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.corrodinggames.rts.game.units.ce",
           "shortId": "a(Lcom/corrodinggames/rts/game/units/custom/g;)I"
         },
         "newName": "getQueueSize"
@@ -10664,11 +12405,31 @@
           "declClass": "com.corrodinggames.rts.game.units.cj",
           "shortId": "a(Ljava/lang/String;Z)Lcom/corrodinggames/rts/game/units/el;"
         },
+        "newName": "getUnitByName"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.corrodinggames.rts.game.units.cj",
+          "shortId": "a(Ljava/lang/String;Z)Lcom/corrodinggames/rts/game/units/el;"
+        },
         "codeRef": {
           "attachType": "VAR",
           "index": 1
         },
         "newName": "unitEnumRef"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.corrodinggames.rts.game.units.cj",
+          "shortId": "a(Ljava/lang/String;Z)Lcom/corrodinggames/rts/game/units/el;"
+        },
+        "codeRef": {
+          "attachType": "VAR",
+          "index": 327680
+        },
+        "newName": "unitName"
       },
       {
         "nodeRef": {
@@ -10961,6 +12722,302 @@
       {
         "nodeRef": {
           "refType": "METHOD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.a.a.i",
+          "shortId": "a(Lcom/corrodinggames/rts/game/units/custom/j;Lcom/corrodinggames/rts/game/units/a/s;Landroid/graphics/PointF;Lcom/corrodinggames/rts/game/units/ce;I)Z"
+        },
+        "newName": "trigger"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.a.a.i",
+          "shortId": "a(Lcom/corrodinggames/rts/game/units/custom/l;Lcom/corrodinggames/rts/gameFramework/utility/ae;Ljava/lang/String;Ljava/lang/String;Lcom/corrodinggames/rts/game/units/custom/a/d;)V"
+        },
+        "codeRef": {
+          "attachType": "VAR",
+          "index": 8
+        },
+        "newName": "sendMessageWithData"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.a.a.i",
+          "shortId": "a(Lcom/corrodinggames/rts/game/units/custom/l;Lcom/corrodinggames/rts/gameFramework/utility/ae;Ljava/lang/String;Ljava/lang/String;Lcom/corrodinggames/rts/game/units/custom/a/d;)V"
+        },
+        "codeRef": {
+          "attachType": "VAR",
+          "index": 65537
+        },
+        "newName": "sendMessageWithTags"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.a.a.i",
+          "shortId": "a(Lcom/corrodinggames/rts/game/units/custom/l;Lcom/corrodinggames/rts/gameFramework/utility/ae;Ljava/lang/String;Ljava/lang/String;Lcom/corrodinggames/rts/game/units/custom/a/d;)V"
+        },
+        "codeRef": {
+          "attachType": "VAR",
+          "index": 131073
+        },
+        "newName": "sendMessageTo"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.a.a.i",
+          "shortId": "a(Lcom/corrodinggames/rts/game/units/custom/l;Lcom/corrodinggames/rts/gameFramework/utility/ae;Ljava/lang/String;Ljava/lang/String;Lcom/corrodinggames/rts/game/units/custom/a/d;)V"
+        },
+        "codeRef": {
+          "attachType": "VAR",
+          "index": 458752
+        },
+        "newName": "sectionName"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.a.a.i",
+          "shortId": "a(Lcom/corrodinggames/rts/game/units/custom/l;Lcom/corrodinggames/rts/gameFramework/utility/ae;Ljava/lang/String;Ljava/lang/String;Lcom/corrodinggames/rts/game/units/custom/a/d;)V"
+        },
+        "codeRef": {
+          "attachType": "VAR",
+          "index": 524288
+        },
+        "newName": "key"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.a.a.j",
+          "shortId": "a(Lcom/corrodinggames/rts/game/units/custom/l;Lcom/corrodinggames/rts/gameFramework/utility/ae;Ljava/lang/String;Ljava/lang/String;Lcom/corrodinggames/rts/game/units/custom/a/d;)V"
+        },
+        "codeRef": {
+          "attachType": "VAR",
+          "index": 5
+        },
+        "newName": "resetUnitStats"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.a.a.j",
+          "shortId": "a(Lcom/corrodinggames/rts/game/units/custom/l;Lcom/corrodinggames/rts/gameFramework/utility/ae;Ljava/lang/String;Ljava/lang/String;Lcom/corrodinggames/rts/game/units/custom/a/d;)V"
+        },
+        "codeRef": {
+          "attachType": "VAR",
+          "index": 17
+        },
+        "newName": "deleteSelf"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.a.a.j",
+          "shortId": "a(Lcom/corrodinggames/rts/game/units/custom/l;Lcom/corrodinggames/rts/gameFramework/utility/ae;Ljava/lang/String;Ljava/lang/String;Lcom/corrodinggames/rts/game/units/custom/a/d;)V"
+        },
+        "codeRef": {
+          "attachType": "VAR",
+          "index": 23
+        },
+        "newName": "switchToNeutralTeam"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.a.a.j",
+          "shortId": "a(Lcom/corrodinggames/rts/game/units/custom/l;Lcom/corrodinggames/rts/gameFramework/utility/ae;Ljava/lang/String;Ljava/lang/String;Lcom/corrodinggames/rts/game/units/custom/a/d;)V"
+        },
+        "codeRef": {
+          "attachType": "VAR",
+          "index": 29
+        },
+        "newName": "setBodyRotation"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.a.a.j",
+          "shortId": "a(Lcom/corrodinggames/rts/game/units/custom/l;Lcom/corrodinggames/rts/gameFramework/utility/ae;Ljava/lang/String;Ljava/lang/String;Lcom/corrodinggames/rts/game/units/custom/a/d;)V"
+        },
+        "codeRef": {
+          "attachType": "VAR",
+          "index": 34
+        },
+        "newName": "setHeight"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.a.a.j",
+          "shortId": "a(Lcom/corrodinggames/rts/game/units/custom/l;Lcom/corrodinggames/rts/gameFramework/utility/ae;Ljava/lang/String;Ljava/lang/String;Lcom/corrodinggames/rts/game/units/custom/a/d;)V"
+        },
+        "codeRef": {
+          "attachType": "VAR",
+          "index": 39
+        },
+        "newName": "teleportTo"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.a.a.j",
+          "shortId": "a(Lcom/corrodinggames/rts/game/units/custom/l;Lcom/corrodinggames/rts/gameFramework/utility/ae;Ljava/lang/String;Ljava/lang/String;Lcom/corrodinggames/rts/game/units/custom/a/d;)V"
+        },
+        "codeRef": {
+          "attachType": "VAR",
+          "index": 57
+        },
+        "newName": "addAllActionCooldownsTime"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.a.a.j",
+          "shortId": "a(Lcom/corrodinggames/rts/game/units/custom/l;Lcom/corrodinggames/rts/gameFramework/utility/ae;Ljava/lang/String;Ljava/lang/String;Lcom/corrodinggames/rts/game/units/custom/a/d;)V"
+        },
+        "codeRef": {
+          "attachType": "VAR",
+          "index": 65542
+        },
+        "newName": "setUnitStats"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.a.a.j",
+          "shortId": "a(Lcom/corrodinggames/rts/game/units/custom/l;Lcom/corrodinggames/rts/gameFramework/utility/ae;Ljava/lang/String;Ljava/lang/String;Lcom/corrodinggames/rts/game/units/custom/a/d;)V"
+        },
+        "codeRef": {
+          "attachType": "VAR",
+          "index": 65552
+        },
+        "newName": "switchToAggressiveTeam"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.a.a.j",
+          "shortId": "a(Lcom/corrodinggames/rts/game/units/custom/l;Lcom/corrodinggames/rts/gameFramework/utility/ae;Ljava/lang/String;Ljava/lang/String;Lcom/corrodinggames/rts/game/units/custom/a/d;)V"
+        },
+        "codeRef": {
+          "attachType": "VAR",
+          "index": 65569
+        },
+        "newName": "addActionCooldownTime"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.a.a.j",
+          "shortId": "a(Lcom/corrodinggames/rts/game/units/custom/l;Lcom/corrodinggames/rts/gameFramework/utility/ae;Ljava/lang/String;Ljava/lang/String;Lcom/corrodinggames/rts/game/units/custom/a/d;)V"
+        },
+        "codeRef": {
+          "attachType": "VAR",
+          "index": 131080
+        },
+        "newName": "switchToTeam"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.a.a.j",
+          "shortId": "a(Lcom/corrodinggames/rts/game/units/custom/l;Lcom/corrodinggames/rts/gameFramework/utility/ae;Ljava/lang/String;Ljava/lang/String;Lcom/corrodinggames/rts/game/units/custom/a/d;)V"
+        },
+        "codeRef": {
+          "attachType": "VAR",
+          "index": 131081
+        },
+        "newName": "setBuilt"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.a.a.j",
+          "shortId": "a(Lcom/corrodinggames/rts/game/units/custom/l;Lcom/corrodinggames/rts/gameFramework/utility/ae;Ljava/lang/String;Ljava/lang/String;Lcom/corrodinggames/rts/game/units/custom/a/d;)V"
+        },
+        "codeRef": {
+          "attachType": "VAR",
+          "index": 196612
+        },
+        "newName": "clearAllActionCooldowns"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.a.a.j",
+          "shortId": "a(Lcom/corrodinggames/rts/game/units/custom/l;Lcom/corrodinggames/rts/gameFramework/utility/ae;Ljava/lang/String;Ljava/lang/String;Lcom/corrodinggames/rts/game/units/custom/a/d;)V"
+        },
+        "codeRef": {
+          "attachType": "VAR",
+          "index": 262151
+        },
+        "newName": "addActionCooldownApplyToActions"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.a.a.j",
+          "shortId": "a(Lcom/corrodinggames/rts/game/units/custom/l;Lcom/corrodinggames/rts/gameFramework/utility/ae;Ljava/lang/String;Ljava/lang/String;Lcom/corrodinggames/rts/game/units/custom/a/d;)V"
+        },
+        "codeRef": {
+          "attachType": "VAR",
+          "index": 327685
+        },
+        "newName": "offsetSelfAbsolute"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.a.a.j",
+          "shortId": "a(Lcom/corrodinggames/rts/game/units/custom/l;Lcom/corrodinggames/rts/gameFramework/utility/ae;Ljava/lang/String;Ljava/lang/String;Lcom/corrodinggames/rts/game/units/custom/a/d;)V"
+        },
+        "codeRef": {
+          "attachType": "VAR",
+          "index": 393223
+        },
+        "newName": "removeAllQueuedItemsWithoutRefund"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.a.a.j",
+          "shortId": "a(Lcom/corrodinggames/rts/game/units/custom/l;Lcom/corrodinggames/rts/gameFramework/utility/ae;Ljava/lang/String;Ljava/lang/String;Lcom/corrodinggames/rts/game/units/custom/a/d;)V"
+        },
+        "codeRef": {
+          "attachType": "VAR",
+          "index": 458759
+        },
+        "newName": "refundAllQueuedItems"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.a.a.j",
+          "shortId": "a(Lcom/corrodinggames/rts/game/units/custom/l;Lcom/corrodinggames/rts/gameFramework/utility/ae;Ljava/lang/String;Ljava/lang/String;Lcom/corrodinggames/rts/game/units/custom/a/d;)V"
+        },
+        "codeRef": {
+          "attachType": "VAR",
+          "index": 786432
+        },
+        "newName": "sectionName"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.a.a.j",
+          "shortId": "a(Lcom/corrodinggames/rts/game/units/custom/l;Lcom/corrodinggames/rts/gameFramework/utility/ae;Ljava/lang/String;Ljava/lang/String;Lcom/corrodinggames/rts/game/units/custom/a/d;)V"
+        },
+        "codeRef": {
+          "attachType": "VAR",
+          "index": 851968
+        },
+        "newName": "key"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
           "declClass": "com.corrodinggames.rts.game.units.custom.aa",
           "shortId": "\u003cinit\u003e(Ljava/lang/String;)V"
         },
@@ -11001,6 +13058,98 @@
           "index": 262144
         },
         "newName": "times"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.ag",
+          "shortId": "a(Lcom/corrodinggames/rts/game/units/custom/l;)Lcom/corrodinggames/rts/game/units/custom/l;"
+        },
+        "newName": "enableAllUnits"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.ag",
+          "shortId": "a(Lcom/corrodinggames/rts/game/units/custom/l;Lcom/corrodinggames/rts/gameFramework/utility/ae;Lcom/corrodinggames/rts/gameFramework/utility/ae;Ljava/lang/String;I)V"
+        },
+        "codeRef": {
+          "attachType": "VAR",
+          "index": 2
+        },
+        "newName": "copyFromString"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.ag",
+          "shortId": "a(Lcom/corrodinggames/rts/game/units/custom/l;Lcom/corrodinggames/rts/gameFramework/utility/ae;Lcom/corrodinggames/rts/gameFramework/utility/ae;Ljava/lang/String;I)V"
+        },
+        "codeRef": {
+          "attachType": "VAR",
+          "index": 6
+        },
+        "newName": "copyFrom"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.ag",
+          "shortId": "a(Lcom/corrodinggames/rts/game/units/custom/l;Lcom/corrodinggames/rts/gameFramework/utility/ae;Lcom/corrodinggames/rts/gameFramework/utility/ae;Ljava/lang/String;I)V"
+        },
+        "codeRef": {
+          "attachType": "VAR",
+          "index": 25
+        },
+        "newName": "copyFromRealPath"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.ag",
+          "shortId": "a(Lcom/corrodinggames/rts/game/units/custom/l;Lcom/corrodinggames/rts/gameFramework/utility/ae;Lcom/corrodinggames/rts/gameFramework/utility/ae;Ljava/lang/String;I)V"
+        },
+        "codeRef": {
+          "attachType": "VAR",
+          "index": 30
+        },
+        "newName": "copyFrom"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.ag",
+          "shortId": "a(Lcom/corrodinggames/rts/game/units/custom/l;Lcom/corrodinggames/rts/gameFramework/utility/ae;Lcom/corrodinggames/rts/gameFramework/utility/ae;Ljava/lang/String;I)V"
+        },
+        "codeRef": {
+          "attachType": "VAR",
+          "index": 131073
+        },
+        "newName": "copyFroms"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.ag",
+          "shortId": "a(Lcom/corrodinggames/rts/game/units/custom/l;Lcom/corrodinggames/rts/gameFramework/utility/ae;Lcom/corrodinggames/rts/gameFramework/utility/ae;Ljava/lang/String;I)V"
+        },
+        "codeRef": {
+          "attachType": "VAR",
+          "index": 262155
+        },
+        "newName": "copyFromUnitConfig"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.ag",
+          "shortId": "a(Lcom/corrodinggames/rts/game/units/custom/l;Lcom/corrodinggames/rts/gameFramework/utility/ae;Lcom/corrodinggames/rts/gameFramework/utility/ae;Ljava/lang/String;I)V"
+        },
+        "codeRef": {
+          "attachType": "VAR",
+          "index": 262156
+        },
+        "newName": "copyFromPath"
       },
       {
         "nodeRef": {
@@ -11069,6 +13218,18 @@
           "index": 786432
         },
         "newName": "key"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.ag",
+          "shortId": "a(Lcom/corrodinggames/rts/game/units/custom/l;Lcom/corrodinggames/rts/gameFramework/utility/ae;Ljava/lang/String;Ljava/lang/String;I)V"
+        },
+        "codeRef": {
+          "attachType": "VAR",
+          "index": 917504
+        },
+        "newName": "copyFromSectionDeepth"
       },
       {
         "nodeRef": {
@@ -11158,6 +13319,42 @@
         },
         "codeRef": {
           "attachType": "VAR",
+          "index": 327836
+        },
+        "newName": "whenBuildingRotateToRotateTurretX"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.ag",
+          "shortId": "a(Lcom/corrodinggames/rts/game/units/custom/l;Lcom/corrodinggames/rts/gameFramework/utility/ae;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZZ)V"
+        },
+        "codeRef": {
+          "attachType": "VAR",
+          "index": 327881
+        },
+        "newName": "fireTurretXAtGroundWithProjectile"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.ag",
+          "shortId": "a(Lcom/corrodinggames/rts/game/units/custom/l;Lcom/corrodinggames/rts/gameFramework/utility/ae;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZZ)V"
+        },
+        "codeRef": {
+          "attachType": "VAR",
+          "index": 327886
+        },
+        "newName": "fireTurretXAtGroundOnlyOverPassableTileOf"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.ag",
+          "shortId": "a(Lcom/corrodinggames/rts/game/units/custom/l;Lcom/corrodinggames/rts/gameFramework/utility/ae;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZZ)V"
+        },
+        "codeRef": {
+          "attachType": "VAR",
           "index": 458752
         },
         "newName": "whenBuildingTemporarilyConvertTo"
@@ -11194,6 +13391,18 @@
         },
         "codeRef": {
           "attachType": "VAR",
+          "index": 655369
+        },
+        "newName": "unitName"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.ag",
+          "shortId": "a(Lcom/corrodinggames/rts/game/units/custom/l;Lcom/corrodinggames/rts/gameFramework/utility/ae;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZZ)V"
+        },
+        "codeRef": {
+          "attachType": "VAR",
           "index": 720903
         },
         "newName": "forceUnloadTransportNow"
@@ -11209,6 +13418,54 @@
           "index": 786439
         },
         "newName": "forceUnloadTransportNowOnlyOnSlot"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.ag",
+          "shortId": "a(Lcom/corrodinggames/rts/game/units/custom/l;Lcom/corrodinggames/rts/gameFramework/utility/ae;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZZ)V"
+        },
+        "codeRef": {
+          "attachType": "VAR",
+          "index": 917504
+        },
+        "newName": "whenBuildingTemporarilyConvertToKeepFields"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.ag",
+          "shortId": "a(Lcom/corrodinggames/rts/game/units/custom/l;Lcom/corrodinggames/rts/gameFramework/utility/ae;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZZ)V"
+        },
+        "codeRef": {
+          "attachType": "VAR",
+          "index": 983040
+        },
+        "newName": "addEnergy"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.ag",
+          "shortId": "a(Lcom/corrodinggames/rts/game/units/custom/l;Lcom/corrodinggames/rts/gameFramework/utility/ae;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZZ)V"
+        },
+        "codeRef": {
+          "attachType": "VAR",
+          "index": 1048576
+        },
+        "newName": "addResources"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.ag",
+          "shortId": "a(Lcom/corrodinggames/rts/game/units/custom/l;Lcom/corrodinggames/rts/gameFramework/utility/ae;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZZ)V"
+        },
+        "codeRef": {
+          "attachType": "VAR",
+          "index": 1114112
+        },
+        "newName": "addResourcesScaledByAIHandicaps"
       },
       {
         "nodeRef": {
@@ -11314,6 +13571,18 @@
         },
         "codeRef": {
           "attachType": "VAR",
+          "index": 1900552
+        },
+        "newName": "resetCustomTimer"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.ag",
+          "shortId": "a(Lcom/corrodinggames/rts/game/units/custom/l;Lcom/corrodinggames/rts/gameFramework/utility/ae;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZZ)V"
+        },
+        "codeRef": {
+          "attachType": "VAR",
           "index": 2228224
         },
         "newName": "sectionName"
@@ -11329,6 +13598,22 @@
           "index": 2293760
         },
         "newName": "key"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.ag",
+          "shortId": "a(Lcom/corrodinggames/rts/gameFramework/utility/ae;Ljava/lang/String;Ljava/lang/String;)Lcom/corrodinggames/rts/game/units/custom/bu;"
+        },
+        "newName": "loadOrGetCachedUnitConfig"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.ag",
+          "shortId": "a(Ljava/lang/String;)Lcom/corrodinggames/rts/gameFramework/utility/ae;"
+        },
+        "newName": "parseStringAsUnitConfig"
       },
       {
         "nodeRef": {
@@ -11404,7 +13689,11 @@
           "declClass": "com.corrodinggames.rts.game.units.custom.ag",
           "shortId": "a(Ljava/lang/String;Ljava/io/InputStream;Lcom/corrodinggames/rts/gameFramework/i/b;Lcom/corrodinggames/rts/gameFramework/utility/o;Ljava/lang/String;Ljava/lang/String;)Lcom/corrodinggames/rts/game/units/custom/l;"
         },
-        "newName": "loadUnit"
+        "codeRef": {
+          "attachType": "VAR",
+          "index": 262283
+        },
+        "newName": "teamColoringMode"
       },
       {
         "nodeRef": {
@@ -11414,9 +13703,57 @@
         },
         "codeRef": {
           "attachType": "VAR",
-          "index": 262283
+          "index": 262345
         },
-        "newName": "teamColoringMode"
+        "newName": "scaleImagesTo"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.ag",
+          "shortId": "a(Ljava/lang/String;Ljava/io/InputStream;Lcom/corrodinggames/rts/gameFramework/i/b;Lcom/corrodinggames/rts/gameFramework/utility/o;Ljava/lang/String;Ljava/lang/String;)Lcom/corrodinggames/rts/game/units/custom/l;"
+        },
+        "codeRef": {
+          "attachType": "VAR",
+          "index": 262348
+        },
+        "newName": "imageScale"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.ag",
+          "shortId": "a(Ljava/lang/String;Ljava/io/InputStream;Lcom/corrodinggames/rts/gameFramework/i/b;Lcom/corrodinggames/rts/gameFramework/utility/o;Ljava/lang/String;Ljava/lang/String;)Lcom/corrodinggames/rts/game/units/custom/l;"
+        },
+        "codeRef": {
+          "attachType": "VAR",
+          "index": 262351
+        },
+        "newName": "scaleTurretImagesTo"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.ag",
+          "shortId": "a(Ljava/lang/String;Ljava/io/InputStream;Lcom/corrodinggames/rts/gameFramework/i/b;Lcom/corrodinggames/rts/gameFramework/utility/o;Ljava/lang/String;Ljava/lang/String;)Lcom/corrodinggames/rts/game/units/custom/l;"
+        },
+        "codeRef": {
+          "attachType": "VAR",
+          "index": 262354
+        },
+        "newName": "turretImageScale"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.ag",
+          "shortId": "a(Ljava/lang/String;Ljava/io/InputStream;Lcom/corrodinggames/rts/gameFramework/i/b;Lcom/corrodinggames/rts/gameFramework/utility/o;Ljava/lang/String;Ljava/lang/String;)Lcom/corrodinggames/rts/game/units/custom/l;"
+        },
+        "codeRef": {
+          "attachType": "VAR",
+          "index": 262357
+        },
+        "newName": "imageShield"
       },
       {
         "nodeRef": {
@@ -11453,6 +13790,18 @@
           "index": 262511
         },
         "newName": "movementEffect"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.ag",
+          "shortId": "a(Ljava/lang/String;Ljava/io/InputStream;Lcom/corrodinggames/rts/gameFramework/i/b;Lcom/corrodinggames/rts/gameFramework/utility/o;Ljava/lang/String;Ljava/lang/String;)Lcom/corrodinggames/rts/game/units/custom/l;"
+        },
+        "codeRef": {
+          "attachType": "VAR",
+          "index": 262513
+        },
+        "newName": "movementEffectReverse"
       },
       {
         "nodeRef": {
@@ -11616,6 +13965,14 @@
           "declClass": "com.corrodinggames.rts.game.units.custom.ag",
           "shortId": "a(Ljava/lang/String;Ljava/io/InputStream;Lcom/corrodinggames/rts/gameFramework/i/b;Lcom/corrodinggames/rts/gameFramework/utility/o;Ljava/lang/String;Ljava/lang/String;)Lcom/corrodinggames/rts/game/units/custom/l;"
         },
+        "newName": "loadUnit"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.ag",
+          "shortId": "a(Ljava/lang/String;Ljava/io/InputStream;Lcom/corrodinggames/rts/gameFramework/i/b;Lcom/corrodinggames/rts/gameFramework/utility/o;Ljava/lang/String;Ljava/lang/String;)Lcom/corrodinggames/rts/game/units/custom/l;"
+        },
         "codeRef": {
           "attachType": "VAR",
           "index": 393666
@@ -11669,6 +14026,78 @@
           "index": 720897
         },
         "newName": "imageShadow"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.ag",
+          "shortId": "a(Ljava/lang/String;Ljava/lang/String;Lcom/corrodinggames/rts/game/units/custom/l;)Lcom/corrodinggames/rts/gameFramework/a/i;"
+        },
+        "newName": "generateModsSummary"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.ag",
+          "shortId": "a(Ljava/lang/String;Ljava/lang/String;ZLcom/corrodinggames/rts/game/units/custom/l;)Lcom/corrodinggames/rts/gameFramework/m/e;"
+        },
+        "newName": "reloadSingleUnit"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.ag",
+          "shortId": "b()V"
+        },
+        "newName": "validateUnitsConfig"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.ag",
+          "shortId": "b(Ljava/lang/String;)Lcom/corrodinggames/rts/gameFramework/m/e;"
+        },
+        "newName": "getCachedTexture"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.ag",
+          "shortId": "b(Ljava/lang/String;Ljava/lang/String;Lcom/corrodinggames/rts/game/units/custom/l;)Lcom/corrodinggames/rts/gameFramework/a/i;"
+        },
+        "newName": "checkFileChangesAndReload"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.ag",
+          "shortId": "c(Ljava/lang/String;Ljava/lang/String;Lcom/corrodinggames/rts/game/units/custom/l;)Lcom/corrodinggames/rts/gameFramework/utility/o;"
+        },
+        "newName": "applyPendingNetworkUnits"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.ag",
+          "shortId": "c(Z)Ljava/util/ArrayList;"
+        },
+        "newName": "getEnabledUnits"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.ag",
+          "shortId": "d()V"
+        },
+        "newName": "refreshAllUnitsSync"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.ag",
+          "shortId": "e()V"
+        },
+        "newName": "loadAllModsAndUnits"
       },
       {
         "nodeRef": {
@@ -11733,6 +14162,54 @@
       {
         "nodeRef": {
           "refType": "METHOD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.ag",
+          "shortId": "i()V"
+        },
+        "newName": "clearTextureCaches"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.ag",
+          "shortId": "j()V"
+        },
+        "newName": "refreshAllUnitsInternal"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.ag",
+          "shortId": "k()V"
+        },
+        "newName": "calculateMaxRadiusValues"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.ag",
+          "shortId": "l()V"
+        },
+        "newName": "setupUnitsSync"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.ag",
+          "shortId": "m()V"
+        },
+        "newName": "setupUnitsInternal"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.ag",
+          "shortId": "n()V"
+        },
+        "newName": "initializeDefaults"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
           "declClass": "com.corrodinggames.rts.game.units.custom.as",
           "shortId": "a(Ljava/util/LinkedHashMap;Lcom/corrodinggames/rts/game/units/custom/bm;)V"
         },
@@ -11757,6 +14234,186 @@
           "index": 262144
         },
         "newName": "maxAttackRange"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.b.c",
+          "shortId": "a(Lcom/corrodinggames/rts/game/units/custom/l;Lcom/corrodinggames/rts/gameFramework/utility/ae;)V"
+        },
+        "codeRef": {
+          "attachType": "VAR",
+          "index": 131142
+        },
+        "newName": "onlyOnBodyFrameOf"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.b.c",
+          "shortId": "a(Lcom/corrodinggames/rts/game/units/custom/l;Lcom/corrodinggames/rts/gameFramework/utility/ae;)V"
+        },
+        "codeRef": {
+          "attachType": "VAR",
+          "index": 131144
+        },
+        "newName": "imageScale"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.b.c",
+          "shortId": "a(Lcom/corrodinggames/rts/game/units/custom/l;Lcom/corrodinggames/rts/gameFramework/utility/ae;)V"
+        },
+        "codeRef": {
+          "attachType": "VAR",
+          "index": 131146
+        },
+        "newName": "imageScaleX"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.b.c",
+          "shortId": "a(Lcom/corrodinggames/rts/game/units/custom/l;Lcom/corrodinggames/rts/gameFramework/utility/ae;)V"
+        },
+        "codeRef": {
+          "attachType": "VAR",
+          "index": 131148
+        },
+        "newName": "totalFrames"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.b.c",
+          "shortId": "a(Lcom/corrodinggames/rts/game/units/custom/l;Lcom/corrodinggames/rts/gameFramework/utility/ae;)V"
+        },
+        "codeRef": {
+          "attachType": "VAR",
+          "index": 131167
+        },
+        "newName": "image"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.b.c",
+          "shortId": "a(Lcom/corrodinggames/rts/game/units/custom/l;Lcom/corrodinggames/rts/gameFramework/utility/ae;)V"
+        },
+        "codeRef": {
+          "attachType": "VAR",
+          "index": 131180
+        },
+        "newName": "stackDrawInReverseOrder"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.b.c",
+          "shortId": "a(Lcom/corrodinggames/rts/game/units/custom/l;Lcom/corrodinggames/rts/gameFramework/utility/ae;)V"
+        },
+        "codeRef": {
+          "attachType": "VAR",
+          "index": 131224
+        },
+        "newName": "basePositionFromLegEnd"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.b.c",
+          "shortId": "a(Lcom/corrodinggames/rts/game/units/custom/l;Lcom/corrodinggames/rts/gameFramework/utility/ae;)V"
+        },
+        "codeRef": {
+          "attachType": "VAR",
+          "index": 131226
+        },
+        "newName": "basePositionFromTurret"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.b.c",
+          "shortId": "a(Lcom/corrodinggames/rts/game/units/custom/l;Lcom/corrodinggames/rts/gameFramework/utility/ae;)V"
+        },
+        "codeRef": {
+          "attachType": "VAR",
+          "index": 196662
+        },
+        "newName": "imageScaleY"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.b.c",
+          "shortId": "a(Lcom/corrodinggames/rts/game/units/custom/l;Lcom/corrodinggames/rts/gameFramework/utility/ae;)V"
+        },
+        "codeRef": {
+          "attachType": "VAR",
+          "index": 196715
+        },
+        "newName": "alpha"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.b.c",
+          "shortId": "a(Lcom/corrodinggames/rts/game/units/custom/l;Lcom/corrodinggames/rts/gameFramework/utility/ae;)V"
+        },
+        "codeRef": {
+          "attachType": "VAR",
+          "index": 196801
+        },
+        "newName": "imageStack"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.b.c",
+          "shortId": "a(Lcom/corrodinggames/rts/game/units/custom/l;Lcom/corrodinggames/rts/gameFramework/utility/ae;)V"
+        },
+        "codeRef": {
+          "attachType": "VAR",
+          "index": 589824
+        },
+        "newName": "teamColors"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.b.c",
+          "shortId": "a(Lcom/corrodinggames/rts/game/units/custom/l;Lcom/corrodinggames/rts/gameFramework/utility/ae;)V"
+        },
+        "codeRef": {
+          "attachType": "VAR",
+          "index": 1048576
+        },
+        "newName": "imageStack"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.b.m",
+          "shortId": "a(Lcom/corrodinggames/rts/game/units/custom/l;Lcom/corrodinggames/rts/gameFramework/utility/ae;)V"
+        },
+        "codeRef": {
+          "attachType": "VAR",
+          "index": 458792
+        },
+        "newName": "idleDir"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.b.m",
+          "shortId": "a(Lcom/corrodinggames/rts/game/units/custom/l;Lcom/corrodinggames/rts/gameFramework/utility/ae;)V"
+        },
+        "codeRef": {
+          "attachType": "VAR",
+          "index": 524309
+        },
+        "newName": "idleDirReversing"
       },
       {
         "nodeRef": {
@@ -12561,6 +15218,42 @@
       {
         "nodeRef": {
           "refType": "METHOD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.e.d",
+          "shortId": "a(Lcom/corrodinggames/rts/game/units/custom/l;Lcom/corrodinggames/rts/gameFramework/utility/ae;Ljava/lang/String;Ljava/lang/String;)V"
+        },
+        "codeRef": {
+          "attachType": "VAR",
+          "index": 62
+        },
+        "newName": "displayPrefixInHUD"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.e.d",
+          "shortId": "a(Lcom/corrodinggames/rts/game/units/custom/l;Lcom/corrodinggames/rts/gameFramework/utility/ae;Ljava/lang/String;Ljava/lang/String;)V"
+        },
+        "codeRef": {
+          "attachType": "VAR",
+          "index": 68
+        },
+        "newName": "appendResourceInHUD"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.e.d",
+          "shortId": "a(Lcom/corrodinggames/rts/game/units/custom/l;Lcom/corrodinggames/rts/gameFramework/utility/ae;Ljava/lang/String;Ljava/lang/String;)V"
+        },
+        "codeRef": {
+          "attachType": "VAR",
+          "index": 262149
+        },
+        "newName": "includeInStats"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
           "declClass": "com.corrodinggames.rts.game.units.custom.f",
           "shortId": "a(Lcom/corrodinggames/rts/game/units/custom/l;)V"
         },
@@ -12766,6 +15459,14 @@
         "nodeRef": {
           "refType": "METHOD",
           "declClass": "com.corrodinggames.rts.game.units.custom.l",
+          "shortId": "E()Ljava/lang/String;"
+        },
+        "newName": "getAllUnitTypes"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.l",
           "shortId": "a(Lcom/corrodinggames/rts/gameFramework/utility/ae;Ljava/lang/String;Ljava/lang/String;)Lcom/corrodinggames/rts/gameFramework/m/e;"
         },
         "newName": "loadImage"
@@ -12774,9 +15475,73 @@
         "nodeRef": {
           "refType": "METHOD",
           "declClass": "com.corrodinggames.rts.game.units.custom.l",
+          "shortId": "a(Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;)V"
+        },
+        "newName": "checkMinVersion"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.l",
+          "shortId": "a(Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;)V"
+        },
+        "codeRef": {
+          "attachType": "VAR",
+          "index": 327680
+        },
+        "newName": "minVersion"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.l",
+          "shortId": "a(Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;)V"
+        },
+        "codeRef": {
+          "attachType": "VAR",
+          "index": 524288
+        },
+        "newName": "feature"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.l",
           "shortId": "a(Ljava/lang/String;Lcom/corrodinggames/rts/game/units/custom/z;)Lcom/corrodinggames/rts/game/units/custom/z;"
         },
         "newName": "laodEffect"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.l",
+          "shortId": "a(Ljava/lang/String;Z)Lcom/corrodinggames/rts/game/units/el;"
+        },
+        "newName": "getUnitRefByName"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.l",
+          "shortId": "a(Ljava/lang/String;Z)Lcom/corrodinggames/rts/game/units/el;"
+        },
+        "codeRef": {
+          "attachType": "VAR",
+          "index": 0
+        },
+        "newName": "unit"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.l",
+          "shortId": "a(Ljava/lang/String;Z)Lcom/corrodinggames/rts/game/units/el;"
+        },
+        "codeRef": {
+          "attachType": "VAR",
+          "index": 131072
+        },
+        "newName": "unitName"
       },
       {
         "nodeRef": {
@@ -12809,6 +15574,26 @@
           "shortId": "k(Ljava/lang/String;)Lcom/corrodinggames/rts/game/units/custom/l;"
         },
         "newName": "getUnitEnumRefByName"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.l",
+          "shortId": "p(Ljava/lang/String;)Lcom/corrodinggames/rts/game/units/el;"
+        },
+        "newName": "getUnitRefByName"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.l",
+          "shortId": "p(Ljava/lang/String;)Lcom/corrodinggames/rts/game/units/el;"
+        },
+        "codeRef": {
+          "attachType": "VAR",
+          "index": 65536
+        },
+        "newName": "unitName"
       },
       {
         "nodeRef": {
@@ -13313,6 +16098,30 @@
           "index": 3
         },
         "newName": "memoryArray"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.v",
+          "shortId": "a()V"
+        },
+        "newName": "tryLoadUnitType"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.v",
+          "shortId": "c()Lcom/corrodinggames/rts/game/units/el;"
+        },
+        "newName": "getUnit"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.corrodinggames.rts.game.units.custom.v",
+          "shortId": "d()Ljava/lang/String;"
+        },
+        "newName": "getUnitName"
       },
       {
         "nodeRef": {
@@ -15992,6 +18801,14 @@
           "declClass": "com.corrodinggames.rts.gameFramework.utility.ae",
           "shortId": "d(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Float;)Ljava/lang/Float;"
         },
+        "newName": "readStaticTimeValue"
+      },
+      {
+        "nodeRef": {
+          "refType": "METHOD",
+          "declClass": "com.corrodinggames.rts.gameFramework.utility.ae",
+          "shortId": "d(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Float;)Ljava/lang/Float;"
+        },
         "codeRef": {
           "attachType": "VAR",
           "index": 131072
@@ -16401,6 +19218,14 @@
       {
         "nodeRef": {
           "refType": "PKG",
+          "declClass": "com.corrodinggames.rts.game.units.custom.a",
+          "shortId": ""
+        },
+        "newName": "actionSection"
+      },
+      {
+        "nodeRef": {
+          "refType": "PKG",
           "declClass": "com.corrodinggames.rts.game.units.d",
           "shortId": ""
         },
@@ -16467,12 +19292,27 @@
   "openTabs": [
     {
       "type": "class",
-      "tabPath": "com.corrodinggames.rts.game.units.custom.as",
+      "tabPath": "com.corrodinggames.rts.game.units.custom.a.a.i",
       "subPath": "java",
-      "caret": 1525,
+      "caret": 1436,
       "view": {
         "x": 0,
-        "y": 408
+        "y": 78
+      },
+      "active": false,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false,
+      "previewTab": false
+    },
+    {
+      "type": "class",
+      "tabPath": "com.corrodinggames.rts.game.units.custom.a.d",
+      "subPath": "java",
+      "caret": 6022,
+      "view": {
+        "x": 0,
+        "y": 3430
       },
       "active": false,
       "pinned": false,
@@ -16484,10 +19324,100 @@
       "type": "class",
       "tabPath": "com.corrodinggames.rts.game.units.custom.ag",
       "subPath": "java",
-      "caret": 72600,
+      "caret": 230009,
       "view": {
         "x": 0,
-        "y": 23405
+        "y": 54304
+      },
+      "active": false,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false,
+      "previewTab": false
+    },
+    {
+      "type": "class",
+      "tabPath": "com.corrodinggames.rts.game.units.custom.a.b",
+      "subPath": "java",
+      "caret": 295,
+      "view": {
+        "x": 0,
+        "y": 0
+      },
+      "active": false,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false,
+      "previewTab": false
+    },
+    {
+      "type": "class",
+      "tabPath": "com.corrodinggames.rts.game.units.custom.a.c",
+      "subPath": "java",
+      "caret": 894,
+      "view": {
+        "x": 0,
+        "y": 0
+      },
+      "active": false,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false,
+      "previewTab": false
+    },
+    {
+      "type": "class",
+      "tabPath": "com.corrodinggames.rts.game.units.custom.a.e",
+      "subPath": "java",
+      "caret": 111,
+      "view": {
+        "x": 0,
+        "y": 0
+      },
+      "active": false,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false,
+      "previewTab": false
+    },
+    {
+      "type": "class",
+      "tabPath": "com.corrodinggames.rts.game.units.custom.a.a.j",
+      "subPath": "java",
+      "caret": 1783,
+      "view": {
+        "x": 0,
+        "y": 591
+      },
+      "active": false,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false,
+      "previewTab": false
+    },
+    {
+      "type": "class",
+      "tabPath": "com.corrodinggames.rts.game.units.custom.a.a.a",
+      "subPath": "java",
+      "caret": 644,
+      "view": {
+        "x": 0,
+        "y": 314
+      },
+      "active": false,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false,
+      "previewTab": false
+    },
+    {
+      "type": "class",
+      "tabPath": "com.corrodinggames.rts.game.units.custom.v",
+      "subPath": "java",
+      "caret": 387,
+      "view": {
+        "x": 0,
+        "y": 231
       },
       "active": false,
       "pinned": false,
@@ -16499,42 +19429,102 @@
       "type": "class",
       "tabPath": "com.corrodinggames.rts.game.units.custom.l",
       "subPath": "java",
-      "caret": 20883,
+      "caret": 63973,
       "view": {
         "x": 0,
-        "y": 12058
+        "y": 36250
+      },
+      "active": false,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false,
+      "previewTab": false
+    },
+    {
+      "type": "class",
+      "tabPath": "com.corrodinggames.rts.game.units.cj",
+      "subPath": "java",
+      "caret": 77583,
+      "view": {
+        "x": 0,
+        "y": 40339
+      },
+      "active": false,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false,
+      "previewTab": false
+    },
+    {
+      "type": "class",
+      "tabPath": "com.corrodinggames.rts.game.units.custom.o",
+      "subPath": "java",
+      "caret": 198,
+      "view": {
+        "x": 0,
+        "y": 0
+      },
+      "active": false,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false,
+      "previewTab": false
+    },
+    {
+      "type": "class",
+      "tabPath": "com.corrodinggames.rts.game.units.custom.a.a.c",
+      "subPath": "java",
+      "caret": 690,
+      "view": {
+        "x": 0,
+        "y": 0
+      },
+      "active": false,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false,
+      "previewTab": false
+    },
+    {
+      "type": "class",
+      "tabPath": "com.corrodinggames.rts.game.units.custom.a.a.d",
+      "subPath": "java",
+      "caret": 787,
+      "view": {
+        "x": 0,
+        "y": 0
+      },
+      "active": false,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false,
+      "previewTab": false
+    },
+    {
+      "type": "class",
+      "tabPath": "com.corrodinggames.rts.game.units.custom.a.a.e",
+      "subPath": "java",
+      "caret": 1863,
+      "view": {
+        "x": 0,
+        "y": 399
+      },
+      "active": false,
+      "pinned": false,
+      "bookmarked": false,
+      "hidden": false,
+      "previewTab": false
+    },
+    {
+      "type": "class",
+      "tabPath": "com.corrodinggames.rts.game.units.custom.a.a.f",
+      "subPath": "java",
+      "caret": 950,
+      "view": {
+        "x": 0,
+        "y": 611
       },
       "active": true,
-      "pinned": false,
-      "bookmarked": false,
-      "hidden": false,
-      "previewTab": false
-    },
-    {
-      "type": "class",
-      "tabPath": "com.corrodinggames.rts.game.q",
-      "subPath": "java",
-      "caret": 135,
-      "view": {
-        "x": 0,
-        "y": 0
-      },
-      "active": false,
-      "pinned": false,
-      "bookmarked": false,
-      "hidden": false,
-      "previewTab": false
-    },
-    {
-      "type": "class",
-      "tabPath": "com.corrodinggames.rts.game.units.custom.s",
-      "subPath": "java",
-      "caret": 161,
-      "view": {
-        "x": 0,
-        "y": 0
-      },
-      "active": false,
       "pinned": false,
       "bookmarked": false,
       "hidden": false,
@@ -16545,6 +19535,19 @@
   "cacheDir": "C:\\Users\\shishanyue\\AppData\\Local\\skylot\\jadx\\cache\\projects\\base.apk-0e08460f45b2917ea91278d17b53719d",
   "enableLiveReload": false,
   "searchHistory": [
+    "ActionSectionPart",
+    "ActionPa",
+    "onlyTeam",
+    "stackHo",
+    "removeAllQ",
+    "onActions",
+    "addTra",
+    "joinsG",
+    "delayedS",
+    "shootDel",
+    "icon_bu",
+    "sendMess",
+    "ModsLo",
     "throw",
     "extraLag",
     "\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d Mods data loaded",
@@ -16561,20 +19564,7 @@
     "\"tech\"",
     "\"tech",
     "deleteS",
-    "isVis",
-    "isVisible",
-    "isVi",
-    "armo",
-    "hp",
-    "GameNet",
-    "\"Not yet loaded, reload needed",
-    "Storage: slow external unpacked",
-    " Warning: slow external storage",
-    "PointF",
-    "UnitCon",
-    "\"Not tracking reads",
-    "PathEngine",
-    "GAME UPDATED"
+    "isVis"
   ],
   "searchResourcesFilter": "$TEXT",
   "searchResourcesSizeLimit": 0,
