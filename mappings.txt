@@ -13,7 +13,7 @@ a.a.a.g -> net.rudp.a.SYNSegment:
 a.a.a.h -> net.rudp.a.Segment:
     void a(int) -> setAck
     void a(int,int,int) -> init
-a.a.a.i -> net.rudp.a.RunnableC0054i:
+a.a.a.i -> net.rudp.a.RunnableC0006i:
 a.a.b -> net.rudp.ReliableServerSocket:
 a.a.h -> net.rudp.ReliableSocket:
 a.a.p -> net.rudp.ReliableSocketInputStream:
@@ -21,21 +21,101 @@ a.a.q -> net.rudp.ReliableSocketOutputStream:
 a.a.r -> net.rudp.ReliableSocketProfile:
 a.a.s -> net.rudp.ReliableSocketStateListener:
 com.corrodinggames.rts.appFramework.ab -> com.corrodinggames.rts.appFramework.InputContext:
+com.corrodinggames.rts.appFramework.an -> com.corrodinggames.rts.appFramework.ExportGameAsMapOkDialogInterface:
+    android.widget.EditText a -> editText
+    com.corrodinggames.rts.gameFramework.k b -> gameEngine
+    com.corrodinggames.rts.appFramework.InGameActivity c -> inGameActivity
+com.corrodinggames.rts.appFramework.ao -> com.corrodinggames.rts.appFramework.ExportGameAsMapBadMapNameDialogInterface:
+    java.lang.String a -> mapSaveName
+    com.corrodinggames.rts.appFramework.an b -> exportGameAsMapDialogInterface
+com.corrodinggames.rts.appFramework.ap -> com.corrodinggames.rts.appFramework.ExportGameAsMapCancelDialogInterface:
+    com.corrodinggames.rts.appFramework.InGameActivity a -> ninGameActivity
 com.corrodinggames.rts.appFramework.bg -> com.corrodinggames.rts.appFramework.MenuLoading:
     void a() -> doLoadingComplete
+com.corrodinggames.rts.appFramework.d -> com.corrodinggames.rts.appFramework.RwContext:
+    android.content.Context a() -> getContext
 com.corrodinggames.rts.appFramework.ep -> com.corrodinggames.rts.appFramework.CurrTouchPoint:
     float a() -> x
     float b() -> y
-com.corrodinggames.rts.game.a.a -> com.corrodinggames.rts.game.a.a:
+com.corrodinggames.rts.game.a.a -> com.corrodinggames.rts.game.a.CustomPlayerData:
 com.corrodinggames.rts.game.a.a -> com.corrodinggames.rts.game.a.a:
     com.corrodinggames.rts.game.a.q bu -> attackingUnitsLand
     com.corrodinggames.rts.game.a.q bv -> attackingUnitsHover
-com.corrodinggames.rts.game.b.b -> com.corrodinggames.rts.game.b.b:
+    void U() -> reloadUnits
+com.corrodinggames.rts.game.b.a -> com.corrodinggames.rts.game.b.a:
+    java.lang.String b -> name
+    java.lang.String c -> lowerCaseName
+    java.lang.String d -> type
+    float e -> x
+    float f -> y
+    float g -> width
+    float h -> height
+    float i -> rotation
+    int k -> gid
+    java.util.Properties n -> properties
+    java.lang.String p -> imageSourcePath
+com.corrodinggames.rts.game.b.b -> com.corrodinggames.rts.game.maps.RwTiledMap:
+    java.util.HashMap ai -> tileCache
+    float r -> tileWidthInverse
+    float s -> tileHeightInverse
+    java.util.ArrayList t -> tileSets
+    com.corrodinggames.rts.game.b.g u -> mainLayer
+    com.corrodinggames.rts.game.b.g v -> grounddetails
+    com.corrodinggames.rts.game.b.g w -> grounddetails2
+    java.util.ArrayList z -> layers
+    boolean a(float,float,com.corrodinggames.rts.game.p) -> isVisible
+    com.corrodinggames.rts.game.b.i a(java.lang.String,int,int) -> getTile
+    java.io.InputStream a(java.lang.String,java.lang.String,int) -> tryOpenWithLastPathComponents
+    java.io.InputStream b(java.lang.String,java.lang.String) -> tryLoadTileset
+    boolean c(int,int) -> isWithinBounds
+    java.lang.String c(java.lang.String) -> convertAbstractPathIfNotNull
+    void d(float) -> update
+    java.io.InputStream d(java.lang.String) -> openMapFileWithAbstractPath
     float f() -> getMapWidth
     float g() -> getMapHeight
+com.corrodinggames.rts.game.b.e -> com.corrodinggames.rts.game.b.e:
+    float e() -> getEffectiveZoomLevel
 com.corrodinggames.rts.game.b.g -> com.corrodinggames.rts.game.maps.Layer:
+    int n -> width
+    int o -> height
+    com.corrodinggames.rts.game.b.i a(int,int) -> getTiled
+    void a(int,int,com.corrodinggames.rts.game.b.i,boolean) -> setTerrainAtPoint
+com.corrodinggames.rts.game.b.h -> com.corrodinggames.rts.game.maps.logMapError:
+com.corrodinggames.rts.game.b.i -> com.corrodinggames.rts.game.maps.Tile:
+    com.corrodinggames.rts.game.b.l a -> tileSet
+    int b -> terrainType
+    boolean e -> water
+    boolean f -> waterBridge
+    boolean g -> lava
+    boolean h -> cliff
+    boolean i -> resPool
+    boolean k -> trees
+    com.corrodinggames.rts.game.b.i a(com.corrodinggames.rts.game.b.b,com.corrodinggames.rts.game.b.g,com.corrodinggames.rts.game.b.l,int,short,short,boolean) -> create
+    boolean a(com.corrodinggames.rts.game.b.i,com.corrodinggames.rts.game.b.i) -> equal
+    void a(com.corrodinggames.rts.gameFramework.m.fi,android.graphics.RectF,android.graphics.Paint) -> draw
 com.corrodinggames.rts.game.b.k -> com.corrodinggames.rts.game.maps.ObjectGroup:
 com.corrodinggames.rts.game.b.l -> com.corrodinggames.rts.game.maps.TileSet:
+    java.lang.String a -> name
+    com.corrodinggames.rts.gameFramework.m.e b -> bitmap
+    int d -> tileWidth
+    int e -> tileHeight
+    int f -> f787f
+    int g -> f788g
+    int h -> textureOffsetX
+    int i -> textureOffsetY
+    int j -> tilesPerRow
+    float k -> inverseTilesPerRow
+    int l -> firstTileId
+    java.lang.String u -> embedString
+    java.util.ArrayList v -> bitmaps
+    void a(int,android.graphics.Rect) -> getTileRect
+    org.w3c.dom.Element a(java.lang.String) -> loadOrParseTileset
+    com.corrodinggames.rts.gameFramework.m.e b(java.lang.String) -> tryLoadTilesetBitmap
+com.corrodinggames.rts.game.b.m -> com.corrodinggames.rts.game.maps.Bitmap:
+    java.lang.String c -> basePath
+    java.lang.String d -> relativePath
+    com.corrodinggames.rts.gameFramework.m.e e -> texture
+    java.lang.String f -> base64
 com.corrodinggames.rts.game.d -> com.corrodinggames.rts.game.DefaultUnitInfo:
 com.corrodinggames.rts.game.f -> com.corrodinggames.rts.game.Projectile:
     boolean A -> instant
@@ -56,16 +136,22 @@ com.corrodinggames.rts.game.f -> com.corrodinggames.rts.game.Projectile:
     float an -> armourIgnoreAmount
     int ar -> color
     boolean aR -> hitSound
+    float aV -> x
+    float aW -> y
     boolean aY -> shouldRevealFog
     boolean aZ -> alwaysVisibleInFog
     boolean B -> laserEffect
+    android.graphics.Paint bc -> projectilePaint
     boolean D -> nukeWeapon
     com.corrodinggames.rts.game.g g -> customProjectile
     boolean G -> flameWeapon
     float h -> life
     float H -> deflectionPower
     com.corrodinggames.rts.game.units.ce j -> shootBy
+    float J -> angle
+    float K -> xOffset
     com.corrodinggames.rts.game.units.ce l -> target
+    float L -> yOffset
     boolean m -> targetGround
     boolean M -> lightingEffect
     short P -> frame
@@ -83,6 +169,9 @@ com.corrodinggames.rts.game.f -> com.corrodinggames.rts.game.Projectile:
     float x -> drawSize
     float Y -> areaDamage
     float Z -> areaRadius
+    com.corrodinggames.rts.game.f a(com.corrodinggames.rts.game.units.ce,float,float) -> createWithPosition
+    com.corrodinggames.rts.game.f a(com.corrodinggames.rts.game.units.ce,float,float,float,int) -> create
+    void b() -> load
 com.corrodinggames.rts.game.g -> com.corrodinggames.rts.game.AbstractCustomProjectile:
     boolean A -> invisible
     boolean aa -> beamImageStartRotated
@@ -188,6 +277,19 @@ com.corrodinggames.rts.game.g -> com.corrodinggames.rts.game.AbstractCustomProje
     com.corrodinggames.rts.gameFramework.m.e Z -> beamImageStart
     void a(com.corrodinggames.rts.game.g,com.corrodinggames.rts.gameFramework.j.bg) -> writeOut
 com.corrodinggames.rts.game.i -> com.corrodinggames.rts.game.EngineLoad:
+    int c -> allUnitsChecksum
+    float G -> timeScale
+    float H -> maxUpdateTime
+    float I -> lastGameDeltaTime
+    com.corrodinggames.rts.game.l J -> postBase
+    com.corrodinggames.rts.game.l K -> postDisplacement
+    void ai() -> selectAnyBuilderOnScreen
+    void b(float) -> updateGame
+    void q() -> loadMapData
+com.corrodinggames.rts.game.l -> com.corrodinggames.rts.game.DrawableShader:
+    com.corrodinggames.rts.gameFramework.m.e a -> screenBase
+    com.corrodinggames.rts.gameFramework.m.fq c -> paint
+    com.corrodinggames.rts.gameFramework.m.fo d -> shader
 com.corrodinggames.rts.game.n -> com.corrodinggames.rts.game.ScorchMark:
     void b() -> load
 com.corrodinggames.rts.game.p -> com.corrodinggames.rts.game.PlayerData:
@@ -201,30 +303,41 @@ com.corrodinggames.rts.game.p -> com.corrodinggames.rts.game.PlayerData:
     com.corrodinggames.rts.game.p h -> aggressiveTeam
     com.corrodinggames.rts.game.p i -> neutralTeam
     boolean I -> teamDefeatedTech
+    com.corrodinggames.rts.game.p[] j -> allTeamIndex
     boolean J -> teamWipedOut
     boolean K -> teamVictory
     int l -> site
     boolean L -> sharedControl_1
     boolean M -> sharedControl_2
     double p -> credits
+    double q -> antiLagCredits
     int s -> team
     com.corrodinggames.rts.game.units.bp u -> thisUnit
     java.lang.String w -> name
     int Z -> ping
+    boolean a(double) -> hasEnoughCredits
     java.lang.String a(int) -> getTeamName
     boolean a(com.corrodinggames.rts.game.s,com.corrodinggames.rts.game.p) -> contain
     com.corrodinggames.rts.gameFramework.m.e[] a(com.corrodinggames.rts.gameFramework.m.e) -> usePureGreenTeamColor
-    com.corrodinggames.rts.game.p i(int) -> setTeamId
+    boolean b(com.corrodinggames.rts.game.p) -> isEnemyTeam
+    boolean c(com.corrodinggames.rts.game.p) -> isSameTeam
+    boolean e(int) -> hasEnoughCreditsWithAntiLag
+    com.corrodinggames.rts.game.p i(int) -> getTeamId
     int t() -> getPing
+    float w() -> aIHandicaps
 com.corrodinggames.rts.game.q -> com.corrodinggames.rts.game.TeamColorsHueType:
 com.corrodinggames.rts.game.s -> com.corrodinggames.rts.game.Relation:
 com.corrodinggames.rts.game.units.a.b -> com.corrodinggames.rts.game.units.actions.EmptyActionFilter:
 com.corrodinggames.rts.game.units.a.c -> com.corrodinggames.rts.game.units.actions.ActionId:
+    com.corrodinggames.rts.game.units.a.c a -> allActions
+    com.corrodinggames.rts.game.units.a.c a(java.lang.String) -> create
 com.corrodinggames.rts.game.units.a.d -> com.corrodinggames.rts.game.units.actions.AttackModeAction:
 com.corrodinggames.rts.game.units.a.e -> com.corrodinggames.rts.game.units.actions.AttackMoveAction:
 com.corrodinggames.rts.game.units.a.f -> com.corrodinggames.rts.game.units.actions.GuardUnitAction:
-com.corrodinggames.rts.game.units.a.h -> com.corrodinggames.rts.game.units.a.h:
+com.corrodinggames.rts.game.units.a.h -> com.corrodinggames.rts.game.units.actions.ActionWithFilter:
     com.corrodinggames.rts.game.units.a.s a -> actionBaseInner
+    com.corrodinggames.rts.game.units.a.b b -> unitFilter
+    boolean b(com.corrodinggames.rts.game.units.ce) -> checkUnitIsAvailable
 com.corrodinggames.rts.game.units.a.i -> com.corrodinggames.rts.game.units.actions.PatrolAction:
 com.corrodinggames.rts.game.units.a.j -> com.corrodinggames.rts.game.units.actions.PingMapAction:
 com.corrodinggames.rts.game.units.a.k -> com.corrodinggames.rts.game.units.actions.MapPingType:
@@ -237,8 +350,11 @@ com.corrodinggames.rts.game.units.a.o -> com.corrodinggames.rts.game.units.actio
 com.corrodinggames.rts.game.units.a.q -> com.corrodinggames.rts.game.units.actions.TeamChatAction:
 com.corrodinggames.rts.game.units.a.r -> com.corrodinggames.rts.game.units.actions.MapPingAction:
 com.corrodinggames.rts.game.units.a.s -> com.corrodinggames.rts.game.units.actions.AbstractActionBase:
+    com.corrodinggames.rts.game.units.a.c i -> id
     com.corrodinggames.rts.game.units.a.c j -> actionId
     void a(java.lang.String) -> setActionId
+    java.lang.String d(com.corrodinggames.rts.game.units.ce) -> getButtonTitle
+    java.lang.String e(com.corrodinggames.rts.game.units.ce) -> getPlaneDescription
 com.corrodinggames.rts.game.units.a.t -> com.corrodinggames.rts.game.units.actions.DisplayActionType:
 com.corrodinggames.rts.game.units.a.u -> com.corrodinggames.rts.game.units.actions.BothWayPointType:
 com.corrodinggames.rts.game.units.a.v -> com.corrodinggames.rts.game.units.actions.UnitBuildUnitAction:
@@ -260,7 +376,30 @@ com.corrodinggames.rts.game.units.ai -> com.corrodinggames.rts.game.units.Freeze
 com.corrodinggames.rts.game.units.aj -> com.corrodinggames.rts.game.units.ChangeSelectedPlayerAllyAction:
 com.corrodinggames.rts.game.units.ak -> com.corrodinggames.rts.game.units.AddCreditsAction:
 com.corrodinggames.rts.game.units.al -> com.corrodinggames.rts.game.units.ModFilterAction:
+com.corrodinggames.rts.game.units.am -> com.corrodinggames.rts.game.units.ChangeTeamAction:
+    boolean a -> isLeft
+    boolean b -> isMainContent
+    java.lang.String i() -> getDescription
 com.corrodinggames.rts.game.units.an -> com.corrodinggames.rts.game.units.TypeFilterAction:
+com.corrodinggames.rts.game.units.ao -> com.corrodinggames.rts.game.units.ChangeTypeAction:
+    boolean a -> isLeft
+    boolean b -> isMainContent
+    float l() -> getScale
+    int m() -> getProportion
+com.corrodinggames.rts.game.units.ap -> com.corrodinggames.rts.game.units.EditorOrBuilderActionTypeEnum:
+    com.corrodinggames.rts.game.units.ap a -> all
+    com.corrodinggames.rts.game.units.ap b -> types
+    com.corrodinggames.rts.game.units.ap c -> terrain
+    com.corrodinggames.rts.game.units.ap d -> modded
+    com.corrodinggames.rts.game.units.ap e -> search
+    com.corrodinggames.rts.game.units.ap f -> actions
+    com.corrodinggames.rts.game.units.ap[] g -> data
+com.corrodinggames.rts.game.units.aq -> com.corrodinggames.rts.game.units.AllContent:
+com.corrodinggames.rts.game.units.ar -> com.corrodinggames.rts.game.units.TypeContent:
+com.corrodinggames.rts.game.units.as -> com.corrodinggames.rts.game.units.TerrainContent:
+com.corrodinggames.rts.game.units.at -> com.corrodinggames.rts.game.units.ModdedContent:
+com.corrodinggames.rts.game.units.au -> com.corrodinggames.rts.game.units.SearchContent:
+com.corrodinggames.rts.game.units.av -> com.corrodinggames.rts.game.units.ActionsContent:
 com.corrodinggames.rts.game.units.b -> com.corrodinggames.rts.game.units.AttackMovement:
     int a -> normal
     int b -> strafing
@@ -276,11 +415,24 @@ com.corrodinggames.rts.game.units.b.h -> com.corrodinggames.rts.game.units.air.D
 com.corrodinggames.rts.game.units.b.i -> com.corrodinggames.rts.game.units.air.GunShip:
 com.corrodinggames.rts.game.units.b.j -> com.corrodinggames.rts.game.units.air.Helicopter:
 com.corrodinggames.rts.game.units.bc -> com.corrodinggames.rts.game.units.SetTerrainTypeTool:
+    int b -> lastTileX
+    int c -> lastTileY
+    com.corrodinggames.rts.game.b.i d -> lastTile
+    void a(com.corrodinggames.rts.game.units.be,android.graphics.PointF) -> setTerrainAtPoint
 com.corrodinggames.rts.game.units.bd -> com.corrodinggames.rts.game.units.SetTerrainTypeAction:
+    com.corrodinggames.rts.game.units.be a -> terrainDefinition
+com.corrodinggames.rts.game.units.be -> com.corrodinggames.rts.game.units.AbstractTerrainDefinition:
+    com.corrodinggames.rts.game.units.be a -> grass
+    com.corrodinggames.rts.game.units.be b -> sea
+    com.corrodinggames.rts.game.units.be c -> sand
+    com.corrodinggames.rts.game.units.be d -> dust
+    com.corrodinggames.rts.game.units.be[] e -> terrains
 com.corrodinggames.rts.game.units.bf -> com.corrodinggames.rts.game.units.LongGrassTerrain:
+    java.lang.String b() -> getDefinitionPath
 com.corrodinggames.rts.game.units.bg -> com.corrodinggames.rts.game.units.WaterTerrain:
 com.corrodinggames.rts.game.units.bh -> com.corrodinggames.rts.game.units.SandTerrain:
 com.corrodinggames.rts.game.units.bi -> com.corrodinggames.rts.game.units.DustTerrain:
+    java.lang.String a() -> getAlertDefinitionPath
 com.corrodinggames.rts.game.units.bl -> com.corrodinggames.rts.game.units.FogRevealer:
 com.corrodinggames.rts.game.units.bn -> com.corrodinggames.rts.game.units.UnitAgent:
 com.corrodinggames.rts.game.units.bp -> com.corrodinggames.rts.game.units.AbstractUnitAgent:
@@ -293,9 +445,15 @@ com.corrodinggames.rts.game.units.bp -> com.corrodinggames.rts.game.units.Abstra
     com.corrodinggames.rts.game.units.en ap() -> activeWayPoint
     com.corrodinggames.rts.game.units.custom.d.b bh() -> getResourceQueued
     com.corrodinggames.rts.gameFramework.utility.p bi() -> transportUnit
+    void h(float) -> setBodyRotation
     int U() -> getUnitTechLevel
     float y() -> MaxMoveSpeed
+    boolean Z() -> isAttacking
 com.corrodinggames.rts.game.units.bt -> com.corrodinggames.rts.game.units.ExplodeTypeOnDeath:
+com.corrodinggames.rts.game.units.by -> com.corrodinggames.rts.game.units.OrderType:
+    int a -> ATTACK_ORDER
+    int b -> MOVE_ORDER
+    int c -> SELECT_ORDER
 com.corrodinggames.rts.game.units.c -> com.corrodinggames.rts.game.units.UnitRefProtected:
 com.corrodinggames.rts.game.units.c.a -> com.corrodinggames.rts.game.units.bugs.Ladybug:
     com.corrodinggames.rts.gameFramework.m.e b -> mainTexture
@@ -322,16 +480,19 @@ com.corrodinggames.rts.game.units.ce -> com.corrodinggames.rts.game.units.UnitRe
     float cD -> energy
     int cG -> ammo
     float ci -> dir
+    boolean cI -> isSelected
     float cl -> radius
     float cm -> displayRadius
     boolean cM -> isMoving
     float co -> isComplete
-    com.corrodinggames.rts.game.units.ce cP -> nullUnitRef
+    com.corrodinggames.rts.game.units.ce cP -> targetUnitMaybe
     com.corrodinggames.rts.game.units.bp cQ -> parent
+    com.corrodinggames.rts.game.units.custom.b.n cR -> attachmentData
     float cw -> hp
     int cW -> kills
     float cx -> maxHp
     float cz -> shield
+    void a() -> remove
     void a(com.corrodinggames.rts.game.units.a.s,boolean) -> ActionCallback
     void a(com.corrodinggames.rts.game.units.custom.af) -> autoTriggerAction
     void a(com.corrodinggames.rts.game.units.custom.af,com.corrodinggames.rts.game.units.ce) -> autoTriggerAction
@@ -340,7 +501,10 @@ com.corrodinggames.rts.game.units.ce -> com.corrodinggames.rts.game.units.UnitRe
     void a_(java.lang.String) -> setTurretType
     java.util.HashMap b() -> getUnitsMap
     void bN() -> removeSelf
+    void bp() -> loadAllUnits
     void bs() -> loadAllUnitsMaps
+    int bt() -> getAllUnitsChecksum
+    boolean bx() -> getIsBug
     float c_() -> getRemainingHpPercentage
     com.corrodinggames.rts.game.units.custom.h cG() -> getTagList
     boolean ck() -> touchWater
@@ -349,6 +513,7 @@ com.corrodinggames.rts.game.units.ce -> com.corrodinggames.rts.game.units.UnitRe
     boolean cn() -> isOverLiquid
     int co() -> priceCredits
     com.corrodinggames.rts.game.units.ce cS() -> getParent
+    float f() -> getResourceReclaimMultiplier
 com.corrodinggames.rts.game.units.cg -> com.corrodinggames.rts.game.units.MovementType:
 com.corrodinggames.rts.game.units.cj -> com.corrodinggames.rts.game.units.UnitEnum:
     com.corrodinggames.rts.game.units.cj a -> extractor
@@ -423,10 +588,14 @@ com.corrodinggames.rts.game.units.cs -> com.corrodinggames.rts.game.units.MegaTa
 com.corrodinggames.rts.game.units.ct -> com.corrodinggames.rts.game.units.LaserTankEnum:
 com.corrodinggames.rts.game.units.cu -> com.corrodinggames.rts.game.units.HovercraftEnum:
 com.corrodinggames.rts.game.units.custom.a.a -> com.corrodinggames.rts.game.units.custom.actionSection.Action:
-com.corrodinggames.rts.game.units.custom.a.a.a -> com.corrodinggames.rts.game.units.custom.a.a.a:
+com.corrodinggames.rts.game.units.custom.a.a.a -> com.corrodinggames.rts.game.units.custom.actionSection.actionPartB.ResourceActionPart:
     com.corrodinggames.rts.game.units.custom.e.a a -> resourceAmount
     double b -> resourceAmountSetValue
-com.corrodinggames.rts.game.units.custom.a.a.b -> com.corrodinggames.rts.game.units.custom.actionSection.a.AddWaypointActionPart:
+    com.corrodinggames.rts.game.units.custom.e.a c -> resourceAmountAddOtherResource
+    float d -> resourceAmountMultiplyBy
+    com.corrodinggames.rts.game.units.custom.d.c e -> addResourcesWithLogic
+    com.corrodinggames.rts.game.units.custom.d.c f -> setResourcesWithLogic
+com.corrodinggames.rts.game.units.custom.a.a.b -> com.corrodinggames.rts.game.units.custom.actionSection.actionPartB.AddWaypointActionPart:
     boolean e -> addWaypointPrepend
     com.corrodinggames.rts.game.units.custom.h f -> addWaypointTargetNearestUnitTagged
     com.corrodinggames.rts.game.s g -> addWaypointTargetNearestUnitTeam
@@ -443,16 +612,58 @@ com.corrodinggames.rts.game.units.custom.a.a.b -> com.corrodinggames.rts.game.un
     float s -> addWaypointMaxTime
     com.corrodinggames.rts.game.units.custom.u t -> addWaypointTriggerActionIfFailed
     com.corrodinggames.rts.game.units.custom.u u -> addWaypointTriggerActionIfMatched
-com.corrodinggames.rts.game.units.custom.a.a.i -> com.corrodinggames.rts.game.units.custom.actionSection.a.SendMessageAction:
+    void a(com.corrodinggames.rts.game.units.custom.l,com.corrodinggames.rts.gameFramework.utility.ae,java.lang.String,java.lang.String,com.corrodinggames.rts.game.units.custom.a.d) -> parser
+com.corrodinggames.rts.game.units.custom.a.a.c -> com.corrodinggames.rts.game.units.custom.a.a.c:
+    boolean a -> addWaypointTargetMapMustBeReachable
+    com.corrodinggames.rts.game.units.custom.h b -> addWaypointTargetRandomUnitTagged
+    float c -> addWaypointTargetRandomUnitMaxRange
+    com.corrodinggames.rts.game.s e -> addWaypointTargetRandomUnitTeam
+com.corrodinggames.rts.game.units.custom.a.a.d -> com.corrodinggames.rts.game.units.custom.actionSection.actionPartB.AnimationActionPart:
+    boolean a -> finishPlayingLastAnimation
+    boolean b -> stopLastAnimation
+    com.corrodinggames.rts.game.units.custom.o c -> playAnimation
+    com.corrodinggames.rts.game.units.custom.o d -> playAnimationIfNotPlaying
+    boolean e -> playAnimationLowPriority
+    void a(com.corrodinggames.rts.game.units.custom.l,com.corrodinggames.rts.gameFramework.utility.ae,java.lang.String,java.lang.String,com.corrodinggames.rts.game.units.custom.a.d) -> parser
+com.corrodinggames.rts.game.units.custom.a.a.e -> com.corrodinggames.rts.game.units.custom.actionSection.actionPartB.AttachmentActionPart:
+    java.util.ArrayList b -> attachmentsOnlyOnSlots
+    int c -> attachmentsDeleteNumUnits
+    boolean d -> attachmentsDisconnect
+    boolean e -> attachmentsUnload
+    boolean f -> disconnectFromParent
+    void a(com.corrodinggames.rts.game.units.custom.l,com.corrodinggames.rts.gameFramework.utility.ae,java.lang.String,java.lang.String,com.corrodinggames.rts.game.units.custom.a.d) -> parser
+com.corrodinggames.rts.game.units.custom.a.a.f -> com.corrodinggames.rts.game.units.custom.actionSection.actionPartB.LogicMessageActionPart:
+    com.corrodinggames.rts.game.units.custom.aj a -> showMessageToPlayer
+    com.corrodinggames.rts.game.units.custom.aj b -> showMessageToAllPlayers
+    com.corrodinggames.rts.game.units.custom.aj c -> showMessageToAllEnemyPlayers
+    com.corrodinggames.rts.game.units.custom.aj d -> showQuickWarLogToPlayer
+    com.corrodinggames.rts.game.units.custom.aj e -> showQuickWarLogToAllPlayers
+    com.corrodinggames.rts.game.units.custom.aj f -> debugMessage
+    void a(com.corrodinggames.rts.game.units.custom.l,com.corrodinggames.rts.gameFramework.utility.ae,java.lang.String,com.corrodinggames.rts.game.units.custom.a.d) -> paser
+com.corrodinggames.rts.game.units.custom.a.a.g -> com.corrodinggames.rts.game.units.custom.actionSection.actionPartB.convertResourceActionPart:
+    com.corrodinggames.rts.game.units.custom.e.a a -> convertResourceFrom
+    com.corrodinggames.rts.game.units.custom.e.a b -> convertResourceTo
+    double c -> convertResourceMinAmount
+    double d -> convertResourceMaxAmount
+    float e -> convertResourceMultiplyAmountBy
+    void a(com.corrodinggames.rts.game.units.custom.l,com.corrodinggames.rts.gameFramework.utility.ae,java.lang.String,com.corrodinggames.rts.game.units.custom.a.d) -> parser
+com.corrodinggames.rts.game.units.custom.a.a.h -> com.corrodinggames.rts.game.units.custom.actionSection.actionPartB.MemoryActionPart:
+    com.corrodinggames.rts.game.units.custom.logicBooleans.VariableScope$CachedWriter a -> setUnitMemoryWriter
+    boolean b -> swapCustomTarget1And2
+    com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBoolean c -> setCustomTarget1
+    com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBoolean d -> setCustomTarget2
+    void a(com.corrodinggames.rts.game.units.custom.l,com.corrodinggames.rts.gameFramework.utility.ae,java.lang.String,java.lang.String,com.corrodinggames.rts.game.units.custom.a.d) -> parser
+com.corrodinggames.rts.game.units.custom.a.a.i -> com.corrodinggames.rts.game.units.custom.actionSection.actionPartB.SendMessageAction:
     com.corrodinggames.rts.game.units.custom.logicBooleans.VariableScope$MemoryWriter a -> sendMessageWithDataWriter
     com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBoolean b -> sendMessageTo
     com.corrodinggames.rts.game.units.custom.h c -> sendMessageWithTags
     boolean a(com.corrodinggames.rts.game.units.custom.j,com.corrodinggames.rts.game.units.a.s,android.graphics.PointF,com.corrodinggames.rts.game.units.ce,int) -> trigger
-com.corrodinggames.rts.game.units.custom.a.a.j -> com.corrodinggames.rts.game.units.custom.actionSection.a.ActionSectionPartA:
+    void a(com.corrodinggames.rts.game.units.custom.l,com.corrodinggames.rts.gameFramework.utility.ae,java.lang.String,java.lang.String,com.corrodinggames.rts.game.units.custom.a.d) -> parser
+com.corrodinggames.rts.game.units.custom.a.a.j -> com.corrodinggames.rts.game.units.custom.actionSection.actionPartB.SetOperationActionSectionPart:
     boolean a -> deleteSelf
     boolean b -> switchToNeutralTeam
     boolean c -> switchToAggressiveTeam
-    com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBoolean d -> nswitchToTeam
+    com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBoolean d -> switchToTeam
     com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBoolean e -> setBodyRotation
     com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBoolean f -> setHeight
     com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBoolean g -> teleportTo
@@ -466,8 +677,19 @@ com.corrodinggames.rts.game.units.custom.a.a.j -> com.corrodinggames.rts.game.un
     com.corrodinggames.rts.gameFramework.utility.am o -> offsetSelfAbsolute
     boolean p -> resetUnitStats
     com.corrodinggames.rts.game.units.custom.logicBooleans.VariableScope$CachedWriter q -> setUnitStats
-com.corrodinggames.rts.game.units.custom.a.a.m -> com.corrodinggames.rts.game.units.custom.actionSection.a.TakeResourcesActionPart:
-com.corrodinggames.rts.game.units.custom.a.a.o -> com.corrodinggames.rts.game.units.custom.a.a.o:
+    void a(com.corrodinggames.rts.game.units.custom.l,com.corrodinggames.rts.gameFramework.utility.ae,java.lang.String,java.lang.String,com.corrodinggames.rts.game.units.custom.a.d) -> parser
+com.corrodinggames.rts.game.units.custom.a.a.k -> com.corrodinggames.rts.game.units.custom.actionSection.actionPartB.spawnOrProduceUnitsActionPart:
+    void a(com.corrodinggames.rts.game.units.custom.l,com.corrodinggames.rts.gameFramework.utility.ae,java.lang.String,java.lang.String,com.corrodinggames.rts.game.units.custom.a.d) -> parser
+com.corrodinggames.rts.game.units.custom.a.a.l -> com.corrodinggames.rts.game.units.custom.actionSection.actionPartB.SetTagsActionPart:
+    boolean a -> resetToDefaultTags
+    com.corrodinggames.rts.game.units.custom.h b -> temporarilyAddTags
+    com.corrodinggames.rts.game.units.custom.h c -> temporarilyRemoveTags
+    com.corrodinggames.rts.game.units.custom.h d -> addGlobalTeamTags
+    com.corrodinggames.rts.game.units.custom.h e -> f789e
+    void a(com.corrodinggames.rts.gameFramework.utility.ae,java.lang.String,java.lang.String,com.corrodinggames.rts.game.units.custom.a.d) -> parser
+com.corrodinggames.rts.game.units.custom.a.a.m -> com.corrodinggames.rts.game.units.custom.actionSection.actionPartB.TakeResourcesActionPart:
+    void a(com.corrodinggames.rts.game.units.custom.l,com.corrodinggames.rts.gameFramework.utility.ae,java.lang.String,java.lang.String,com.corrodinggames.rts.game.units.custom.a.d) -> nparser
+com.corrodinggames.rts.game.units.custom.a.a.o -> com.corrodinggames.rts.game.units.custom.actionSection.actionPartA.TransportActionPart:
     com.corrodinggames.rts.game.units.custom.ci a -> addUnitsIntoTransport
     int b -> deleteNumUnitsFromTransport
     com.corrodinggames.rts.game.units.custom.h c -> stringAsTagListOrDefault
@@ -475,14 +697,27 @@ com.corrodinggames.rts.game.units.custom.a.a.o -> com.corrodinggames.rts.game.un
     boolean e -> forceUnloadTransportNow
     int f -> forceUnloadTransportNowOnlyOnSlot
     com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBoolean g -> transportTargetNow
-com.corrodinggames.rts.game.units.custom.a.d -> com.corrodinggames.rts.game.units.custom.actionSection.ActionSectionPartB:
+com.corrodinggames.rts.game.units.custom.a.c -> com.corrodinggames.rts.game.units.custom.a.c:
+    com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBoolean b -> isVisible
+    com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBoolean c -> isLocked
+    com.corrodinggames.rts.game.units.custom.aj d -> isLockedMessage
+    com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBoolean e -> isLockedAlt
+    com.corrodinggames.rts.game.units.custom.aj f -> isLockedAltMessage
+    com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBoolean g -> isLockedAlt2
+    com.corrodinggames.rts.game.units.custom.aj h -> isLockedAlt2Message
+    boolean i -> canLocked
+    com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBoolean j -> isGuiBlinking
+    com.corrodinggames.rts.game.units.custom.d.b k -> price
+    com.corrodinggames.rts.game.units.custom.d.b l -> addResources
+    com.corrodinggames.rts.game.units.custom.d.b m -> streamingCost
+com.corrodinggames.rts.game.units.custom.a.d -> com.corrodinggames.rts.game.units.custom.actionSection.CustomAction:
     int a -> actionCount
     com.corrodinggames.rts.game.units.custom.aj A -> isLockedMessage
     com.corrodinggames.rts.game.units.custom.cg aa -> whenBuildingRotateToRotateTurret
     int aA -> iconExtraColor
     com.corrodinggames.rts.game.units.custom.u ab -> whenBuildingTriggerAction
     com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBoolean aB -> iconExtraIsVisible
-    com.corrodinggames.rts.gameFramework.utility.p ac -> actionPart
+    com.corrodinggames.rts.gameFramework.utility.p ac -> actionParts
     com.corrodinggames.rts.game.units.custom.logicBooleans.UnitReference$UnitReferenceOrUnitType aC -> unitShownInUI
     java.lang.Float ad -> addEnergy
     boolean aD -> unitShownInUIWithHpBar
@@ -490,6 +725,7 @@ com.corrodinggames.rts.game.units.custom.a.d -> com.corrodinggames.rts.game.unit
     boolean aE -> unitShownInUIWithProgressBar
     com.corrodinggames.rts.game.units.custom.d.b af -> addResourcesScaledByAIHandicaps
     com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBoolean aF -> isGuiBlinking
+    java.lang.Integer ag -> actionOrder
     com.corrodinggames.rts.game.units.a.t aG -> displayType
     android.graphics.PointF ah -> fireTurretXAtGroundWithOffset
     com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBoolean aH -> resetCustomTimer
@@ -503,10 +739,16 @@ com.corrodinggames.rts.game.units.custom.a.d -> com.corrodinggames.rts.game.unit
     java.lang.String aL -> type
     com.corrodinggames.rts.game.units.custom.b.g am -> fireTurretXAtGroundShowGuideDecals
     com.corrodinggames.rts.game.units.custom.a.f aM -> extraType
+    com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBoolean an -> alsoTriggerOrQueueActionWithTarget
     com.corrodinggames.rts.game.units.custom.a.e aN -> aiUse
+    com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBoolean ao -> alsoTriggerOrQueueActionConditional
+    com.corrodinggames.rts.game.units.custom.u ap -> alsoTriggerAction
+    com.corrodinggames.rts.game.units.custom.u aq -> alsoQueueAction
+    com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBoolean ar -> alsoTriggerActionRepeat
     com.corrodinggames.rts.gameFramework.m.e ay -> iconImage
     com.corrodinggames.rts.gameFramework.m.e az -> iconExtraImage
     com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBoolean B -> isLockedAlt
+    java.lang.String c -> actionName
     com.corrodinggames.rts.game.units.custom.aj C -> isLockedAltMessage
     com.corrodinggames.rts.game.units.custom.aj d -> text
     com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBoolean D -> isLockedAlt2
@@ -554,6 +796,7 @@ com.corrodinggames.rts.game.units.custom.a.d -> com.corrodinggames.rts.game.unit
     boolean Z -> whenBuildingRotateToAimAtActionTarget
 com.corrodinggames.rts.game.units.custom.a.f -> com.corrodinggames.rts.game.units.custom.actionSection.ActionExtraType:
 com.corrodinggames.rts.game.units.custom.a.g -> com.corrodinggames.rts.game.units.custom.actionSection.CustomActionConfig:
+    com.corrodinggames.rts.game.units.custom.a.d a -> customAction
 com.corrodinggames.rts.game.units.custom.aa -> com.corrodinggames.rts.game.units.custom.FileChangeWatcher:
     java.lang.String b -> filePath
 com.corrodinggames.rts.game.units.custom.ab -> com.corrodinggames.rts.game.units.custom.UnitDifferenceChecker:
@@ -581,17 +824,23 @@ com.corrodinggames.rts.game.units.custom.ag -> com.corrodinggames.rts.game.units
     java.lang.String s -> lastErrorMessage
     void a(long,com.corrodinggames.rts.game.units.custom.ah) -> debugUnitParsePartCostTimes
     com.corrodinggames.rts.game.units.custom.l a(com.corrodinggames.rts.game.units.custom.l) -> enableAllUnits
+    void a(com.corrodinggames.rts.game.units.custom.l,com.corrodinggames.rts.gameFramework.utility.ae,com.corrodinggames.rts.gameFramework.utility.ae,java.lang.String,int) -> ExecuteCopyFromForUnitConfig
     void a(com.corrodinggames.rts.game.units.custom.l,com.corrodinggames.rts.gameFramework.utility.ae,java.lang.String,java.lang.String) -> parseCanBuildSection
     com.corrodinggames.rts.game.units.custom.aj a(com.corrodinggames.rts.game.units.custom.l,com.corrodinggames.rts.gameFramework.utility.ae,java.lang.String,java.lang.String,java.lang.String) -> getLogicMessage
+    void a(com.corrodinggames.rts.game.units.custom.l,com.corrodinggames.rts.gameFramework.utility.ae,java.lang.String,java.lang.String,java.lang.String,boolean,boolean) -> parser
+    java.lang.String a(com.corrodinggames.rts.game.units.custom.l,java.lang.String,java.lang.String) -> resolveUnitConfigPath
     com.corrodinggames.rts.game.units.custom.bu a(com.corrodinggames.rts.gameFramework.utility.ae,java.lang.String,java.lang.String) -> loadOrGetCachedUnitConfig
     com.corrodinggames.rts.gameFramework.utility.ae a(java.lang.String) -> parseStringAsUnitConfig
     com.corrodinggames.rts.game.units.custom.l a(java.lang.String,com.corrodinggames.rts.gameFramework.i.b,java.lang.String,java.lang.String) -> loadUnits
     com.corrodinggames.rts.game.units.custom.l a(java.lang.String,java.io.InputStream,com.corrodinggames.rts.gameFramework.i.b,com.corrodinggames.rts.gameFramework.utility.o,java.lang.String,java.lang.String) -> loadUnit
-    com.corrodinggames.rts.gameFramework.a.i a(java.lang.String,java.lang.String,com.corrodinggames.rts.game.units.custom.l) -> generateModsSummary
-    com.corrodinggames.rts.gameFramework.m.e a(java.lang.String,java.lang.String,boolean,com.corrodinggames.rts.game.units.custom.l) -> reloadSingleUnit
+    java.lang.String a(java.lang.String,java.lang.String) -> joinPath
+    com.corrodinggames.rts.gameFramework.a.i a(java.lang.String,java.lang.String,com.corrodinggames.rts.game.units.custom.l) -> loadSoundAsset
+    java.util.ArrayList a(java.lang.String,java.lang.String,java.lang.String) -> parserAutoTriggerOnEventParameters
+    com.corrodinggames.rts.gameFramework.m.e a(java.lang.String,java.lang.String,boolean,com.corrodinggames.rts.game.units.custom.l) -> loadUnitTexture
+    com.corrodinggames.rts.gameFramework.m.e a(java.lang.String,java.lang.String,boolean,com.corrodinggames.rts.game.units.custom.l,java.lang.String,java.lang.String) -> loadTexture
     void b() -> validateUnitsConfig
     com.corrodinggames.rts.gameFramework.m.e b(java.lang.String) -> getCachedTexture
-    com.corrodinggames.rts.gameFramework.a.i b(java.lang.String,java.lang.String,com.corrodinggames.rts.game.units.custom.l) -> checkFileChangesAndReload
+    com.corrodinggames.rts.gameFramework.a.i b(java.lang.String,java.lang.String,com.corrodinggames.rts.game.units.custom.l) -> loadSoundAssetInternal
     com.corrodinggames.rts.gameFramework.utility.o c(java.lang.String,java.lang.String,com.corrodinggames.rts.game.units.custom.l) -> applyPendingNetworkUnits
     java.util.ArrayList c(boolean) -> getEnabledUnits
     void d() -> refreshAllUnitsSync
@@ -606,7 +855,10 @@ com.corrodinggames.rts.game.units.custom.ag -> com.corrodinggames.rts.game.units
     void m() -> setupUnitsInternal
     void n() -> initializeDefaults
 com.corrodinggames.rts.game.units.custom.ah -> com.corrodinggames.rts.game.units.custom.CustomLoaderState:
+com.corrodinggames.rts.game.units.custom.ai -> com.corrodinggames.rts.game.units.custom.Parameter:
+    java.lang.String a -> string
 com.corrodinggames.rts.game.units.custom.aj -> com.corrodinggames.rts.game.units.custom.LogicMessage:
+    java.lang.String a(com.corrodinggames.rts.game.units.ce) -> generateLogicMessage
 com.corrodinggames.rts.game.units.custom.as -> com.corrodinggames.rts.game.units.custom.CoreRegister:
     float b -> mass
     int c -> maxHp
@@ -626,8 +878,9 @@ com.corrodinggames.rts.game.units.custom.as -> com.corrodinggames.rts.game.units
     float q -> targetHeight
     float r -> nanoFactorySpeed
     java.util.LinkedHashMap s -> map
+    com.corrodinggames.rts.game.units.custom.logicBooleans.VariableScope$CachedWriter a(java.lang.String,com.corrodinggames.rts.game.units.custom.l,java.lang.String,java.lang.String) -> createVariableScopeCachedWriter
     void a(java.util.LinkedHashMap,com.corrodinggames.rts.game.units.custom.bm) -> register
-    java.lang.Object clone() -> m59clone
+    java.lang.Object clone() -> m1clone
 com.corrodinggames.rts.game.units.custom.at -> com.corrodinggames.rts.game.units.custom.MassValue:
 com.corrodinggames.rts.game.units.custom.au -> com.corrodinggames.rts.game.units.custom.MaxAttackRangeValue:
 com.corrodinggames.rts.game.units.custom.av -> com.corrodinggames.rts.game.units.custom.ShootDelayMultiplierValue:
@@ -639,7 +892,15 @@ com.corrodinggames.rts.game.units.custom.b -> com.corrodinggames.rts.game.units.
     com.corrodinggames.rts.game.units.custom.z e -> name
 com.corrodinggames.rts.game.units.custom.b.a -> com.corrodinggames.rts.game.units.custom.b.AbstractSectionParser:
 com.corrodinggames.rts.game.units.custom.b.c -> com.corrodinggames.rts.game.units.custom.b.DecalSectionParser:
+    com.corrodinggames.rts.gameFramework.utility.p c -> shadowLayerDecals
+    com.corrodinggames.rts.gameFramework.utility.p d -> onTopLayerDecals
+    com.corrodinggames.rts.gameFramework.utility.p e -> beforeBodyLayerDecals
+    com.corrodinggames.rts.gameFramework.utility.p f -> afterBodyLayerDecals
+    com.corrodinggames.rts.gameFramework.utility.p g -> beforeUILayerDecals
+    void a(com.corrodinggames.rts.game.units.custom.l,com.corrodinggames.rts.gameFramework.utility.ae) -> parser
+    com.corrodinggames.rts.game.units.custom.b.d b(com.corrodinggames.rts.game.units.custom.l,java.lang.String) -> getDecalFromUnitTypeRefBase
 com.corrodinggames.rts.game.units.custom.b.d -> com.corrodinggames.rts.game.units.custom.b.Decal:
+    java.lang.String a -> name
     com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBoolean A -> stackIndexStart
     float aa -> dirOffset
     float ab -> pivotOffset
@@ -647,6 +908,7 @@ com.corrodinggames.rts.game.units.custom.b.d -> com.corrodinggames.rts.game.unit
     com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBoolean ad -> drawLineTo
     int ae -> basePositionFromLegEnd
     int ag -> basePositionFromTurret
+    com.corrodinggames.rts.gameFramework.m.fq ah -> defaultPaint
     com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBoolean ai -> alpha
     com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBoolean B -> stackIndexCount
     boolean c -> onlyWhenSelectedByOwnPlayer
@@ -662,7 +924,9 @@ com.corrodinggames.rts.game.units.custom.b.d -> com.corrodinggames.rts.game.unit
     com.corrodinggames.rts.game.s h -> onlyTeam
     float H -> order
     boolean i -> onlyPlayersWithUnitControl
+    boolean I -> needCutting
     float j -> onlyWithZoomLevelOrMore
+    int J -> totalFrames
     boolean k -> onlyWhileActive
     int K -> frameWidth
     boolean l -> onlyWhileAlive
@@ -737,7 +1001,7 @@ com.corrodinggames.rts.game.units.custom.b.n -> com.corrodinggames.rts.game.unit
     boolean v -> keepAliveWhenParentDies
     com.corrodinggames.rts.game.units.custom.ci w -> onCreateSpawnUnitOf
     boolean x -> createIncompleteIfParentIs
-com.corrodinggames.rts.game.units.custom.ba -> com.corrodinggames.rts.game.units.custom.NanoRange:
+com.corrodinggames.rts.game.units.custom.ba -> com.corrodinggames.rts.game.units.custom.NanoRangeValue:
 com.corrodinggames.rts.game.units.custom.bb -> com.corrodinggames.rts.game.units.custom.Selfregenrate:
 com.corrodinggames.rts.game.units.custom.bc -> com.corrodinggames.rts.game.units.custom.TargetHeight:
 com.corrodinggames.rts.game.units.custom.bd -> com.corrodinggames.rts.game.units.custom.NanoFactorySpeed:
@@ -754,14 +1018,22 @@ com.corrodinggames.rts.game.units.custom.bi -> com.corrodinggames.rts.game.units
 com.corrodinggames.rts.game.units.custom.bj -> com.corrodinggames.rts.game.units.custom.ShieldValue:
 com.corrodinggames.rts.game.units.custom.bk -> com.corrodinggames.rts.game.units.custom.ShieldregenValue:
 com.corrodinggames.rts.game.units.custom.bl -> com.corrodinggames.rts.game.units.custom.ArmourValue:
-com.corrodinggames.rts.game.units.custom.bm -> com.corrodinggames.rts.game.units.custom.IntValue:
-    int a -> value
+com.corrodinggames.rts.game.units.custom.bm -> com.corrodinggames.rts.game.units.custom.ValueAbstract:
+    int a -> index
     java.lang.String b -> type
+com.corrodinggames.rts.game.units.custom.bn -> com.corrodinggames.rts.game.units.custom.UnitStatsWriter:
+    com.corrodinggames.rts.game.units.custom.l a -> unitTypeRefBase
 com.corrodinggames.rts.game.units.custom.bo -> com.corrodinggames.rts.game.units.custom.UnitDataFromLogicWriter:
-com.corrodinggames.rts.game.units.custom.bo -> com.corrodinggames.rts.game.units.custom.bo:
+    com.corrodinggames.rts.game.units.custom.bm a -> key
     com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBoolean b -> logicBoolean
     com.corrodinggames.rts.game.units.custom.logicBooleans.VariableScope$CachedWriter$Operator c -> operator
+com.corrodinggames.rts.game.units.custom.bp -> com.corrodinggames.rts.game.units.custom.CoreRegisterValue:
+    double a(com.corrodinggames.rts.game.units.custom.j,com.corrodinggames.rts.game.units.custom.as) -> getWithUnitOrRegister
+com.corrodinggames.rts.game.units.custom.bq -> com.corrodinggames.rts.game.units.custom.CustomUnitValue:
 com.corrodinggames.rts.game.units.custom.br -> com.corrodinggames.rts.game.units.custom.Effect:
+    float a(float) -> random
+    float a(float,float) -> randomRange
+    com.corrodinggames.rts.gameFramework.d.e a(float,float,float,float,com.corrodinggames.rts.gameFramework.ah,int,short) -> InitEffectEmitter
 com.corrodinggames.rts.game.units.custom.bs -> com.corrodinggames.rts.game.units.custom.explodeTypeOnDeath:
 com.corrodinggames.rts.game.units.custom.bt -> com.corrodinggames.rts.game.units.custom.LegOrArm:
     boolean J -> explodeOnDeath
@@ -788,7 +1060,7 @@ com.corrodinggames.rts.game.units.custom.bz -> com.corrodinggames.rts.game.units
     boolean n -> blocksPlacement
     com.corrodinggames.rts.game.units.custom.bu o -> cannotPlaceMessage
     boolean p -> checkEachTile
-com.corrodinggames.rts.game.units.custom.ca -> com.corrodinggames.rts.game.units.custom.CustomProjectileSection:
+com.corrodinggames.rts.game.units.custom.ca -> com.corrodinggames.rts.game.units.custom.CustomProjectile:
     int bi -> projectIndex
     void a(com.corrodinggames.rts.game.units.custom.ca,com.corrodinggames.rts.game.units.custom.l,com.corrodinggames.rts.gameFramework.utility.ae,java.lang.String) -> parse
 com.corrodinggames.rts.game.units.custom.cb -> com.corrodinggames.rts.game.units.custom.SpawnProjectile:
@@ -806,20 +1078,26 @@ com.corrodinggames.rts.game.units.custom.cd -> com.corrodinggames.rts.game.units
     float l -> offsetRandomY
     float m -> offsetRandomDir
     int n -> recursionLimit
+com.corrodinggames.rts.game.units.custom.ce -> com.corrodinggames.rts.game.units.custom.LoadedFile:
+    com.corrodinggames.rts.game.units.custom.ce a(com.corrodinggames.rts.game.units.custom.l,java.lang.String) -> parserFilePath
+    com.corrodinggames.rts.game.units.custom.ce a(com.corrodinggames.rts.game.units.custom.l,java.lang.String,com.corrodinggames.rts.game.units.custom.ce) -> parserFilePath
 com.corrodinggames.rts.game.units.custom.cg -> com.corrodinggames.rts.game.units.custom.Turret:
+    java.lang.String a -> name
     boolean A -> slave
     float aa -> barrelHeight
     com.corrodinggames.rts.game.units.custom.o aA -> onShootPlayAnimation
-    float ab -> f868ab
+    float ab -> limitingRange
     float aB -> onShootFreezeBodyMovementFor
     java.lang.Boolean ac -> showRangeUIGuide
     com.corrodinggames.rts.game.units.custom.u aC -> onShootTriggerActions
-    float ad -> limitingRange
+    float ad -> maxAttackRange
     com.corrodinggames.rts.gameFramework.m.e aD -> image
+    float ae -> maxAttackRangeSquared
     float af -> aimOffsetSpread
     com.corrodinggames.rts.gameFramework.m.e aF -> chargeEffectImage
     float ag -> limitingMinRange
     float aG -> imageDrawOffsetX
+    float ah -> limitingMinRangeSquared
     float aH -> imageDrawOffsetY
     float ai -> limitingAngle
     int aI -> unloadUpToXUnitsAndGiveAttackOrder
@@ -873,6 +1151,7 @@ com.corrodinggames.rts.game.units.custom.cg -> com.corrodinggames.rts.game.units
     java.lang.Float U -> turnSpeed
     float V -> turnSpeedAcceleration
     float W -> turnSpeedDeceleration
+    int x -> slaveToIndex
     float X -> size
     com.corrodinggames.rts.game.units.custom.cg y -> attachedTo
     float Y -> barrelX
@@ -902,10 +1181,18 @@ com.corrodinggames.rts.game.units.custom.cj -> com.corrodinggames.rts.game.units
     short w -> transportedUnitsToTransfer
 com.corrodinggames.rts.game.units.custom.d -> com.corrodinggames.rts.game.units.custom.AnimationFrameSetType:
 com.corrodinggames.rts.game.units.custom.d.b -> com.corrodinggames.rts.game.units.custom.d.AbstractCustomUnit:
+    int b -> generationCredits
     float c -> energy
     float d -> hp
     float e -> shield
     int f -> ammo
+    com.corrodinggames.rts.game.units.custom.d.b a(int) -> createGenerationCredits
+    void a(com.corrodinggames.rts.game.units.ce,double,boolean) -> addResourcesScaledByAIHandicaps
+    com.corrodinggames.rts.game.units.custom.d.b a(com.corrodinggames.rts.game.units.custom.d.b,com.corrodinggames.rts.game.units.custom.d.b) -> merge
+    void d(com.corrodinggames.rts.game.units.ce) -> limitUnitStats
+    void g(com.corrodinggames.rts.game.units.ce) -> addResourceForUnit
+com.corrodinggames.rts.game.units.custom.d.c -> com.corrodinggames.rts.game.units.custom.d.addAndSetResourceUnit:
+    com.corrodinggames.rts.game.units.custom.d.c a(com.corrodinggames.rts.game.units.custom.l,com.corrodinggames.rts.gameFramework.utility.ae,java.lang.String,java.lang.String) -> parser
 com.corrodinggames.rts.game.units.custom.e.a -> com.corrodinggames.rts.game.units.custom.e.ResourceType:
     java.lang.String b -> name
     double a(com.corrodinggames.rts.game.units.ce) -> getResourceCount
@@ -955,14 +1242,84 @@ com.corrodinggames.rts.game.units.custom.g -> com.corrodinggames.rts.game.units.
     com.corrodinggames.rts.game.units.custom.g c(java.lang.String) -> add
 com.corrodinggames.rts.game.units.custom.h -> com.corrodinggames.rts.game.units.custom.TagList:
     com.corrodinggames.rts.game.units.custom.g[] a -> tags
-com.corrodinggames.rts.game.units.custom.j -> com.corrodinggames.rts.game.units.custom.j:
+com.corrodinggames.rts.game.units.custom.j -> com.corrodinggames.rts.game.units.custom.CustomUnit:
+    int a -> nowFrame
+    com.corrodinggames.rts.gameFramework.utility.p B -> transportUnits
+    float c -> imageScaleMultiplier
     com.corrodinggames.rts.game.units.ce dP -> thisActionTarget
     int dQ -> thisActionRepeatedCount
+    float j -> moveSpeedMultiplier
+    float w -> autoTriggerCooldownTime
+    com.corrodinggames.rts.game.units.custom.l x -> unitTypeRefBase
+    com.corrodinggames.rts.game.units.custom.as y -> initialState
+    void a(com.corrodinggames.rts.game.units.custom.r[]) -> fireAutoTriggerAction
+    boolean a(com.corrodinggames.rts.game.units.a.s,android.graphics.PointF,com.corrodinggames.rts.game.units.ce,int,int) -> alsoTriggerAction
+    float A() -> getTurnAcceleration
+    float aB() -> getTurretImageScale
+    boolean ac() -> getCanAttackUnderwaterUnits
+    boolean ad() -> getCanAttackFlyingUnits
+    boolean ae() -> getCanAttackLandUnits
+    boolean af() -> getCanAttackNotTouchingWaterUnits
+    boolean aI() -> getIsMelee
+    float aK() -> getMoveYAxisScaling
+    float aL() -> getMoveYAxisScalingCountdown
+    boolean aS() -> getMoveSlidingMode
+    boolean aT() -> getMoveIgnoringBody
+    int aU() -> getTurretCount
+    boolean aV() -> getTurretRotateWithBodyB
+    float az() -> getWhenBeingBuiltMakeTransparentTill
+    void b(float,boolean) -> checkAutoTriggerAction
+    float b(int) -> getTurretRealDelay
+    float B() -> getMoveAccelerationSpeed
+    com.corrodinggames.rts.gameFramework.utility.p bi() -> getTransportUnits
+    boolean bq() -> getIsBuilding
+    boolean bU() -> checkMovementTypeIsAir
+    int bv() -> getSoftCollisionOnAll
+    boolean bw() -> getIsBio
+    boolean bW() -> checkMovementTypeIsWater
     boolean bx() -> isBug
+    boolean bY() -> getNanoRangeForReclaimIsMelee
+    boolean bZ() -> getNanoRangeForRepairIsMelee
+    float c(int) -> getTurretTurnSpeedByIndex
+    void c(com.corrodinggames.rts.game.units.ce) -> removeTransportUnit
+    float C() -> getMoveDecelerationSpeed
+    float ca() -> getNanoFactorySpeed
+    float cg() -> getImageScaleMultiplier
+    float cQ() -> getUiTargetRadius
+    boolean cR() -> getShowSelectionIndicator
+    boolean cy() -> isUnselectableAsTarget
+    void d(float,float) -> teleportToPosition
+    void d(boolean) -> removeAllQueuedItems
+    boolean D() -> getIsFixedFiring
+    boolean dn() -> canBeAttackedAndDamaged
+    float e(int) -> getTurretWarmup
+    void e(com.corrodinggames.rts.game.p) -> switchToTeam
+    float f(int) -> getTurretWarmupCallDownRateByIndex
+    float g(int) -> getTurretSizeByIndex
+    boolean I(int) -> playSoundForOrder
+    com.corrodinggames.rts.gameFramework.m.e j() -> getImageShadowTexture
+    boolean k() -> getCanAttack
+    boolean m(int) -> getTurretCanShootByIndex
+    boolean n(int) -> getTurretWarmupNoResetByIndex
+    float p(com.corrodinggames.rts.game.units.ce) -> getNanoReclaimSpeedWithMultiplier
+    com.corrodinggames.rts.game.units.el q() -> getThisUnit
+    int q(int) -> getTurretSlaveToIndexByIndex
+    boolean r() -> isUnselectable
+    float r(int) -> getTurretTurnSpeedAccelerationByIndex
+    float s(int) -> getTurretCanAttackMaxAngleByIndex
+    float t(int) -> getTurnSpeedDecelerationByIndex
+    float u(int) -> getTurretLimitingRangeByIndex
+    void u(com.corrodinggames.rts.game.units.ce) -> transportUnitLeft
+    float v(int) -> getTurretLimitingMinRangeSquaredByIndex
+    float w() -> getNanoBuildSpeed
+    float w(int) -> getTurretIdleDirByIndex
+    float x() -> getNanoRepairSpeed
+    float Y() -> getNanoUnbuildSpeed
+    float z() -> getMaxTurnSpeed
 com.corrodinggames.rts.game.units.custom.k -> com.corrodinggames.rts.game.units.custom.ActionEvent:
     com.corrodinggames.rts.game.units.ce c -> eventSource
     com.corrodinggames.rts.game.units.custom.h d -> eventTagList
-com.corrodinggames.rts.game.units.custom.l -> com.corrodinggames.rts.game.units.custom.UnitEnumRefBase:
+com.corrodinggames.rts.game.units.custom.l -> com.corrodinggames.rts.game.units.custom.UnitTypeRefBase:
     boolean A -> showSelectionIndicator
     boolean aa -> imageSmoothingWhenZoomedIn
     com.corrodinggames.rts.gameFramework.utility.p aA -> attachmentList
@@ -1097,6 +1454,7 @@ com.corrodinggames.rts.game.units.custom.l -> com.corrodinggames.rts.game.units.
     boolean cz -> createNeutral
     android.graphics.Rect cZ -> displayFootprint
     java.util.ArrayList d -> UnitEnumRefList
+    java.lang.String D -> unitConfigPath
     float da -> buildingToFootprintOffsetX
     float db -> buildingToFootprintOffsetY
     boolean dB -> rotateWithDirection
@@ -1123,7 +1481,7 @@ com.corrodinggames.rts.game.units.custom.l -> com.corrodinggames.rts.game.units.
     float dO -> moveDecelerationSpeed
     com.corrodinggames.rts.game.units.custom.ce dp -> soundOnMoveOrder
     boolean dP -> ignoreMoveOrders
-    com.corrodinggames.rts.game.units.custom.ce dq -> nsoundOnNewSelection
+    com.corrodinggames.rts.game.units.custom.ce dq -> soundOnNewSelection
     boolean dQ -> landOnGround
     boolean dR -> landOnGroundOnlyIdle
     com.corrodinggames.rts.game.units.custom.f ds -> movingAnimation
@@ -1156,6 +1514,7 @@ com.corrodinggames.rts.game.units.custom.l -> com.corrodinggames.rts.game.units.
     boolean eI -> startFallingWhenStartingUnit
     float ej -> moveYAxisScaling
     boolean eJ -> hideScorchMark
+    float ek -> moveYAxisScalingCountdown
     boolean eK -> disableLowHpFire
     float el -> reverseSpeedPercentage
     boolean eL -> disableLowHpSmoke
@@ -1182,6 +1541,7 @@ com.corrodinggames.rts.game.units.custom.l -> com.corrodinggames.rts.game.units.
     float eY -> transportUnitsHealBy
     float ez -> aimOffsetSpread
     int eZ -> transportSlotsNeeded
+    java.lang.String F -> overrideResourceLoadPath
     int fA -> recommendedInEachBaseNum
     float fB -> recommendedInEachBasePriorityIfUnmet
     com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBoolean fc -> transportUnitsCanUnloadUnits
@@ -1192,6 +1552,7 @@ com.corrodinggames.rts.game.units.custom.l -> com.corrodinggames.rts.game.units.
     int fF -> whenUsingAsHarvesterRecommendedGlobal
     com.corrodinggames.rts.game.units.cg fg -> movementType
     boolean fG -> whenUsingAsHarvesterIncludeOtherHarvesterCounts
+    com.corrodinggames.rts.game.units.cg fh -> movementTypeClone
     com.corrodinggames.rts.game.units.custom.h fH -> onlyUseAsHarvesterIfBaseHasUnitTagged
     boolean fi -> slowDeathFall
     java.lang.String fI -> upgradedFrom
@@ -1206,22 +1567,31 @@ com.corrodinggames.rts.game.units.custom.l -> com.corrodinggames.rts.game.units.
     boolean fN -> notPassivelyTargetedByOtherUnits
     com.corrodinggames.rts.game.units.custom.h fo -> canRepairUnitsOnlyWithTags
     com.corrodinggames.rts.game.units.custom.h fO -> showActionsWithMixedSelectionIfOtherUnitsHaveTag
+    com.corrodinggames.rts.game.units.custom.cg[] fQ -> turrets
     boolean fr -> useAsHarvester
     boolean fs -> useAsAttacker
     boolean ft -> useAsTransport
-    java.util.ArrayList fT -> CustomProjectileList
+    java.util.ArrayList fT -> customProjectileList
     com.corrodinggames.rts.game.units.custom.h fv -> aiTags
     com.corrodinggames.rts.game.units.custom.cg fV -> mainNano
     boolean fw -> disableUse
+    com.corrodinggames.rts.gameFramework.utility.p fW -> autoTriggerActionList
     int fx -> maxGlobal
+    boolean fX -> hasAutoTriggerAction
     int fy -> maxEachBase
+    com.corrodinggames.rts.game.units.custom.r[] fY -> everyFrameTriggerActionList
     float fz -> buildPriority
+    com.corrodinggames.rts.game.units.custom.r[] fZ -> every4FramesTriggerActionList
+    com.corrodinggames.rts.game.units.custom.r[] ga -> every8FramesTriggerActionList
+    java.util.ArrayList gd -> allCustomEffects
     java.util.ArrayList gh -> actionList
+    com.corrodinggames.rts.gameFramework.utility.p gp -> alsoTriggerOrQueueActions
     boolean gs -> logIfCreditResourceUsed
     com.corrodinggames.rts.gameFramework.i.b J -> customMod
     java.lang.String M -> name
     com.corrodinggames.rts.gameFramework.utility.p N -> coreSection
     com.corrodinggames.rts.game.units.custom.h O -> tags
+    com.corrodinggames.rts.gameFramework.utility.p q -> decals
     int R -> strictLevel
     boolean s -> teamColorsOnTurret
     boolean t -> showHealthBar
@@ -1241,16 +1611,21 @@ com.corrodinggames.rts.game.units.custom.l -> com.corrodinggames.rts.game.units.
     void a(java.lang.String,int,java.lang.String,java.lang.String) -> checkMinVersion
     com.corrodinggames.rts.game.units.custom.z a(java.lang.String,com.corrodinggames.rts.game.units.custom.z) -> laodEffect
     com.corrodinggames.rts.game.units.el a(java.lang.String,boolean) -> getUnitRefByName
+    com.corrodinggames.rts.game.units.custom.u b(java.lang.String,java.lang.String,java.lang.String) -> getValueAsActionList
+    com.corrodinggames.rts.game.units.custom.br c(java.lang.String) -> getEffectByName
     boolean C() -> isAvailableInDemo
     com.corrodinggames.rts.game.units.custom.cg d(java.lang.String) -> getUnitTurret
     com.corrodinggames.rts.game.units.custom.ca e(java.lang.String) -> getCustomProjectileByName
     java.lang.String E() -> getAllUnitTypes
+    com.corrodinggames.rts.game.units.custom.a.d f(java.lang.String) -> getCustomAction
+    com.corrodinggames.rts.game.units.custom.b.n g(java.lang.String) -> getAttachmentSlot
     com.corrodinggames.rts.game.units.custom.e.a h(java.lang.String) -> getResourceType
     com.corrodinggames.rts.game.units.custom.l k(java.lang.String) -> getUnitEnumRefByName
     com.corrodinggames.rts.game.units.el p(java.lang.String) -> getUnitRefByName
 com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanGameFunctions$EventTagsBoolean -> com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanGameFunctions$EventTagsBoolean:
 com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanGameFunctions$EventTagsBoolean -> com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBooleanGameFunctions$EventTagsBoolean:
     com.corrodinggames.rts.game.units.custom.g includesTag -> includesTagList
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicNumberFunction$FunctionDirectionBetween -> com.corrodinggames.rts.game.units.custom.logicBooleans.LogicNumberFunction$FunctionDirectionBetween:
 com.corrodinggames.rts.game.units.custom.logicBooleans.LogicNumberFunction$FunctionDirectionBetween -> com.corrodinggames.rts.game.units.custom.logicBooleans.LogicNumberFunction$FunctionDirectionBetween:
     com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBoolean unit1 -> from
     com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBoolean unit2 -> to
@@ -1261,6 +1636,7 @@ com.corrodinggames.rts.game.units.custom.logicBooleans.LogicNumberFunction$Funct
     com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBoolean unit1 -> from
     com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBoolean unit2 -> to
 com.corrodinggames.rts.game.units.custom.logicBooleans.LogicNumberFunction$FunctionLength -> com.corrodinggames.rts.game.units.custom.logicBooleans.LogicNumberFunction$FunctionLength:
+com.corrodinggames.rts.game.units.custom.logicBooleans.LogicNumberFunction$FunctionLength -> com.corrodinggames.rts.game.units.custom.logicBooleans.LogicNumberFunction$FunctionLength:
     com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBoolean a -> logicValue
 com.corrodinggames.rts.game.units.custom.logicBooleans.LogicNumberFunction$FunctionMax -> com.corrodinggames.rts.game.units.custom.logicBooleans.LogicNumberFunction$FunctionMax:
     com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBoolean a -> first
@@ -1268,11 +1644,26 @@ com.corrodinggames.rts.game.units.custom.logicBooleans.LogicNumberFunction$Funct
 com.corrodinggames.rts.game.units.custom.logicBooleans.LogicNumberFunction$FunctionMin -> com.corrodinggames.rts.game.units.custom.logicBooleans.LogicNumberFunction$FunctionMin:
     com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBoolean a -> first
     com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBoolean b -> second
+com.corrodinggames.rts.game.units.custom.logicBooleans.VariableScope$ReadUnitMemoryLogicBoolean -> com.corrodinggames.rts.game.units.custom.logicBooleans.VariableScope$ReadUnitMemoryLogicBoolean:
+com.corrodinggames.rts.game.units.custom.logicBooleans.VariableScope$ReadUnitMemoryLogicBoolean -> com.corrodinggames.rts.game.units.custom.logicBooleans.VariableScope$ReadUnitMemoryLogicBoolean:
+    void type(java.lang.String) -> setType
+com.corrodinggames.rts.game.units.custom.n -> com.corrodinggames.rts.game.units.custom.AnimationTriggerOnAction:
 com.corrodinggames.rts.game.units.custom.o -> com.corrodinggames.rts.game.units.custom.AnimationId:
+com.corrodinggames.rts.game.units.custom.r -> com.corrodinggames.rts.game.units.custom.AutoTriggerAction:
+    com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBoolean a -> autoTrigger
+    java.lang.String b -> autoTriggerString
+    com.corrodinggames.rts.game.units.custom.s c -> autoTriggerCheckRate
+    com.corrodinggames.rts.game.units.custom.a.g d -> customActionConfig
 com.corrodinggames.rts.game.units.custom.s -> com.corrodinggames.rts.game.units.custom.AutoTriggerCheckRate:
 com.corrodinggames.rts.game.units.custom.u -> com.corrodinggames.rts.game.units.custom.ActionList:
+    com.corrodinggames.rts.gameFramework.utility.p a -> actionNames
+    com.corrodinggames.rts.gameFramework.utility.p b -> actionParts
+    java.lang.String c -> key
+    java.lang.String d -> sectionName
+    void a(com.corrodinggames.rts.game.units.custom.j,android.graphics.PointF,com.corrodinggames.rts.game.units.ce) -> trigger
+    void a(com.corrodinggames.rts.game.units.custom.j,android.graphics.PointF,com.corrodinggames.rts.game.units.ce,int,int) -> trigger
+    void a(com.corrodinggames.rts.game.units.custom.l) -> loadActionPartFromUnit
 com.corrodinggames.rts.game.units.custom.v -> com.corrodinggames.rts.game.units.custom.UnitType:
-com.corrodinggames.rts.game.units.custom.v -> com.corrodinggames.rts.game.units.custom.v:
     java.lang.String a -> fileName
     java.lang.String b -> sectionName
     java.lang.String c -> unitName
@@ -1284,6 +1675,10 @@ com.corrodinggames.rts.game.units.custom.v -> com.corrodinggames.rts.game.units.
     java.lang.String d() -> getUnitName
 com.corrodinggames.rts.game.units.custom.x -> com.corrodinggames.rts.game.units.custom.x:
     java.lang.String g -> name
+com.corrodinggames.rts.game.units.custom.z -> com.corrodinggames.rts.game.units.custom.z:
+    com.corrodinggames.rts.game.units.custom.l c -> effects
+    com.corrodinggames.rts.gameFramework.d.e a(float,float,float,float,com.corrodinggames.rts.gameFramework.ah) -> createEffectEmitter
+    com.corrodinggames.rts.gameFramework.d.e a(float,float,float,float,com.corrodinggames.rts.gameFramework.ah,int,short) -> createEffectEmitter
 com.corrodinggames.rts.game.units.cv -> com.corrodinggames.rts.game.units.LandFactoryEnum:
     void a(java.util.ArrayList,int) -> getActionList
 com.corrodinggames.rts.game.units.cw -> com.corrodinggames.rts.game.units.LadybugEnum:
@@ -1350,6 +1745,11 @@ com.corrodinggames.rts.game.units.d.p -> com.corrodinggames.rts.game.units.build
     int a(com.corrodinggames.rts.game.units.a.c,boolean) -> getQueueNumberBy
 com.corrodinggames.rts.game.units.d.q -> com.corrodinggames.rts.game.units.buildings.ActionFinishedResult:
     com.corrodinggames.rts.game.units.a.c j -> actionId
+com.corrodinggames.rts.game.units.d.r -> com.corrodinggames.rts.game.units.d.r:
+    com.corrodinggames.rts.gameFramework.utility.p c -> queueItems
+    com.corrodinggames.rts.game.units.d.q a(com.corrodinggames.rts.game.units.a.w,boolean,android.graphics.PointF,com.corrodinggames.rts.game.units.ce) -> alsoQueueAction
+    void a(boolean) -> removeAllQueuedItems
+    void b(com.corrodinggames.rts.game.units.d.q) -> returnResources
 com.corrodinggames.rts.game.units.d.s -> com.corrodinggames.rts.game.units.buildings.AbsctractActionBind:
 com.corrodinggames.rts.game.units.d.t -> com.corrodinggames.rts.game.units.buildings.LandFactory:
     void a(java.util.ArrayList,int) -> getCanBuildList
@@ -1403,7 +1803,7 @@ com.corrodinggames.rts.game.units.e.b -> com.corrodinggames.rts.game.units.land.
     com.corrodinggames.rts.game.units.a.s n -> reclaimBuildingTargetAction
     void b(java.util.ArrayList) -> getCanBuildList
     java.util.ArrayList N() -> getUnitActionList
-    com.corrodinggames.rts.game.units.el q() -> mo116q
+    com.corrodinggames.rts.game.units.el q() -> getThisUnit
 com.corrodinggames.rts.game.units.e.c -> com.corrodinggames.rts.game.units.land.ExperimentalHoverTank:
 com.corrodinggames.rts.game.units.e.d -> com.corrodinggames.rts.game.units.land.ExperimentalTank:
 com.corrodinggames.rts.game.units.e.e -> com.corrodinggames.rts.game.units.land.HeavyHoverTank:
@@ -1440,7 +1840,20 @@ com.corrodinggames.rts.game.units.en -> com.corrodinggames.rts.game.units.WayPoi
     float e -> PositionX
     float f -> PositionY
     com.corrodinggames.rts.game.units.ce h -> activeWaypointTarget
+    void a(float,float) -> move
+    void a(float,float,com.corrodinggames.rts.game.units.el,int) -> build
+    void a(com.corrodinggames.rts.game.units.ce) -> attack
+    void b() -> setDefault
+    void b(float,float) -> attackMove
+    void b(com.corrodinggames.rts.game.units.ce) -> repair
     boolean c() -> hasActiveWaypointTarget
+    void c(com.corrodinggames.rts.game.units.ce) -> guard
+    float d() -> getTargetPositionX
+    void d(com.corrodinggames.rts.game.units.ce) -> reclaim
+    float e() -> getTargetPositionY
+    void e(com.corrodinggames.rts.game.units.ce) -> loadInto
+    com.corrodinggames.rts.game.units.ce f() -> getActiveWaypointTarget
+    void f(com.corrodinggames.rts.game.units.ce) -> loadUp
 com.corrodinggames.rts.game.units.eo -> com.corrodinggames.rts.game.units.WayPointType:
 com.corrodinggames.rts.game.units.f -> com.corrodinggames.rts.game.units.DamagingBorder:
 com.corrodinggames.rts.game.units.f.c -> com.corrodinggames.rts.game.units.f.UnitGeoIndex:
@@ -1469,11 +1882,16 @@ com.corrodinggames.rts.game.units.f.h -> com.corrodinggames.rts.game.units.f.Rec
     float d -> rectTop
     float e -> rectBottom
     boolean a(com.corrodinggames.rts.game.units.ce) -> read
+com.corrodinggames.rts.game.units.g.a -> com.corrodinggames.rts.game.units.g.a:
+    int a -> cooldownTime
+com.corrodinggames.rts.game.units.g.g -> com.corrodinggames.rts.game.units.g.g:
+    void a(com.corrodinggames.rts.game.units.bp,com.corrodinggames.rts.game.units.a.c,int) -> addActionCooldownTime
 com.corrodinggames.rts.game.units.h -> com.corrodinggames.rts.game.units.EditorOrBuilder:
     com.corrodinggames.rts.game.units.a.s A -> enableAIDebug
     com.corrodinggames.rts.game.units.a.s B -> enableTriggerDebug
     com.corrodinggames.rts.game.units.a.s C -> clearSaveHistory
     java.util.ArrayList D -> actionList
+    com.corrodinggames.rts.game.units.ap G -> nowEditorOrBuilderActionTypeEnum
     com.corrodinggames.rts.game.units.a.s h -> reloadUnits
     com.corrodinggames.rts.game.units.a.s i -> reloadOnlyActiveUnits
     com.corrodinggames.rts.game.units.a.s j -> unitClone
@@ -1495,6 +1913,7 @@ com.corrodinggames.rts.game.units.h -> com.corrodinggames.rts.game.units.EditorO
     com.corrodinggames.rts.game.units.a.s z -> enableDebug
     boolean f_() -> networkIsNotSync
     void h(int) -> sandBoxMode
+    com.corrodinggames.rts.game.units.h L() -> getLocalEditorOrBuilder
 com.corrodinggames.rts.game.units.h.a -> com.corrodinggames.rts.game.units.water.BattleShip:
 com.corrodinggames.rts.game.units.h.b -> com.corrodinggames.rts.game.units.water.BuilderShip:
     void b(java.util.ArrayList) -> getCanBuildList
@@ -1521,6 +1940,7 @@ com.corrodinggames.rts.game.units.z -> com.corrodinggames.rts.game.units.Trigger
 com.corrodinggames.rts.gameFramework.a -> com.corrodinggames.rts.gameFramework.CollisionEngine:
     java.util.ArrayList n -> mapList
     com.corrodinggames.rts.gameFramework.b a(byte) -> findFromMapList
+com.corrodinggames.rts.gameFramework.a.i -> com.corrodinggames.rts.gameFramework.a.SoundAsset:
 com.corrodinggames.rts.gameFramework.aa -> com.corrodinggames.rts.gameFramework.KeyStateA:
     int c -> keyCode
 com.corrodinggames.rts.gameFramework.ab -> com.corrodinggames.rts.gameFramework.MenuLoadingAbstract:
@@ -1538,6 +1958,7 @@ com.corrodinggames.rts.gameFramework.ag -> com.corrodinggames.rts.gameFramework.
     com.corrodinggames.rts.gameFramework.s e -> buttonC
     com.corrodinggames.rts.gameFramework.k f -> gameEngine
 com.corrodinggames.rts.gameFramework.ah -> com.corrodinggames.rts.gameFramework.GameEntity:
+    com.corrodinggames.rts.gameFramework.utility.r a -> entityManager
     long ej -> id
     boolean el -> isDeleted
     int eo -> layerPriority
@@ -1546,6 +1967,7 @@ com.corrodinggames.rts.gameFramework.ah -> com.corrodinggames.rts.gameFramework.
     float er -> y
     float es -> height
     com.corrodinggames.rts.gameFramework.utility.v et -> entityPool
+    void a(float) -> update
 com.corrodinggames.rts.gameFramework.ai -> com.corrodinggames.rts.gameFramework.GameEntityLayerComparator:
 com.corrodinggames.rts.gameFramework.aj -> com.corrodinggames.rts.gameFramework.GameSaver:
 com.corrodinggames.rts.gameFramework.ak -> com.corrodinggames.rts.gameFramework.GameThread:
@@ -1555,7 +1977,19 @@ com.corrodinggames.rts.gameFramework.al -> com.corrodinggames.rts.gameFramework.
 com.corrodinggames.rts.gameFramework.am -> com.corrodinggames.rts.gameFramework.UnknownAm:
     com.corrodinggames.rts.gameFramework.utility.p a -> agentPool
 com.corrodinggames.rts.gameFramework.an -> com.corrodinggames.rts.gameFramework.GameOperationKeys:
+    com.corrodinggames.rts.gameFramework.ao c -> shootKey
+    com.corrodinggames.rts.gameFramework.ao d -> moveUpKey
+    com.corrodinggames.rts.gameFramework.ao e -> moveDownKey
+    com.corrodinggames.rts.gameFramework.ao f -> moveLeftKey
+    com.corrodinggames.rts.gameFramework.ao g -> moveRightKey
+    com.corrodinggames.rts.gameFramework.ao h -> aimUpKey
+    com.corrodinggames.rts.gameFramework.ao i -> aimDownKey
+    com.corrodinggames.rts.gameFramework.ao j -> aimLeftKey
+    com.corrodinggames.rts.gameFramework.ao k -> aimRightKey
+    com.corrodinggames.rts.gameFramework.ao a(java.lang.String) -> createOperation
 com.corrodinggames.rts.gameFramework.ao -> com.corrodinggames.rts.gameFramework.SingleKey:
+    com.corrodinggames.rts.gameFramework.ao a(int,java.lang.String,int) -> assignKey
+    com.corrodinggames.rts.gameFramework.ao a(int,boolean) -> configureAxis
 com.corrodinggames.rts.gameFramework.ap -> com.corrodinggames.rts.gameFramework.SingleKeySpecial:
 com.corrodinggames.rts.gameFramework.aq -> com.corrodinggames.rts.gameFramework.KeyComponent:
 com.corrodinggames.rts.gameFramework.ar -> com.corrodinggames.rts.gameFramework.KeyComponentA:
@@ -1597,10 +2031,14 @@ com.corrodinggames.rts.gameFramework.bo -> com.corrodinggames.rts.gameFramework.
 com.corrodinggames.rts.gameFramework.bp -> com.corrodinggames.rts.gameFramework.ReplayEngine:
     void c(java.lang.String) -> recordReplayLog
     void d() -> close
+    void f() -> nrecordFrame
 com.corrodinggames.rts.gameFramework.bq -> com.corrodinggames.rts.gameFramework.RelaySaveRunnable:
+    void a(com.corrodinggames.rts.gameFramework.bs) -> recordChatMessage
 com.corrodinggames.rts.gameFramework.br -> com.corrodinggames.rts.gameFramework.ReplayChatInfo:
+    java.lang.String b -> header
+    java.lang.String c -> message
 com.corrodinggames.rts.gameFramework.bs -> com.corrodinggames.rts.gameFramework.ReplayInfo:
-    com.corrodinggames.rts.gameFramework.br g -> chat
+    com.corrodinggames.rts.gameFramework.br g -> replayChatInfo
 com.corrodinggames.rts.gameFramework.bt -> com.corrodinggames.rts.gameFramework.FileSaver:
 com.corrodinggames.rts.gameFramework.bu -> com.corrodinggames.rts.gameFramework.FileSaverInfo:
 com.corrodinggames.rts.gameFramework.bv -> com.corrodinggames.rts.gameFramework.StatsHandler:
@@ -1638,49 +2076,239 @@ com.corrodinggames.rts.gameFramework.ck -> com.corrodinggames.rts.gameFramework.
 com.corrodinggames.rts.gameFramework.cl -> com.corrodinggames.rts.gameFramework.TimeCalculationArrays:
 com.corrodinggames.rts.gameFramework.d -> com.corrodinggames.rts.gameFramework.UnitData:
     com.corrodinggames.rts.game.units.cg h -> movementType
+com.corrodinggames.rts.gameFramework.d.a -> com.corrodinggames.rts.gameFramework.d.a:
+    void a(float) -> update
+com.corrodinggames.rts.gameFramework.d.c -> com.corrodinggames.rts.gameFramework.emitter.EffectManager:
+    int a -> activeEffectCount
+    int b -> verylowEffectLimit
+    int c -> lowEffectLimit
+    int d -> highEffectLimit
+    int e -> veryhighEffectLimit
+    com.corrodinggames.rts.gameFramework.d.e[] f -> effectEmitterPool
+    int g -> nextFreeIndex
+    int j -> lowPerformanceLimitReduction
+    com.corrodinggames.rts.gameFramework.m.fo k -> displacementShader
+    com.corrodinggames.rts.gameFramework.m.e l -> screenBase
+    com.corrodinggames.rts.gameFramework.d.h t -> priority
+    boolean u -> shouldCheckCameraBounds
+    boolean v -> shouldForceCheckVisibility
+    void a() -> ninitialize
+    void a(float) -> update
+    void a(float,float,float) -> createSmallExplosions
+    com.corrodinggames.rts.gameFramework.d.e a(float,float,float,float) -> createSmallExplosion
+    void a(float,float,float,float,float) -> createSmallExplosions
+    com.corrodinggames.rts.gameFramework.d.e a(float,float,float,float,float,float) -> createLineEffect
+    com.corrodinggames.rts.gameFramework.d.e a(float,float,float,float,int) -> createGenericEffect
+    com.corrodinggames.rts.gameFramework.d.e a(float,float,float,int) -> createEffectAtPosition
+    com.corrodinggames.rts.gameFramework.d.e a(float,float,float,int,com.corrodinggames.rts.gameFramework.d.h) -> ncreateGenericEffect
+    com.corrodinggames.rts.gameFramework.d.e a(float,float,float,int,boolean,com.corrodinggames.rts.gameFramework.d.h) -> createGenericEffect
+    com.corrodinggames.rts.gameFramework.d.e a(com.corrodinggames.rts.gameFramework.ah,int) -> createEffectForEntity
+    com.corrodinggames.rts.gameFramework.d.e a(com.corrodinggames.rts.gameFramework.ah,int,float) -> createEffectForEntity
+    void a(com.corrodinggames.rts.gameFramework.d.e,com.corrodinggames.rts.gameFramework.ah) -> attachedToUnit
+    com.corrodinggames.rts.gameFramework.d.e a(com.corrodinggames.rts.gameFramework.d.h) -> getAvailableEffectEmitter
+    void a(boolean) -> deactivateAllEffectEmitters
+    com.corrodinggames.rts.gameFramework.d.e a(boolean,com.corrodinggames.rts.gameFramework.d.h) -> findAvailableEmitterFromPool
+    com.corrodinggames.rts.gameFramework.d.e b(float,float,float) -> smallExplosion
+    com.corrodinggames.rts.gameFramework.d.e b(float,float,float,float) -> createMediumExplosion
+    com.corrodinggames.rts.gameFramework.d.e b(float,float,float,float,float) -> createExplosionBits
+    com.corrodinggames.rts.gameFramework.d.e b(float,float,float,int) -> createEffectAtPositionInternal
+    com.corrodinggames.rts.gameFramework.d.e c(float,float,float,float) -> createSmokeEffect
+    com.corrodinggames.rts.gameFramework.d.e c(float,float,float,int) -> createShockwaveEffect
+    com.corrodinggames.rts.gameFramework.d.e d(float,float,float,int) -> createShockwave
+    com.corrodinggames.rts.gameFramework.d.e e(float,float,float) -> createExplosionBitsEffect
+    com.corrodinggames.rts.gameFramework.d.e e(float,float,float,float) -> createExplosionEffect
+com.corrodinggames.rts.gameFramework.d.d -> com.corrodinggames.rts.gameFramework.d.d:
+    int a -> dir
+com.corrodinggames.rts.gameFramework.d.e -> com.corrodinggames.rts.gameFramework.emitter.EffectEmitter:
+    boolean ae -> haveAnimate
+    int af -> animateFrameStart
+    int ag -> animateFrameEnd
+    boolean ah -> animateFramePingPong
+    boolean ai -> animateFrameLooping
+    float aj -> animateFrameSpeed
+    float ak -> animateFrame
+    boolean al -> isAnimationReversed
+    boolean an -> isAnimated
+    int ap -> frameIndex
+    int aq -> stripIndex
+    short ar -> drawLayer
+    boolean as -> shadow
+    com.corrodinggames.rts.gameFramework.d.c ay -> effectManager
+    com.corrodinggames.rts.gameFramework.ah b -> attachedUnit
+    android.graphics.LightingColorFilter B -> cachedLightingColorFilter
+    float E -> alpha
+    float F -> scaleTo
+    float G -> scaleFrom
+    float I -> offsetX
+    float J -> offsetY
+    float K -> hOffset
+    float M -> targetX
+    float N -> targetY
+    boolean o -> isActive
+    float O -> targetHeight
+    float P -> xSpeedAbsolute
+    com.corrodinggames.rts.gameFramework.d.h q -> priority
+    float Q -> ySpeedAbsolute
+    boolean r -> fadeOut
+    float R -> hSpeed
+    boolean s -> enableFade
+    float t -> fadeInTime
+    boolean u -> atmospheric
+    float U -> delayedStartTimer
+    boolean v -> physics
+    float V -> life
+    float w -> physicsGravity
+    float W -> actuallyLife
+    int x -> color
+    float X -> trailEffectTimer
+    float Y -> finalPivotOffset
+    float Z -> dirSpeed
+    void a() -> setDefault
+    void a(float) -> update
+    void b() -> endEffect
 com.corrodinggames.rts.gameFramework.d.f -> com.corrodinggames.rts.gameFramework.emitter.Emitter:
     void b() -> load
-com.corrodinggames.rts.gameFramework.d.g -> com.corrodinggames.rts.gameFramework.d.g:
+com.corrodinggames.rts.gameFramework.d.g -> com.corrodinggames.rts.gameFramework.emitter.EffectObject:
+    java.lang.String a -> effectName
     int b -> staticFrameWidth
     int c -> staticFrameHeight
     int f -> frameWidth
     int g -> frameHeight
     com.corrodinggames.rts.gameFramework.m.e i -> image
     com.corrodinggames.rts.gameFramework.m.e j -> imageShadow
+com.corrodinggames.rts.gameFramework.d.h -> com.corrodinggames.rts.gameFramework.emitter.EffectPriority:
+    boolean a(com.corrodinggames.rts.gameFramework.d.h) -> isLowerThan
 com.corrodinggames.rts.gameFramework.e -> com.corrodinggames.rts.gameFramework.SyncPacket:
     int c -> localTick
     void a(com.corrodinggames.rts.gameFramework.j.bg) -> write
     void a(com.corrodinggames.rts.gameFramework.j.j) -> read
     com.corrodinggames.rts.gameFramework.e e() -> clone
-com.corrodinggames.rts.gameFramework.e.a -> com.corrodinggames.rts.gameFramework.e.a:
+com.corrodinggames.rts.gameFramework.e.a -> com.corrodinggames.rts.gameFramework.file.FileSystem:
+    com.corrodinggames.rts.gameFramework.e.c a -> DEFAULT_FILE_LOADER
+    com.corrodinggames.rts.gameFramework.e.c b -> currentFileLoader
+    java.lang.Boolean c -> useDirectExternalAccess
+    java.lang.String d -> overriddenExternalPath
+    java.lang.String e -> errorMessage
+    java.lang.String a() -> getErrorMessage
+    com.corrodinggames.rts.gameFramework.e.c a(int) -> getFileLoaderWithStorageType
+    com.corrodinggames.rts.gameFramework.utility.o a(java.io.File) -> openFileInputWithFileAbsoultePath
+    boolean a(java.io.File,java.io.File) -> renameFileWithOverride
+    java.io.OutputStream a(java.io.File,boolean) -> openFileOutputWithAbstractPath
+    java.io.File a(java.lang.String,java.lang.String,boolean) -> openFile
+    void b() -> reconfigureFileLoader
+    boolean b(java.io.File) -> deleteFile
+    java.lang.String e() -> getGameDataStoragePath
+    java.lang.String e(java.lang.String) -> convertAbstractPath
+    java.lang.String f() -> getCachePath
     java.lang.String[] h(java.lang.String) -> allModListOnPath
+    java.lang.String i() -> getInternalAppPath
+    com.corrodinggames.rts.gameFramework.utility.o j(java.lang.String) -> openFileInputWithAssetPath
+    com.corrodinggames.rts.gameFramework.utility.o k(java.lang.String) -> openFileInputWithAbstractPath
+    java.io.OutputStream l(java.lang.String) -> openFileOutputWithAbstractPath
+    boolean m(java.lang.String) -> createDirectoryWithAbstractPath
+    long n(java.lang.String) -> getLastModified
 com.corrodinggames.rts.gameFramework.e.c -> com.corrodinggames.rts.gameFramework.file.FileLoader:
+    java.lang.String a -> loggerPrefix
+    java.lang.String f -> externalStoragePath
+    boolean a(java.io.File,java.io.File) -> renameFile
+    boolean a(java.lang.String,java.lang.String,java.lang.String,boolean) -> renameFile
+    java.io.File a(java.lang.String,java.lang.String,boolean) -> openFile
+    boolean a(java.lang.String,boolean) -> checkPathIsDirectory
+    java.lang.String b() -> getGameDataStoragePath
+    java.io.OutputStream c(java.lang.String,boolean) -> openFileOutputWithAbstractPath
+    java.lang.String d(java.lang.String) -> resolveSpecialPath
+    java.lang.String f(java.lang.String) -> convertAbstractPath
+    com.corrodinggames.rts.gameFramework.utility.o h(java.lang.String) -> openFileInputWithAssetPath
+    com.corrodinggames.rts.gameFramework.utility.o i(java.lang.String) -> openFileInputWithAbstractPath
+    boolean j(java.lang.String) -> createDirectory
 com.corrodinggames.rts.gameFramework.f -> com.corrodinggames.rts.gameFramework.LogicNumberFuntion:
+    java.util.Random a -> randomGenerator
     void a() -> restartSeed
+    double a(double,double) -> min
     java.lang.String a(double,int) -> formatDecimal
     float a(float) -> squareRoot
+    float a(float,float) -> getExcessBeyondLimit
     float a(float,float,float,float) -> distanceSquared
+    float a(float,float,int) -> generateSeededRandomFloatTwoDecimals
+    java.lang.String a(float,int) -> formatFloat
+    int a(int,int) -> generateRandomInt
+    int a(int,int,int) -> generateSeededRandomInt
+    void a(android.graphics.Rect) -> normalizeRect
+    float a(com.corrodinggames.rts.game.units.ce,float,float,int) -> calculateScaledDistanceOrRandomFloat
+    int a(com.corrodinggames.rts.game.units.ce,int,int) -> calculateScaledDistanceOrRandomInt
+    java.lang.String a(java.io.InputStream) -> readInputStreamToString
+    java.lang.String a(java.lang.String) -> formatCurrentTime
     java.lang.String a(java.lang.String,java.lang.String,java.lang.String) -> decodeTextAsMultiline
+    java.lang.String b(double,int) -> formatDouble
     float b(float,float,float,float) -> distance
-    float b(float,float,int) -> random
+    float b(float,float,int) -> generateSeededRandomFloatThreeDecimals
+    int b(int) -> generateRandomInt
+    int b(int,int) -> max
+    java.lang.String[] b(java.lang.String,char) -> split
     java.lang.String b(java.lang.String,java.lang.String) -> normalizationPath
+    float c(float) -> powerZeroPointEight
+    float c(float,float) -> generateGameRandomFloat
+    int c(int) -> abs
+    int c(int,int) -> min
+    float d(float) -> abs
+    float d(float,float) -> generateRandomFloat
+    android.graphics.PointF d(float,float,float) -> setPointOffsetY
     float d(float,float,float,float) -> direction
+    float e(float) -> ceil
+    float e(float,float) -> max
+    float f(float,float) -> min
+    boolean g(float,float) -> approximatelyEqual
+    java.lang.String i(java.lang.String) -> getBaseFileName
     float j(float) -> sin
+    java.lang.String j(java.lang.String) -> getParentDirectoryPath
     float k(float) -> cos
     java.lang.String n(java.lang.String) -> getFileName
     java.lang.Integer o(java.lang.String) -> readAsInt
     java.lang.Long p(java.lang.String) -> readAsLong
     java.lang.Float q(java.lang.String) -> readAsFloat
+    java.lang.String s(java.lang.String) -> extractQuotedString
+    java.lang.String t(java.lang.String) -> removeEscapeCharacters
+com.corrodinggames.rts.gameFramework.f.a -> com.corrodinggames.rts.gameFramework.f.a:
+    com.corrodinggames.rts.gameFramework.f.i a -> interfaceEngine
+    java.lang.String am -> tipContent
+    float an -> tipLife
+    com.corrodinggames.rts.gameFramework.k b -> gameEngine
+    com.corrodinggames.rts.gameFramework.m.e S -> zoomButton
+    void a(java.lang.String,int) -> showTipOnCenter
+    void c(float) -> updateTipOnCenter
 com.corrodinggames.rts.gameFramework.f.e -> com.corrodinggames.rts.gameFramework.Interface.DisplayedStat:
 com.corrodinggames.rts.gameFramework.f.i -> com.corrodinggames.rts.gameFramework.Interface.InterfaceEngine:
+    int aX -> selectedUnitCount
+    java.lang.String bG -> notAvailableInDemoText
+    com.corrodinggames.rts.game.units.custom.bu bI -> notEnoughResources
+    java.lang.String bJ -> cannotPlaceGeneral
+    java.lang.String bK -> cannotPlaceNeedsResourcePool
+    java.lang.String bL -> cannotPlaceNeedsWater
+    boolean bN -> isLargeOffsetMode
+    com.corrodinggames.rts.gameFramework.utility.x bZ -> selectedUnits
     com.corrodinggames.rts.gameFramework.f.o h -> chatMessageServer
-    void a(java.lang.String) -> tipsOnCenter
+    com.corrodinggames.rts.game.units.a.e l -> attackMoveAction
+    com.corrodinggames.rts.game.units.a.f m -> guardUnitAction
+    com.corrodinggames.rts.game.units.a.i n -> patrolAction
+    com.corrodinggames.rts.game.units.a.d o -> attackModeAction
+    com.corrodinggames.rts.game.units.a.j p -> pingMapAction
+    com.corrodinggames.rts.game.units.a.r q -> mapPingAction
+    com.corrodinggames.rts.game.units.a.q r -> teamChatAction
+    boolean a(int,com.corrodinggames.rts.game.units.ce) -> newOrderOperationForUnit
+    boolean a(com.corrodinggames.rts.game.units.ce) -> canSelectUnit
+    void a(java.lang.String) -> showTipOnCenter
+    void a(java.lang.String,int) -> showQuickReloadProgress
+    boolean b(com.corrodinggames.rts.game.units.ce) -> trySelectUnit
+    void c(float) -> update
+    void c(com.corrodinggames.rts.game.units.ce) -> addSelectedUnit
 com.corrodinggames.rts.gameFramework.f.o -> com.corrodinggames.rts.gameFramework.Interface.ChatMessageServer:
     java.util.ArrayList f -> chatMessageList
     com.corrodinggames.rts.gameFramework.f.p a(java.lang.String,java.lang.String) -> chatMessage
 com.corrodinggames.rts.gameFramework.f.p -> com.corrodinggames.rts.gameFramework.Interface.ChatMessage:
     int e -> delayPerChar
     int f -> textColor
+com.corrodinggames.rts.gameFramework.f.q -> com.corrodinggames.rts.gameFramework.f.q:
+    void a(float) -> update
 com.corrodinggames.rts.gameFramework.g -> com.corrodinggames.rts.gameFramework.GetSystemCpuFile:
 com.corrodinggames.rts.gameFramework.h -> com.corrodinggames.rts.gameFramework.GameThreadDebug:
 com.corrodinggames.rts.gameFramework.h.a -> com.corrodinggames.rts.gameFramework.translations.TranslationsServer:
@@ -1693,6 +2321,7 @@ com.corrodinggames.rts.gameFramework.i.a -> com.corrodinggames.rts.gameFramework
     java.util.ArrayList e -> enableModArray
     com.corrodinggames.rts.gameFramework.i.b a(java.lang.String,java.lang.String,java.lang.String,java.lang.String,boolean,boolean) -> loadCustomMod
     void a(java.lang.String,boolean,boolean) -> loadCustomMods
+    com.corrodinggames.rts.gameFramework.i.b b(java.lang.String) -> getModByHash
 com.corrodinggames.rts.gameFramework.i.b -> com.corrodinggames.rts.gameFramework.mod.CustomMod:
     boolean f -> disable
     java.lang.String K -> sourceFolder
@@ -1710,10 +2339,15 @@ com.corrodinggames.rts.gameFramework.i.b -> com.corrodinggames.rts.gameFramework
 com.corrodinggames.rts.gameFramework.j -> com.corrodinggames.rts.gameFramework.AutoUpdateModLastModified:
 com.corrodinggames.rts.gameFramework.j.ab -> com.corrodinggames.rts.gameFramework.net.ListOperateUpdateRoom:
 com.corrodinggames.rts.gameFramework.j.ae -> com.corrodinggames.rts.gameFramework.net.GameNetEngine:
+    int ar -> desyncErrorCount
     java.lang.Object aS -> indexSync
     com.corrodinggames.rts.gameFramework.j.ao bG -> enterPasswordCallback
     float K -> currentStepRate
     int Z -> loaclTick
+    void a(java.lang.String,java.lang.String) -> showChatMessage
+    void a(java.lang.String,boolean) -> handleDesyncError
+    void e(java.lang.String) -> logDesyncWarning
+    void f(java.lang.String) -> logDesyncError
 com.corrodinggames.rts.gameFramework.j.ao -> com.corrodinggames.rts.gameFramework.net.EnterPasswordCallback:
 com.corrodinggames.rts.gameFramework.j.as -> com.corrodinggames.rts.gameFramework.net.GameMapData:
     com.corrodinggames.rts.gameFramework.j.at a -> mapType
@@ -1753,23 +2387,37 @@ com.corrodinggames.rts.gameFramework.j.j -> com.corrodinggames.rts.gameFramework
 com.corrodinggames.rts.gameFramework.j.m -> com.corrodinggames.rts.gameFramework.net.GameNetAPIOperate:
     java.lang.String[] c -> urlList
 com.corrodinggames.rts.gameFramework.j.n -> com.corrodinggames.rts.gameFramework.j.n:
-    java.lang.Object call() -> mo117call
+    java.lang.Object call() -> mo26call
 com.corrodinggames.rts.gameFramework.k -> com.corrodinggames.rts.gameFramework.GameEngine:
     com.corrodinggames.rts.gameFramework.k ak -> globalGameEngine
     android.content.Context al -> gameContext
     com.corrodinggames.rts.appFramework.ab an -> inputContext
     boolean aR -> isModsInSD
+    boolean aV -> usingGDX
     boolean bb -> isLargeOffsetMode
     com.corrodinggames.rts.game.b.b bI -> map
+    com.corrodinggames.rts.gameFramework.a bM -> CollisionEngine
     com.corrodinggames.rts.gameFramework.SettingsEngine bN -> settingsEngine
+    com.corrodinggames.rts.gameFramework.d.c bO -> builtInEffects
     com.corrodinggames.rts.game.p bp -> playerData
+    com.corrodinggames.rts.gameFramework.f.i bP -> interfaceEngine
+    float bq -> deltaSpeedMultiplier
+    com.corrodinggames.rts.gameFramework.an bQ -> gameOperationKeys
+    com.corrodinggames.rts.gameFramework.k.k bR -> PathEngine
+    com.corrodinggames.rts.gameFramework.al bS -> GroupController
     int bu -> tick
     com.corrodinggames.rts.gameFramework.j.ae bU -> netEngine
+    int bv -> gameTimeMs
     com.corrodinggames.rts.gameFramework.bv bV -> statsHandler
     com.corrodinggames.rts.gameFramework.i.a bW -> modEngine
     com.corrodinggames.rts.gameFramework.aj bX -> gameSaver
     com.corrodinggames.rts.gameFramework.bp bY -> replayEngine
+    com.corrodinggames.rts.game.units.f.c bZ -> unitGeoIndex
     float cB -> cameraWidth
+    com.corrodinggames.rts.gameFramework.c cc -> commandController
+    float cf -> density
+    float ci -> resolutionX
+    float cj -> resolutionY
     android.graphics.Rect cK -> cameraBoundsWithOffset
     android.graphics.RectF cL -> cameraBoundsCopy
     android.graphics.RectF cM -> cameraExtendedBounds
@@ -1779,29 +2427,61 @@ com.corrodinggames.rts.gameFramework.k -> com.corrodinggames.rts.gameFramework.G
     int cs -> cameraYInt
     float ct -> cameraXSnapped
     float cu -> cameraYSnapped
-    float cU -> gridSize
+    float cU -> zoomLevel
     float cv -> x
     float cw -> y
     float cx -> cameraWidthCopy
     float cy -> cameraHeight
     android.os.Handler dA -> handler
     java.lang.String dF -> introScreenLoadingTips
+    java.lang.String di -> level
     com.corrodinggames.rts.gameFramework.x dv -> createNewGameEngine
     com.corrodinggames.rts.gameFramework.ae dY -> fileErrorType
     void a(float,float) -> globalMoveCameraToInner
+    void a(java.lang.String) -> logError
+    void a(java.lang.String,java.lang.String) -> logWithLabel
+    void a(java.lang.String,java.lang.Throwable) -> logException
+    boolean ac() -> isNetworkGame
     void ag() -> systemMemoryDebug
+    int b() -> getPerformanceValue
     void b(float,float) -> globalMoveCameraTo
-    void b(java.lang.String) -> print
+    void b(java.lang.String) -> printColored
+    void c(java.lang.String) -> logDebug
     void d(java.lang.String) -> log
     void d(java.lang.String,java.lang.String) -> crash
     void e(android.content.Context) -> gameContextInitialize
+    void e(java.lang.String) -> logWithTimestamp
+    java.lang.String e(java.lang.String,java.lang.String) -> formatWithColor
     com.corrodinggames.rts.gameFramework.k f(android.content.Context) -> createNewFrom
+    void f(java.lang.String) -> printColoredWithStackTrace
     void g(java.lang.String) -> error
     void H() -> adjustCameraBounds
+    void K() -> printStackTrace
     void m(java.lang.String) -> addChatMessage
+    long M() -> getCurrentTimeMillis
+    float N() -> getFinalRenderDensity
     com.corrodinggames.rts.gameFramework.k t() -> getGameEngine
     void W() -> checkGameThread
+com.corrodinggames.rts.gameFramework.k.h -> com.corrodinggames.rts.gameFramework.k.PathLayer:
+    com.corrodinggames.rts.game.units.cg a -> movementType
+    int b -> gridWidth
+    int c -> gridHeight
+    byte[] d -> terrainPassability
+    com.corrodinggames.rts.gameFramework.k.k q -> pathEngine
+    void a(com.corrodinggames.rts.game.units.bp) -> removeBuildingUnit
 com.corrodinggames.rts.gameFramework.k.k -> com.corrodinggames.rts.gameFramework.path.PathEngine:
+    com.corrodinggames.rts.gameFramework.k.h A -> water
+    com.corrodinggames.rts.gameFramework.k.h B -> air
+    com.corrodinggames.rts.gameFramework.k.h C -> hover
+    com.corrodinggames.rts.gameFramework.k.h D -> overCliff
+    com.corrodinggames.rts.gameFramework.k.h E -> overCliffWater
+    short s -> width
+    short t -> height
+    com.corrodinggames.rts.gameFramework.k.h x -> none
+    com.corrodinggames.rts.gameFramework.k.h y -> land
+    com.corrodinggames.rts.gameFramework.k.h z -> building
+    void a(float) -> update
+    void a(com.corrodinggames.rts.game.units.bp) -> removeBuildingUnit
 com.corrodinggames.rts.gameFramework.l -> com.corrodinggames.rts.gameFramework.ShowToast:
 com.corrodinggames.rts.gameFramework.l.a -> com.corrodinggames.rts.gameFramework.specialValues.setA:
     java.lang.String a() -> nullString
@@ -1811,10 +2491,44 @@ com.corrodinggames.rts.gameFramework.m -> com.corrodinggames.rts.gameFramework.L
     android.content.Context a -> context
     com.corrodinggames.rts.gameFramework.ab b -> menuLoading
 com.corrodinggames.rts.gameFramework.m.e -> com.corrodinggames.rts.gameFramework.unitAction.UnitTexture:
+    java.lang.String g -> filePath
     int p -> width
     int q -> height
     int g() -> height
     int h() -> width
+com.corrodinggames.rts.gameFramework.m.fi -> com.corrodinggames.rts.gameFramework.m.GameObject:
+    void a(float,float,float,float,android.graphics.Paint) -> drawLine
+    void a(float,float,float,android.graphics.Paint) -> draw
+    void a(com.corrodinggames.rts.gameFramework.m.e,android.graphics.Rect,android.graphics.RectF,android.graphics.Paint) -> draw
+    com.corrodinggames.rts.gameFramework.m.e a(java.io.InputStream,boolean) -> loadTexture
+com.corrodinggames.rts.gameFramework.m.fo -> com.corrodinggames.rts.gameFramework.m.Shader:
+    java.lang.String c -> shaderFileName
+    java.lang.String d -> nullOrMissingString
+    java.lang.String g -> plainShaderPath
+    java.lang.String h -> shaderPath
+    com.corrodinggames.rts.gameFramework.m.fp[] n -> uniforms
+    void a(java.lang.String,float) -> setUniformFloat
+    void a(java.lang.String,float,float) -> setUniformVec2
+    void a(java.lang.String,int) -> setColor
+    void a(java.lang.String,com.corrodinggames.rts.gameFramework.m.e) -> setUnitTexture
+    void b(java.lang.String,com.corrodinggames.rts.gameFramework.m.e) -> setUnitTextureWithSomething
+    com.corrodinggames.rts.gameFramework.m.fp c(java.lang.String) -> getUniform
+com.corrodinggames.rts.gameFramework.m.fp -> com.corrodinggames.rts.gameFramework.m.Uniform:
+    java.lang.String a -> uniformName
+    boolean c -> hasParameter
+    float[] e -> value
+    com.corrodinggames.rts.gameFramework.m.e f -> unitTexture
+    boolean g -> alsoSetSomthing
+    void a(float,float) -> setUniformVec2
+    void a(float,float,float,float) -> setColor
+    void a(com.corrodinggames.rts.gameFramework.m.e) -> setUnitTexture
+    void b(com.corrodinggames.rts.gameFramework.m.e) -> setUnitTextureWithSomething
+com.corrodinggames.rts.gameFramework.m.fq -> com.corrodinggames.rts.gameFramework.m.GamePaint:
+    com.corrodinggames.rts.gameFramework.m.fq a -> instance
+    com.corrodinggames.rts.gameFramework.m.fo c -> shader
+    boolean d -> debugMode
+    void a(float) -> setTextSize
+    void setTextSize(float) -> setTextSizeWithCheck
 com.corrodinggames.rts.gameFramework.n -> com.corrodinggames.rts.gameFramework.ShowMessage:
 com.corrodinggames.rts.gameFramework.n.a -> com.corrodinggames.rts.gameFramework.n.a:
     int a() -> centerX
@@ -1847,6 +2561,7 @@ com.corrodinggames.rts.gameFramework.n.n -> com.corrodinggames.rts.gameFramework
 com.corrodinggames.rts.gameFramework.n.o -> com.corrodinggames.rts.gameFramework.status.TriggerUnitDetect:
 com.corrodinggames.rts.gameFramework.n.p -> com.corrodinggames.rts.gameFramework.n.p:
     void b(float) -> mapEventObjectPaser
+    void e(java.lang.String) -> logMapScriptError
 com.corrodinggames.rts.gameFramework.o -> com.corrodinggames.rts.gameFramework.ShowMessageA:
 com.corrodinggames.rts.gameFramework.o.a -> com.corrodinggames.rts.gameFramework.steamDebug.LoadModDebug:
     void b() -> debugLoadWorkshopMods
@@ -1861,19 +2576,46 @@ com.corrodinggames.rts.gameFramework.s -> com.corrodinggames.rts.gameFramework.S
     com.corrodinggames.rts.gameFramework.s b() -> buttonOk
 com.corrodinggames.rts.gameFramework.t -> com.corrodinggames.rts.gameFramework.SetDialogButtonClose:
 com.corrodinggames.rts.gameFramework.u -> com.corrodinggames.rts.gameFramework.SetDialogButtonOk:
+com.corrodinggames.rts.gameFramework.utility.a.a -> com.corrodinggames.rts.gameFramework.utility.RwAndroidSAF.RwAndroidSAFServer:
+    com.corrodinggames.rts.appFramework.android.AndroidSAF a -> androidSAF
+    java.lang.String a(android.net.Uri) -> getReadablePath
+    boolean a(java.lang.String) -> exists
+    boolean a(java.lang.String,java.lang.String) -> rename
+    java.io.OutputStream a(java.lang.String,boolean) -> writer
+    long c(java.lang.String) -> getFileSize
+    com.corrodinggames.rts.gameFramework.utility.o d(java.lang.String) -> read
+    long i(java.lang.String) -> getLastModified
+    void k(java.lang.String) -> logSafMessage
+    void l(java.lang.String) -> logSafError
+    boolean m(java.lang.String) -> isSafLink
+    com.corrodinggames.rts.gameFramework.utility.a.b o(java.lang.String) -> open
+    java.lang.String p(java.lang.String) -> extractPathInZip
+com.corrodinggames.rts.gameFramework.utility.a.b -> com.corrodinggames.rts.gameFramework.utility.RwAndroidSAF.RwAndroidSAF:
+    com.corrodinggames.rts.gameFramework.utility.o a(java.lang.String) -> read
+    boolean a(java.lang.String,java.lang.String) -> rename
+    java.io.OutputStream a(java.lang.String,boolean) -> writer
+    boolean b(java.lang.String) -> deleteFile
+    android.net.Uri c(java.lang.String) -> getUri
+    android.net.Uri d(java.lang.String) -> getParentPathUri
 com.corrodinggames.rts.gameFramework.utility.ab -> com.corrodinggames.rts.gameFramework.utility.TileMap:
+    void a(float) -> update
     boolean a(float,float) -> inMap
     boolean a(float,float,com.corrodinggames.rts.game.units.cg) -> canPassable
+    void a(com.corrodinggames.rts.game.units.ce,com.corrodinggames.rts.game.units.bp) -> unloadUpToUnitFromSource
 com.corrodinggames.rts.gameFramework.utility.ae -> com.corrodinggames.rts.gameFramework.utility.UnitConfig:
     java.util.LinkedHashMap a -> sectionMap
     java.lang.String b -> path
     boolean c -> isTrackingReads
     java.util.LinkedHashSet d -> keyValuePairTexts
-    com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBoolean a(com.corrodinggames.rts.game.units.custom.l,java.lang.String,java.lang.String,com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBoolean) -> getValueAsLogicBoolean
+    java.lang.String h -> filePath
+    com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBoolean a(com.corrodinggames.rts.game.units.custom.l,java.lang.String,java.lang.String) -> getValueAsLogicBoolean
+    com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBoolean a(com.corrodinggames.rts.game.units.custom.l,java.lang.String,java.lang.String,com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBoolean) -> getValueAsLogicBooleanOrDefault
+    com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBoolean a(com.corrodinggames.rts.game.units.custom.l,java.lang.String,java.lang.String,com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBoolean$ReturnType) -> getValueAsLogicBoolean
     com.corrodinggames.rts.game.units.custom.u a(com.corrodinggames.rts.game.units.custom.l,java.lang.String,java.lang.String,com.corrodinggames.rts.game.units.custom.u) -> getVauleAsActionList
     com.corrodinggames.rts.game.units.custom.aj a(com.corrodinggames.rts.game.units.custom.l,java.lang.String,java.lang.String,java.lang.String) -> getValueAsLogicMessage
     void a(java.io.BufferedReader) -> readConfig
-    com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBoolean a(java.lang.String,com.corrodinggames.rts.game.units.custom.l,java.lang.String,java.lang.String,com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBoolean$ReturnType) -> getValueAsUnitref
+    com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBoolean a(java.lang.String,com.corrodinggames.rts.game.units.custom.l,java.lang.String,java.lang.String) -> getValueAsSpawnUnitArgs
+    com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBoolean a(java.lang.String,com.corrodinggames.rts.game.units.custom.l,java.lang.String,java.lang.String,com.corrodinggames.rts.game.units.custom.logicBooleans.LogicBoolean$ReturnType) -> getValueAsLogicBoolean
     java.lang.Enum a(java.lang.String,java.lang.Enum,java.lang.Class) -> convertStringToEnumOrDefault
     void a(java.lang.String,java.lang.String) -> addKeyValuePairToTextsDefaultsUnknown
     double a(java.lang.String,java.lang.String,double) -> getValueAsDoubleOrDefault
@@ -1909,16 +2651,41 @@ com.corrodinggames.rts.gameFramework.utility.ae -> com.corrodinggames.rts.gameFr
     void o(java.lang.String,java.lang.String) -> throwNoKeyInSectionException
     java.lang.String p(java.lang.String,java.lang.String) -> getValueAndRecordOrNull
     java.lang.String q(java.lang.String,java.lang.String) -> getValueAndRecord
+com.corrodinggames.rts.gameFramework.utility.ah -> com.corrodinggames.rts.gameFramework.utility.RwAndroidSAFServerManager:
+    java.lang.Object a -> managerLock
+    com.corrodinggames.rts.gameFramework.utility.aj b -> rwModRwAndroidSAFServer
+    com.corrodinggames.rts.gameFramework.utility.ai c -> rwAndroidSAF
+    com.corrodinggames.rts.gameFramework.utility.ai a(java.lang.String) -> getSAFServer
+    boolean b() -> shouldUseSAF
+    com.corrodinggames.rts.gameFramework.utility.ai b(java.lang.String) -> getRWSAFServer
+com.corrodinggames.rts.gameFramework.utility.ai -> com.corrodinggames.rts.gameFramework.utility.AbstarctRwAndroidSAFServer:
+    boolean e(java.lang.String) -> deleteFile
+com.corrodinggames.rts.gameFramework.utility.aj -> com.corrodinggames.rts.gameFramework.utility.RwModRwAndroidSAFServer:
+    java.util.HashMap a -> zipFileCache
+    void k(java.lang.String) -> logZipMessage
+    boolean l(java.lang.String) -> isRwMod
 com.corrodinggames.rts.gameFramework.utility.am -> com.corrodinggames.rts.gameFramework.utility.Point3DF:
     float a -> x
     float b -> y
     float c -> z
+com.corrodinggames.rts.gameFramework.utility.o -> com.corrodinggames.rts.gameFramework.utility.ResourceInputStream:
+    java.io.InputStream a -> inputStream
+    java.lang.String b -> resourcePath
+    java.lang.String c -> secondaryIdentifier
+    boolean d -> isClosed
+    java.lang.String e -> creationStackTrace
+    java.lang.String a() -> getResourcePath
 com.corrodinggames.rts.gameFramework.utility.p -> com.corrodinggames.rts.gameFramework.utility.LukeArray:
-    int a -> transportingUnitCount
+    int a -> count
     java.lang.Object[] b -> unitList
+com.corrodinggames.rts.gameFramework.utility.r -> com.corrodinggames.rts.gameFramework.utility.EntityManager:
+    java.lang.Object[] d -> entitiesArray
+    void a(java.lang.Object) -> add
 com.corrodinggames.rts.gameFramework.utility.v -> com.corrodinggames.rts.gameFramework.utility.EntityPool:
-com.corrodinggames.rts.gameFramework.utility.x -> com.corrodinggames.rts.gameFramework.utility.UnitPool:
+com.corrodinggames.rts.gameFramework.utility.x -> com.corrodinggames.rts.gameFramework.utility.UnitRefPool:
+    int b -> unitCount
     com.corrodinggames.rts.game.units.ce[] c -> unitRefList
+    void b(com.corrodinggames.rts.game.units.ce) -> addUnitRef
 com.corrodinggames.rts.gameFramework.v -> com.corrodinggames.rts.gameFramework.UnknownV:
 com.corrodinggames.rts.gameFramework.w -> com.corrodinggames.rts.gameFramework.UnusedW:
 com.corrodinggames.rts.gameFramework.x -> com.corrodinggames.rts.gameFramework.CreateNewGameEngineAbstract:
